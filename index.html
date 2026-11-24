@@ -1,65 +1,59 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFAIR STUDIO · Etkileşimli 3B sanat galerisi</title>
-<meta name="description" content="Üç boyutlu galeride ışığı ve bakış açını değiştir. Dila’daki kumaş seçimini aynı seçkiyle açabilir veya filmleri izleyebilirsin.">
-<link rel="stylesheet" href="/dila-3b/sahne.0fbb13978c.css">
-<script src="/dila-3b/sahne.e1b5005f08.js" defer></script>
-<script src="/dila-3b/studio-baglantilari.0b8250f540.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Lif Atölyesi · AFAIR Studio</title>
+  <meta name="description" content="Liften dokumaya, numuneden provaya: iki malzeme fikrini yan yana incele. Fiziksel numune ve tedarikçi doğrulama adımlarını açıkça gör.">
+  <link rel="stylesheet" href="/lif-atolyesi/lif.css">
+  <script src="/lif-atolyesi/lif.js" defer></script>
 </head>
-<body data-world="studio">
-<a class="skip" href="#ana">İçeriğe geç</a>
-<header class="bar">
-<a class="wordmark" href="/" aria-label="AFAIR STUDIO · Etkileşimli 3B sanat galerisi ana sayfası">AFAIR STUDIO</a>
-<nav aria-label="Ana menü"><a href="/dila/#bu-gece">Dila’ya geç</a><a href="#filmler">Dila filmleri</a><a href="/dila/#galeri">Üretken galeri</a><a class="btn seffaf" href="/dila-hareket-atolyesi/">Dila filmlerini izle ↗</a><a href="https://www.xn--modernataehir-qtc.com/yasam/bina.html#yasam">Ataşehir · Yeni komşular</a><a href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/?rota=a#doku">Ataşehir doku masası ↗</a><a href="https://www.selinahbap.com/istanbul/index.html">İstanbul’a kanat aç</a></nav>
-</header>
-<main id="ana">
-<section class="hero" aria-labelledby="baslik">
-<div class="hero-copy">
-<p class="overline">Dila / AFAIR Studio</p>
-<h1 id="baslik">Galeriye <em>içeriden bak.</em></h1>
-<p class="summary">Üç boyutlu galeride ışığı ve bakış açını değiştir. Dila’daki kumaş seçimini aynı seçkiyle açabilir veya filmleri izleyebilirsin.</p>
-<div class="actions"><a class="action" href="/dila/#bu-gece">Dila’ya geç</a><a class="ghost" href="#filmler">Dila filmleri</a></div>
-</div>
-<div class="console">
-<figure class="stage">
-<canvas id="sahne" tabindex="0" aria-label="Etkileşimli 3B sanat galerisi">
-Sahneyi görüntülemek için WebGL destekli bir tarayıcı kullan.
-</canvas>
-<figcaption>Etkileşimli 3B sanat galerisi</figcaption>
-</figure>
-<div class="panel">
-<div class="modes" role="group" aria-label="Sahne seçenekleri"><button type="button" class="mode" data-mode="0" aria-pressed="true">Galeri</button>
-<button type="button" class="mode" data-mode="1" aria-pressed="false">Doku</button>
-<button type="button" class="mode" data-mode="2" aria-pressed="false">Gece ışığı</button></div>
-<div class="camera" role="group" aria-label="Kamera">
-<button id="kamera-sifirla" type="button" class="ghost">Kamerayı sıfırla</button>
-<button id="kamera-oynat" type="button" class="ghost" aria-pressed="false">Otomatik dönüş</button>
-<button id="vr" type="button" class="ghost" hidden>VR gözlükle aç</button>
-</div>
-<p id="sahne-durum" class="state" role="status">Sahne yükleniyor…</p>
-</div>
-</div>
-</section>
-<p class="note">Sürükleyerek veya ok tuşlarıyla galerinin açısını değiştir.</p>
-<div class="more"><a href="/dila/#galeri">Üretken galeri</a><a href="/dila-rehber">Atölye rehberi</a><a href="https://www.afair.live/">AFAIR Live</a></div>
-<section class="reels" id="filmler" aria-labelledby="film-baslik"><h2 class="section-h" id="film-baslik">Dila filmleri</h2><div class="reels-grid"><article class="clip">
-<video controls playsinline preload="none" poster="/dila-3b/video/dila-olcu.jpg" aria-label="İki mezura">
-<source src="/dila-3b/video/dila-olcu.mp4" type="video/mp4">
-</video>
-<div class="clip-body"><h3>İki mezura</h3><p>Saten, pirinç ve atölyenin yakın planı.</p>
-<p class="clip-info">Higgsfield · 5,04 sn · 720p · 0,85 MB · <a href="/dila-3b/video/dila-olcu.mp4">MP4’ü aç</a></p></div>
-</article>
-<article class="clip">
-<video controls playsinline preload="none" poster="/dila-3b/video/dila-galeri.jpg" aria-label="Galeride kadife">
-<source src="/dila-3b/video/dila-galeri.mp4" type="video/mp4">
-</video>
-<div class="clip-body"><h3>Galeride kadife</h3><p>Kehribar ve turkuaz spotlar altında dönen kumaş.</p>
-<p class="clip-info">Higgsfield · 5,04 sn · 720p · 0,84 MB · <a href="/dila-3b/video/dila-galeri.mp4">MP4’ü aç</a></p></div>
-</article></div></section>
-</main>
-<footer><span>AFAIR STUDIO</span><a href="/onceki-ana-sayfa.html">Önceki ana sayfa</a></footer>
-</body>
-</html>
+<body>
+  <a class="skip" href="#atolye">Atölyeye geç</a>
+  <header><a class="brand" href="/">AFAIR / STUDIO</a><nav aria-label="Yaşam ağı"><a href="https://www.xn--ataehirmodern-ktc.com/uc-yon/">Üç blok · üç yön ↗</a><a href="https://www.afair.live/yasam-destegi/?konu=terzi">Terziyle görüş ↗</a><a href="/dila/">Dila prova ↗</a><a href="/dila-hareket-atolyesi/">Dila filmleri ↗</a></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="baslik">
+      <p class="kicker">LİF ATÖLYESİ / 01</p>
+      <h1>Rengi ekranda gör.<br><em>Kararı kumaşla ver.</em></h1>
+      <div class="hero-bottom"><p>Bir renk kutusundan fazlası. Lif fikri, iplik yönü ve dokuma düzeni; aynı ışık denemesinde yan yana.</p><a class="round-link" href="#atolye">İki numuneyi karşılaştır ↓</a></div>
+      <p class="disclosure">Bu bir tasarım önizlemesidir. Gerçek kumaş taraması, tedarikçi stoğu veya ölçülmüş renk eşlemesi değildir.</p>
+    </section>
+
+    <section id="atolye" aria-labelledby="karsilastirma-baslik">
+      <div class="section-heading"><p class="kicker">01 / KARŞILAŞTIR</p><h2 id="karsilastirma-baslik">Aynı fikir.<br>İki malzeme yolu.</h2></div>
+      <form id="ayarlar" class="workspace" aria-label="Malzeme karşılaştırma ayarları">
+        <fieldset class="sample-controls"><legend>A / İlk aday</legend>
+          <label for="lif-a">Lif fikri<select id="lif-a" name="lif-a"><option value="pamuk">Pamuk</option><option value="keten">Keten</option><option value="yun">Yün</option><option value="ipek">İpek</option></select></label>
+          <label for="orgu-a">Dokuma düzeni<select id="orgu-a" name="orgu-a"><option value="bezayagi">Bezayağı · 1/1</option><option value="dimi">Dimi · 2/2</option><option value="saten">Saten · 5 uçlu şema</option></select></label>
+          <label for="renk-a">Renk niyeti<select id="renk-a" name="renk-a"><option value="aqua">Akuamarin</option><option value="apricot">Kayısı</option><option value="coral">Mercan</option><option value="blue">Mavi</option></select></label>
+        </fieldset>
+        <fieldset class="sample-controls"><legend>B / İkinci aday</legend>
+          <label for="lif-b">Lif fikri<select id="lif-b" name="lif-b"><option value="ipek">İpek</option><option value="pamuk">Pamuk</option><option value="keten">Keten</option><option value="yun">Yün</option></select></label>
+          <label for="orgu-b">Dokuma düzeni<select id="orgu-b" name="orgu-b"><option value="saten">Saten · 5 uçlu şema</option><option value="bezayagi">Bezayağı · 1/1</option><option value="dimi">Dimi · 2/2</option></select></label>
+          <label for="renk-b">Renk niyeti<select id="renk-b" name="renk-b"><option value="apricot">Kayısı</option><option value="aqua">Akuamarin</option><option value="coral">Mercan</option><option value="blue">Mavi</option></select></label>
+        </fieldset>
+        <fieldset class="shared-controls"><legend>İkisine aynı koşul</legend>
+          <label for="isik">Işık denemesi<select id="isik" name="isik"><option value="notr">Nötr stüdyo</option><option value="sicak">Sıcak iç mekân</option><option value="serin">Serin gün ışığı</option></select></label>
+          <label for="olcek">İplik şeması ölçeği<select id="olcek" name="olcek"><option value="yakin">Yakın görünüm</option><option value="genel">Genel görünüm</option></select></label>
+          <button type="button" id="yer-degistir">A ile B’yi değiştir ↔</button>
+        </fieldset>
+      </form>
+      <div class="samples">
+        <figure class="sample"><div class="sample-caption"><span>A / TASARIM ADAYI</span><strong id="ad-a">Pamuk · Bezayağı</strong></div><canvas id="tuval-a" width="1200" height="800" role="img" aria-label="A adayının temsili dokuma şeması"></canvas><figcaption id="ozet-a"></figcaption></figure>
+        <figure class="sample"><div class="sample-caption"><span>B / TASARIM ADAYI</span><strong id="ad-b">İpek · Saten</strong></div><canvas id="tuval-b" width="1200" height="800" role="img" aria-label="B adayının temsili dokuma şeması"></canvas><figcaption id="ozet-b"></figcaption></figure>
+      </div>
+      <p class="comparison-status" id="karsilastirma-durum" role="status" aria-live="polite"></p>
+      <details><summary>Bu görüntü neyi gösterir?</summary><p>Çözgü ve atkının üstten görünüşüyle kurulmuş basitleştirilmiş bir çizimdir. Lif seçimi çizimin görünüşünü değiştirir; gerçek lif davranışını, iplik numarasını, parlaklığı, dökümü veya dayanımı hesaplamaz. Işık seçenekleri görsel renklendirme denemeleridir; spektral ölçüm, Kelvin kalibrasyonu veya renk yönetimi değildir.</p></details>
+    </section>
+
+    <section class="physical" aria-labelledby="fiziksel-baslik">
+      <p class="kicker">02 / EKRANDAN NUMUNEYE</p><h2 id="fiziksel-baslik">Gerçek kumaşın<br>kendi kaydı olmalı.</h2>
+      <div class="verification-grid"><article><span>01</span><h3>Kaynağı belli olsun.</h3><p>Tedarikçi adı, ürün kodu, parti numarası, lif bileşimi ve bakım beyanı istenir. Burada henüz doğrulanmış bir tedarikçi numunesi yok.</p></article><article><span>02</span><h3>Numuneyi aynı ışıkta gör.</h3><p>Fiziksel parçalar yan yana incelenir. Ekran rengi tek başına kumaş kabulü sayılmaz. Gerçek Pantone referansı ve ölçüm raporu varsa numuneye bağlanır.</p></article><article><span>03</span><h3>Prova ile karar ver.</h3><p>Terzi; kullanım amacı, tenle temas, hareket, dikiş ve bakım gereksinimini numuneyle değerlendirir. Uygunluk ya da müsaitlik bu ekrandan varsayılmaz.</p></article></div>
+      <dl class="missing"><div><dt>Tedarikçi / parti</dt><dd>Henüz alınmadı</dd></div><div><dt>Gramaj / iplik numarası</dt><dd>Henüz doğrulanmadı</dd></div><div><dt>Pantone / renk farkı ΔE</dt><dd>Fiziksel referans ve ölçüm yok</dd></div><div><dt>Stok / sertifika / fiyat</dt><dd>Bu sayfadan doğrulanmıyor</dd></div></dl>
+    </section>
+
+    <section class="handoff" aria-labelledby="teslim-baslik"><div><p class="kicker">03 / SONRAKİ ADIM</p><h2 id="teslim-baslik">Bir kumaş seçmedin.<br>İyi bir soru hazırladın.</h2><p>Karşılaştırma kartını indir, fiziksel numune geldiğinde onun bilgileriyle tamamla. Kart, kişisel ölçü veya iletişim bilgisi içermez.</p></div><div class="actions"><button id="kart-indir" type="button">Karşılaştırma kartını indir · JSON ↓</button><a class="button" href="https://www.afair.live/yasam-destegi/?konu=terzi">Terzi görüşmesi hazırlığı ↗</a><a class="button secondary" href="https://www.xn--ataehirmodern-ktc.com/uc-yon/">Ataşehir’de yaşama dön ↗</a><p id="aktarim-durum" role="status" aria-live="polite"></p></div></section>
+  </main>
+  <footer><span>AFAIR / STUDIO · LİF ATÖLYESİ</span><a href="https://www.afair.live/yasam-destegi/?konu=tarim">Lifin yetiştiği yer · tarım görüşmesi ↗</a><a href="/onceki-giris-0d686a243c.html">Önceki giriş ↗</a></footer>
+</body></html>
