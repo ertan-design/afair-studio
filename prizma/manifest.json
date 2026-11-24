@@ -1,0 +1,105 @@
+{
+  "schema": "prizma.live-bundle.v1",
+  "generated_utc": "2026-11-24T21:39:40.456Z",
+  "csp_strict_safe": true,
+  "zero_cdn": true,
+  "zero_xss": true,
+  "zero_local_path_leaks": true,
+  "targets": [
+    "https://ertanaraz.com/prizma/",
+    "https://www.afair.studio/prizma/",
+    "https://www.afair.live/prizma/"
+  ],
+  "free_additions": [
+    "front2.html (Dila Front 2/4: Iki Mezura Evde Terzi Randevu & Hareket Olcu Defteri)",
+    "front3.html (Dila Front 3/4: AFAIR Studio AI Galeri Odalari, Kelvin Isik & Akustik Kurator)",
+    "index.html (PRIZMA x DILA Canli Komuta Merkezi & 50.000 Slot RCOMBO Hesaplayicisi)"
+  ],
+  "file_count": 14,
+  "files": [
+    {
+      "file": "dila_8_konsept_senkron.jsonl",
+      "bytes": 1775,
+      "sha256": "a9eee115016e08e60a83186af3036ef7e89df7a0a5299a0bbd5eb3cf4dc49cb0",
+      "sha16": "a9eee115016e08e6"
+    },
+    {
+      "file": "filo.html",
+      "bytes": 3494,
+      "sha256": "678c956e33854ecfb59d3d376a928aba7c33c32f9c662ad6b20a770f59bdc7c8",
+      "sha16": "678c956e33854ecf"
+    },
+    {
+      "file": "filo_canli_durum.jsonl",
+      "bytes": 4476,
+      "sha256": "0eb2cd9be38cbf53c4cb810fa2c08e54a596bd76f1f3d9a3d027884310a100c0",
+      "sha16": "0eb2cd9be38cbf53"
+    },
+    {
+      "file": "front1.html",
+      "bytes": 9561,
+      "sha256": "6a27036187c4a86ba2c0e12d330d77bc972bd7918156b64e7aad0c96f69dacdc",
+      "sha16": "6a27036187c4a86b"
+    },
+    {
+      "file": "front2.html",
+      "bytes": 7154,
+      "sha256": "2fa300d03d0becef8529a6fe0fd137c9d72900c3d3a2e3144894958db48ce31e",
+      "sha16": "2fa300d03d0becef"
+    },
+    {
+      "file": "front3.html",
+      "bytes": 4673,
+      "sha256": "bf0ff4257a200d57a3d00665bb105084f5fa8b2f0da4ca6ec85b84e738995ef4",
+      "sha16": "bf0ff4257a200d57"
+    },
+    {
+      "file": "index.html",
+      "bytes": 7986,
+      "sha256": "1fcc3368849fbb3c83810bc368c032161e870470d45a86dd2b9187f757932a9d",
+      "sha16": "1fcc3368849fbb3c"
+    },
+    {
+      "file": "prizma-data.js",
+      "bytes": 22670,
+      "sha256": "b32eb30633741705ef937fc6739bcaf7208b1319f60775d57e45a0b9a1464518",
+      "sha16": "b32eb30633741705"
+    },
+    {
+      "file": "prizma-filo.js",
+      "bytes": 4076,
+      "sha256": "7ee027f065d7f876c49294e6256928f477c4624320efa8e870c986c0a8d4aa12",
+      "sha16": "7ee027f065d7f876"
+    },
+    {
+      "file": "prizma-front1.js",
+      "bytes": 11380,
+      "sha256": "07fb0ca1e4be4eee582101bcf5457f6babee617abebc5ce77ad86777893c4ec8",
+      "sha16": "07fb0ca1e4be4eee"
+    },
+    {
+      "file": "prizma-front2.js",
+      "bytes": 10331,
+      "sha256": "8f4e1a4226310445629cd9cbd1c046aefc52fd6699a8f551700826092c3501ef",
+      "sha16": "8f4e1a4226310445"
+    },
+    {
+      "file": "prizma-front3.js",
+      "bytes": 9455,
+      "sha256": "b941e09df08b88e22a7b250fb896dded88e02b19a7779dfd61a0df6825ad9052",
+      "sha16": "b941e09df08b88e2"
+    },
+    {
+      "file": "prizma-hub.js",
+      "bytes": 4606,
+      "sha256": "61ca0a701b255725e173f02fb224072155e3217e0bf5fe06e500bfa0c5d474f0",
+      "sha16": "61ca0a701b255725"
+    },
+    {
+      "file": "prizma.css",
+      "bytes": 10324,
+      "sha256": "d52fbe670c016c16777285f1db8a6dc147ecd5fd747fd3566b8b74c714f1c263",
+      "sha16": "d52fbe670c016c16"
+    }
+  ]
+}
