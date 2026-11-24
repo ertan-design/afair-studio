@@ -2,249 +2,64 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>Dila × AFAIR · Renk, prova ve galeri</title>
-<meta name="description" content="Dila ile bu gece için renk ve kumaş seç. Seçimin AFAIR Live podyumuna ve AFAIR Studio galerisine taşınır.">
-<link rel="stylesheet" href="dila-studyo.03eda5488bdb.css">
-<script src="dila-veri.0aeff1d6b38f.js" defer></script>
-<script src="dila-studyo.b23bf7ab9ac7.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFAIR STUDIO · Etkileşimli 3B sanat galerisi</title>
+<meta name="description" content="Üç boyutlu galeride ışığı ve bakış açını değiştir. Dila’daki kumaş seçimini aynı seçkiyle açabilir veya filmleri izleyebilirsin.">
+<link rel="stylesheet" href="/dila-3b/sahne.0fbb13978c.css">
+<script src="/dila-3b/sahne.e1b5005f08.js" defer></script>
+<script src="/dila-3b/studio-baglantilari.927d40d181.js" defer></script>
 </head>
-<body>
-<a class="atla" href="#ana">İçeriğe geç</a>
-
-<nav class="evrensel-serit" aria-label="8 Senkron Konsept ve Ekosistem Ağı">
-  <span class="canli-etiket">DİLA · AFAIR STUDIO VE AFAIR LIVE</span>
-  <a href="https://www.afair.studio/">afair.studio</a>
-  <a href="https://www.afair.live/dila/">afair.live/dila</a>
-  <a href="https://www.selinahbap.com/dila/">selinahbap.com/dila</a>
-  <a href="https://ertanaraz.com/dila">ertanaraz.com/dila</a>
-  <a href="https://www.afair.live/">Birleşik 1903 Sahne ↗</a>
-  <a href="https://ertanaraz.com/canli_isler">Tüm Gerçek İşler ↗</a>
-</nav>
-
-<header class="ust">
-  <a class="marka" href="#kahraman">
-    <b>AFAIR / STUDIO</b><span class="ayrac">·</span><em>DİLA</em><span class="alt-rozet">AI GALLERY &amp; BESPOKE LEAP</span>
-  </a>
-  <nav class="bolum-menu" aria-label="Sayfa bölümleri">
-    <a href="#bu-gece">Bu gece</a>
-    <a href="#iki-mezura">İki mezura</a>
-    <a href="#podyum-prova">Podyum</a>
-    <a href="#galeri">AI Sanat Galerisi</a>
-    <a href="#sekiz-konsept">Sekiz deneyim</a>
-    <a href="#sekiz-prompt">8 Eşzamanlı Prompt</a>
-    <a href="#kapasite">Doğrulama</a>
-    <a href="#yaratici-soru">Yaratıcı Soru</a>
-  </nav>
+<body data-world="studio">
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="bar">
+<a class="wordmark" href="/" aria-label="AFAIR STUDIO · Etkileşimli 3B sanat galerisi ana sayfası">AFAIR STUDIO</a>
+<nav aria-label="Ana menü"><a href="/dila/#bu-gece">Dila’ya geç</a><a href="#filmler">Dila filmleri</a><a href="/dila/#galeri">Üretken galeri</a></nav>
 </header>
-
 <main id="ana">
-  <section id="kahraman" class="kahraman" aria-labelledby="ana-baslik">
-    <canvas id="tuval-galeri-hero" class="hero-tuval" aria-hidden="true"></canvas>
-    <div class="kahraman-ic">
-      <div>
-        <p class="ust-iz">AFAIR’DAN DİLA BEN</p>
-        <h1 id="ana-baslik">Yaptığın her seçim,<br><em>bir sonraki sıçramayı diker.</em></h1>
-        <p class="aciklama-buyuk">Bu gece için rengini ve kumaşını seç. Aynı karar terzinin prova kartını, podyumdaki iki ışığı ve Studio galerisindeki seçkiyi değiştirir.</p>
-        <div class="dugme-satiri">
-          <a class="btn altin" href="#bu-gece">Bu geceyi tasarla</a>
-          <a class="btn seffaf" href="#galeri">Galeriyi gör</a>
-          <a class="btn seffaf" href="#sekiz-prompt">8 Eşzamanlı Promptu Kopyala</a>
-          <a class="btn seffaf" href="/dila-prova">Etkileşimli prova</a>
-          <a class="btn seffaf" href="/dila-filmler/">Dila filmleri</a>
-          <a class="btn seffaf" href="/dila-rehber">Uygulama rehberi</a>
-          <a class="btn seffaf" href="https://ertan-design.github.io/dila-afair-konsept/">Konseptleri karşılaştır</a>
-        </div>
-      </div>
-      <div class="sicrama-karti" aria-live="polite">
-        <p class="kucuk-etiket">ATÖLYE ÖNİZLEMESİ</p>
-        <div class="sicrama-no" id="ui-sicrama-no">Sıçrama #01</div>
-        <p class="tohum-kod" id="ui-tohum">Tohum: hesaplanıyor…</p>
-        <div class="palet-seridi" id="ui-imza-palet" aria-label="Onaylı imza renk paleti"></div>
-        <p class="veto-rozet" id="ui-veto-ozet">Renk tercihi hazırlanıyor…</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="bu-gece" class="bolum" aria-labelledby="b-bu-gece">
-    <div class="baslik-satiri">
-      <div>
-        <p class="kucuk-etiket">DİLA / BU GECE</p>
-        <h2 id="b-bu-gece">Bu gece nasıl hissetmek istiyorsun?</h2>
-      </div>
-      <button class="btn seffaf" type="button" id="tercih-geri" disabled>Son seçimi geri al</button>
-    </div>
-    <div class="iki-sutun dila-tercih">
-      <div class="kart">
-        <div class="alan-izgara">
-          <label>Hissetmek istediğim
-            <select id="tercih-his"><option value="sakin">Sakin</option><option value="carpici">Çarpıcı</option></select>
-          </label>
-          <label>Palet
-            <select id="tercih-palet"><option value="siyah">Siyah &amp; Şampanya</option><option value="civit">Gece Çiviti</option><option value="murdum">Mürdüm</option><option value="kehribar">Kehribar</option></select>
-          </label>
-          <label>Kumaş
-            <select id="tercih-kumas"><option value="ipek">İpek</option><option value="keten">Keten</option><option value="kadife">Kadife</option></select>
-          </label>
-          <label>Tercih süresi
-            <select id="tercih-sure"><option value="gece">Bu gece</option><option value="hatirla">Bu tarayıcıda hatırla</option></select>
-          </label>
-        </div>
-        <label class="dila-onay"><input type="checkbox" id="tercih-siyah"> Bu gece siyah giymek istemiyorum</label>
-        <p class="durum-satiri" id="tercih-durum" role="status"></p>
-      </div>
-      <div class="kart">
-        <h3>Sonraki adım · Evde ölçü</h3>
-        <p>İlk mezura omuz ve beli, ikinci mezura hareket payını örnekler.</p>
-        <label class="dila-ziyaret">Örnek ziyaret aralığı
-          <select id="tercih-ziyaret"><option value="">Aralık seç</option><option value="gunduz">Gündüz · 11.00–13.00</option><option value="aksam">Akşam · 17.00–19.00</option></select>
-        </label>
-        <p id="tercih-ziyaret-durum" role="status">Aralık seçimi bir prova kaydıdır.</p>
-        <div class="dugme-satiri ust-bosluk">
-          <a class="btn seffaf" href="#iki-mezura">Ölçüye ve provaya geç</a>
-          <a class="btn seffaf" id="tercih-live" href="https://www.afair.live/dila/#podyum-prova">AFAIR Live’da devam et</a>
-          <a class="btn seffaf" id="tercih-studio" href="https://www.afair.studio/#galeri">Studio’da aynı seçkiyi aç</a>
-          <a class="btn seffaf" id="tercih-selin" href="https://www.selinahbap.com/dila/#bu-gece">Selinahbap’ta devam et</a>
-        </div>
-        <p class="ust-bosluk">Bu bağlantılar renk, kumaş, his ve tercih süresini taşır. Ölçü ve ziyaret bilgisi bu sayfada kalır.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="iki-mezura" class="bolum" aria-labelledby="b-mezura">
-    <div class="baslik-satiri">
-      <div>
-        <p class="kucuk-etiket">AFAIR / İKİ MEZURA</p>
-        <h2 id="b-mezura">İki mezura, bir prova kartı.</h2>
-      </div>
-      <p class="aciklama">Örnek ölçüleri ayarlayarak kalıp ve hareket payını karşılaştır. Kumaş ve palet seçimini aynı kartta gör.</p>
-    </div>
-
-    <div class="iki-sutun">
-      <div class="kart" role="region" aria-label="İki Mezura ve Alt-Ton Kontrolleri">
-        <h3>Mezura-A (Statik Anatomi) &amp; Mezura-B (Hareket / Işık Payı)</h3>
-        <div class="alan-izgara">
-          <label>Mezura-A · Omuz Genişliği (cm)
-            <input type="range" id="inp-omuz" min="34" max="50" step="0.5" value="40.5">
-            <span class="deger" id="val-omuz">40,5 cm</span>
-          </label>
-          <label>Mezura-A · Bel Çevresi (cm)
-            <input type="range" id="inp-bel" min="56" max="96" step="0.5" value="65">
-            <span class="deger" id="val-bel">65,0 cm</span>
-          </label>
-          <label>Mezura-B · Nefes, Yürüyüş &amp; Drape Payı (cm)
-            <input type="range" id="inp-pay" min="1.5" max="9.0" step="0.5" value="4.5">
-            <span class="deger" id="val-pay">4,5 cm</span>
-          </label>
-          <label>Dila Cilt Alt-Tonu &amp; Işık Yansıması
-            <select id="sel-altton">
-              <option value="zeytin_notr" selected>Zeytin / Nötr-Işıltılı Alt-Ton</option>
-              <option value="sicak_altin">Sıcak Altın / Kehribar Alt-Ton</option>
-              <option value="serin_ipek">Serin Porselen / İpek Alt-Ton</option>
-            </select>
-          </label>
-        </div>
-        <div class="dugme-satiri ust-bosluk">
-          <button type="button" class="btn altin" id="btn-sicrama-tetik">Ölçüyle provayı güncelle</button>
-          <button type="button" class="btn seffaf" id="btn-profil-indir">dila.senkron.v1 JSON İndir</button>
-        </div>
-      </div>
-
-      <div class="kart" id="terzi-karar-karti" aria-live="polite">
-        <h3>AFAIR terzi prova kartı</h3>
-        <p id="ui-terzi-karsilama" class="vurgu-metin"></p>
-        <dl class="veri-listesi" id="ui-terzi-detay"></dl>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="podyum-prova" class="bolum" aria-labelledby="b-podyum-prova">
-    <div class="baslik-satiri"><div>
-      <p class="kucuk-etiket">AFAIR LIVE / PODYUM PROVASI</p>
-      <h2 id="b-podyum-prova">Aynı kumaş, iki ışık.</h2>
-    </div><p id="tercih-podyum" class="aciklama"></p></div>
-    <div class="iki-sutun dila-podyum">
-      <figure class="kart"><canvas id="prova-sicak" width="640" height="320" aria-hidden="true"></canvas><figcaption>Sıcak sahne ışığı</figcaption></figure>
-      <figure class="kart"><canvas id="prova-serin" width="640" height="320" aria-hidden="true"></canvas><figcaption>Serin sahne ışığı</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="galeri" class="bolum" aria-labelledby="b-galeri">
-    <div class="baslik-satiri">
-      <div>
-        <p class="kucuk-etiket">AFAIR STUDIO / ÜRETKEN SANAT</p>
-        <h2 id="b-galeri">Renk ve kumaştan yeni bir sergi.</h2>
-      </div>
-      <button type="button" class="btn seffaf" id="btn-galeri-yenile">Sonraki seriyi göster</button>
-    </div>
-
-    <p class="aciklama" id="ui-galeri-secim" aria-live="polite"></p>
-    <div class="galeri-izgara" id="galeri-izgara"></div>
-  </section>
-
-  <section id="sekiz-konsept" class="bolum" aria-labelledby="b-konsept">
-    <div class="baslik-satiri">
-      <div>
-        <p class="kucuk-etiket">DİLA / DENEYİMLER VE BAĞLANTILAR</p>
-        <h2 id="b-konsept">Bir atölye, sekiz deneyim.</h2>
-      </div>
-    </div>
-
-    <div class="onyuz-seridi" id="dort-onyuz-seridi" aria-label="4 Önyüz Durumu"></div>
-    <div class="konsept-izgara" id="konsept-izgara"></div>
-  </section>
-
-  <section id="sekiz-prompt" class="bolum" aria-labelledby="b-prompt">
-    <div class="baslik-satiri">
-      <div>
-        <p class="kucuk-etiket">04 · ÖNCEDEN YAZILMIŞ 8 EŞZAMANLI YAPAY ZEKÂ PROMPTU</p>
-        <h2 id="b-prompt">İlk arayüz için sekiz ayrı görev.</h2>
-      </div>
-      <button type="button" class="btn altin" id="btn-tum-prompt-kopyala">8 Promptun Tamamını Tek Seferde Kopyala</button>
-    </div>
-    <p id="prompt-kopya-durum" class="durum-satiri" role="status" aria-live="polite"></p>
-    <div class="prompt-izgara" id="prompt-izgara"></div>
-  </section>
-
-  <section id="kapasite" class="bolum" aria-labelledby="b-kapasite">
-    <div class="baslik-satiri"><div><p class="kucuk-etiket">DOĞRULAMA</p>
-      <h2 id="b-kapasite">Bir tercih değişince ne değişiyor?</h2>
-    </div></div>
-    <div class="kart"><p>Siyahı bu gece için ele. Prova kartında, iki ışıklı podyumda ve galeride aynı paleti gör. Geri alıp önceki rengi kontrol et.</p>
-      <p class="ust-bosluk">Bu önizleme tarayıcıda çalışır ve model çağrısı yapmaz. Model kapasitesi için aynı iş yükünde başarılı çıktı sayısı ve süre ölçülür.</p></div>
-  </section>
-
-  <section id="yaratici-soru" class="bolum" aria-labelledby="b-soru">
-    <div class="kart soru-karti">
-      <p class="kucuk-etiket">06 · DİLA'YA YARATICI SORU · FRONT #2–#4 İÇİN SIÇRAMA ANAHTARI</p>
-      <h2 id="b-soru">“Üçüncü Görünmez Mezura” neyi ölçsün?</h2>
-      <p class="aciklama-buyuk">
-        İlk mezura bugünkü ölçünü, ikinci mezura hareket payını örnekliyor. Üçüncü mezura, Dila’nın henüz tasarlanmamış arayüzlerine hangi soruyu taşısın?
-      </p>
-      <div class="secenek-izgara" id="soru-secenekler" role="group" aria-label="Üçüncü Mezura Seçimi">
-        <button type="button" class="secenek-btn" data-secim="ISIK_MESAFESI">
-          <strong>A · Işık Mesafesi</strong>
-          <span>Yanında sesinin ve enerjinin açıldığı insan/mekân mesafesini ölçsün; galeri ve siteler bu yakınlığa göre sadeleşsin.</span>
-        </button>
-        <button type="button" class="secenek-btn" data-secim="ESTETIK_GURULTU_VETOSU">
-          <strong>B · Yasaklı Estetik Gürültü</strong>
-          <span>Zihnini yoran kelime, biçim ve sesleri fark etsin ve o anki seçkide azaltmayı önersin.</span>
-        </button>
-        <button type="button" class="secenek-btn" data-secim="GELECEK_SILUETI">
-          <strong>C · Gelecek Sıçrama Silüeti</strong>
-          <span>Bugünkü halini değil, bir sonraki sıçramada dönüşmek istediğin kişiyi ölçsün; eserler ve kalıplar o geleceğe göre önden dikilsin.</span>
-        </button>
-      </div>
-      <p id="soru-yanit-durum" class="vurgu-metin ust-bosluk" aria-live="polite">Bir seçenek belirleyip atölye kartındaki sonucu gör.</p>
-    </div>
-  </section>
+<section class="hero" aria-labelledby="baslik">
+<div class="hero-copy">
+<p class="overline">Dila / AFAIR Studio</p>
+<h1 id="baslik">Galeriye <em>içeriden bak.</em></h1>
+<p class="summary">Üç boyutlu galeride ışığı ve bakış açını değiştir. Dila’daki kumaş seçimini aynı seçkiyle açabilir veya filmleri izleyebilirsin.</p>
+<div class="actions"><a class="action" href="/dila/#bu-gece">Dila’ya geç</a><a class="ghost" href="#filmler">Dila filmleri</a></div>
+</div>
+<div class="console">
+<figure class="stage">
+<canvas id="sahne" tabindex="0" aria-label="Etkileşimli 3B sanat galerisi">
+Sahneyi görüntülemek için WebGL destekli bir tarayıcı kullan.
+</canvas>
+<figcaption>Etkileşimli 3B sanat galerisi</figcaption>
+</figure>
+<div class="panel">
+<div class="modes" role="group" aria-label="Sahne seçenekleri"><button type="button" class="mode" data-mode="0" aria-pressed="true">Galeri</button>
+<button type="button" class="mode" data-mode="1" aria-pressed="false">Doku</button>
+<button type="button" class="mode" data-mode="2" aria-pressed="false">Gece ışığı</button></div>
+<div class="camera" role="group" aria-label="Kamera">
+<button id="kamera-sifirla" type="button" class="ghost">Kamerayı sıfırla</button>
+<button id="kamera-oynat" type="button" class="ghost" aria-pressed="false">Otomatik dönüş</button>
+<button id="vr" type="button" class="ghost" hidden>VR gözlükle aç</button>
+</div>
+<p id="sahne-durum" class="state" role="status">Sahne yükleniyor…</p>
+</div>
+</div>
+</section>
+<p class="note">Sürükleyerek veya ok tuşlarıyla galerinin açısını değiştir.</p>
+<div class="more"><a href="/dila/#galeri">Üretken galeri</a><a href="/dila-rehber">Atölye rehberi</a><a href="https://www.afair.live/">AFAIR Live</a></div>
+<section class="reels" id="filmler" aria-labelledby="film-baslik"><h2 class="section-h" id="film-baslik">Dila filmleri</h2><div class="reels-grid"><article class="clip">
+<video controls playsinline preload="none" poster="/dila-3b/video/dila-olcu.jpg" aria-label="İki mezura">
+<source src="/dila-3b/video/dila-olcu.mp4" type="video/mp4">
+</video>
+<div class="clip-body"><h3>İki mezura</h3><p>Saten, pirinç ve atölyenin yakın planı.</p>
+<p class="clip-info">Higgsfield · 5,04 sn · 720p · 0,85 MB · <a href="/dila-3b/video/dila-olcu.mp4">MP4’ü aç</a></p></div>
+</article>
+<article class="clip">
+<video controls playsinline preload="none" poster="/dila-3b/video/dila-galeri.jpg" aria-label="Galeride kadife">
+<source src="/dila-3b/video/dila-galeri.mp4" type="video/mp4">
+</video>
+<div class="clip-body"><h3>Galeride kadife</h3><p>Kehribar ve turkuaz spotlar altında dönen kumaş.</p>
+<p class="clip-info">Higgsfield · 5,04 sn · 720p · 0,84 MB · <a href="/dila-3b/video/dila-galeri.mp4">MP4’ü aç</a></p></div>
+</article></div></section>
 </main>
-
-<footer class="alt">
-  <p>DİLA × AFAIR STUDIO · <a href="https://www.afair.studio/calisma-notu.html">Çalışma notu</a></p>
-</footer>
+<footer><span>AFAIR STUDIO</span><a href="/onceki-ana-sayfa.html">Önceki ana sayfa</a></footer>
 </body>
 </html>
