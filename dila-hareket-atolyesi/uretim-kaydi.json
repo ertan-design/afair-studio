@@ -1,0 +1,51 @@
+{
+  "schema": "dila.video-test.v1",
+  "project_id": "6ba41f05-7bba-49d2-ac39-361a02106d43",
+  "folder_id": "c204ce9f-723d-4272-9dc4-b35fedd03436",
+  "provider": "Higgsfield connected tool",
+  "model": "seedance_2_0_mini",
+  "submitted_at": "2026-11-24T22:13:16.272Z",
+  "completed_observed_at": "2026-11-24T22:16:23.238Z",
+  "quoted_total_credits": 10,
+  "balance_attribution": "Not measured: other concurrent account activity. Quoted cost is not a balance-delta measurement.",
+  "timing_method": "Elapsed wall time from first submission until terminal status was observed. Includes submission, queue, rendering, polling and orchestration; not isolated GPU render time.",
+  "jobs": [
+    {
+      "index": 0,
+      "job_id": "2e47cc00-65f9-4443-8361-34e75f30ad29",
+      "file": "ipek-galeri.mp4",
+      "status": "completed",
+      "target_duration_seconds": 5,
+      "target_resolution": "720p",
+      "aspect_ratio": "16:9",
+      "audio_requested": false,
+      "quoted_credits": 5,
+      "elapsed_to_observation_seconds": 171,
+      "prompt": "Dila AFAIR, abstract couture film. Macro of flowing aquamarine silk ribbon floating through a deep blue architectural gallery, apricot and coral edge lighting. Fabric weave visible, physically plausible movement, premium technology fashion aesthetic. One continuous slow dolly shot, no cuts, no words, no logos, no humans. 5 second landscape cinematic website clip.",
+      "sha256": "cb019532f0f229191935e75f26f839e55a26eec3b5d79fcc162ebc759ee1ecda",
+      "bytes": 2333796
+    },
+    {
+      "index": 1,
+      "job_id": "16b3488b-06dc-4fc6-b2d6-cc4262cbfbb0",
+      "file": "dijital-prova.mp4",
+      "status": "completed",
+      "target_duration_seconds": 5,
+      "target_resolution": "720p",
+      "aspect_ratio": "16:9",
+      "audio_requested": false,
+      "quoted_credits": 5,
+      "elapsed_to_observation_seconds": 147,
+      "prompt": "Dila AFAIR, digital atelier concept film. Two luminous measuring ribbons orbit a sculptural draped silk garment on an abstract headless mannequin, then unfold into a generative art installation. Deep blue gallery, aquamarine silk, apricot highlights and restrained coral details. Slow smooth camera arc, one uninterrupted shot, no text, no logos, no identifiable person. 5 seconds landscape.",
+      "sha256": "49206b78c668b241c592521672211195ea4cf722e6b79e75eec99b948c96d9e0",
+      "bytes": 2807752
+    }
+  ],
+  "integration": {
+    "mode": "self-hosted static MP4 playback",
+    "api_key_in_client": false,
+    "automatic_site_generation": false,
+    "assets": "local relative URLs; no external media CDN dependency",
+    "next_stage": "Server-only API credentials, authenticated generation requests, bounded budget, durable job queue, verified completion webhook and durable media storage would be needed for website-triggered generation."
+  }
+}
