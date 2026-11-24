@@ -613,3 +613,35 @@ footer.foot {
   justify-content: space-between;
   gap: 10px;
 }
+
+.video-player {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line-gold);
+  background: #0d1016;
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
+.poster-thumb {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.drop-zone {
+  border: 1px dashed var(--line-gold);
+  border-radius: 12px;
+  padding: 18px;
+  background: rgba(212, 176, 106, 0.06);
+  text-align: center;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
