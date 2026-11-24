@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Front 4 / 4 · DİLA DNA Dijital Pasaport, 50.000 Kapı &amp; SHA-256 Doğrulayıcı</title>
+  <meta name="description" content="Dila x AFAIR Front 4/4: Front 1-2-3 + Video birleşik dijital pasaportu, 50.000 slot 2-bit bitmap kapı ataması, PNG pasaport kartı ve canlı 1-bayt SHA-256 sabotaj doğrulayıcısı.">
+  <link rel="stylesheet" href="./prizma.css">
+  <script src="./prizma-data.js" defer></script>
+  <script src="./prizma-front4.js" defer></script>
+</head>
+<body>
+  <nav class="eco-bar" aria-label="Canlı ekosistem köprüsü">
+    <span class="eco-badge">FRONT 4 / 4 · DİLA PASAPORT &amp; 50K KAPI</span>
+    <a href="https://ertanaraz.com/prizma/">ertanaraz.com/prizma</a>
+    <a href="https://www.afair.studio/prizma/">afair.studio/prizma</a>
+    <a href="https://www.afair.live/prizma/">afair.live/prizma</a>
+    <a href="https://www.selinahbap.com/">Selin Ahbap 50K ↗</a>
+    <span class="eco-spacer">4/4 FRONT TAMAMLANDI · SHA-256 ZİNCİR MÜHRÜ</span>
+  </nav>
+
+  <header class="top-header">
+    <a class="brand" href="./index.html">
+      <strong>PRIZMA × DİLA</strong>
+      <span>Front 4 · Dijital Pasaport &amp; 50.000 Kapı Mührü</span>
+    </a>
+    <nav class="nav-links" aria-label="PRIZMA uygulamaları">
+      <a href="./index.html">Komuta Merkezi</a>
+      <a href="./front1.html">Front 1 · Renk</a>
+      <a href="./front2.html">Front 2 · Mezura</a>
+      <a href="./front3.html">Front 3 · Galeri</a>
+      <a class="nav-active" href="./front4.html">Front 4 · Pasaport</a>
+      <a href="./video.html">Video Stüdyosu</a>
+      <a href="./filo.html">44-Site Filo</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">K8 DİJİTAL PASAPORT &amp; 50.000 KAPI RCOMBO · FRONT 4 / 4</p>
+      <h1>Tüm Sıçramalar Tek SHA-256 Pasaportta:<br>4 Front + Video + 50.000 Kapı Mührü.</h1>
+      <p class="lead">
+        Front 1 (Renk &amp; Siyah Vetosu), Front 2 (İki Mezura Kalıbı), Front 3 (AI Galeri &amp; Kelvin Işık) ve Video Stüdyosu
+        tek kriptografik <strong>dila_pasaport_v1</strong> kaydında birleşir; profilin <strong>50.000 kapılık 2-bit bitmap</strong>
+        üzerindeki kesin kapı numarasına (<code>S00001..S50000</code>) deterministik olarak atanır.
+      </p>
+      <div class="dna-strip" id="f4-chain-strip" aria-live="polite"></div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card card-gold">
+        <p class="eyebrow">CANLI MÜHÜRLÜ PASAPORT KARTI (CANVAS)</p>
+        <h2>DİLA × AFAIR Kişisel Dijital Pasaportu</h2>
+        <div class="field">
+          <label for="f4-misafir"><span>Pasaport Sahibi Etiketi (İsteğe Bağlı)</span><strong id="f4-slot-lbl">S00001 / 50.000</strong></label>
+          <input type="text" id="f4-misafir" maxlength="48" placeholder="Örn. Dila / Nisa — AFAIR Pilot #01" value="Dila · AFAIR Pilot #01">
+        </div>
+        <canvas id="f4-passport-canvas" class="canvas-frame" width="760" height="440" aria-label="Dila DNA Dijital Pasaport Kartı"></canvas>
+        <div class="btn-row">
+          <button type="button" class="btn btn-gold" id="btn-f4-png">Pasaport Kartını PNG İndir</button>
+          <button type="button" class="btn btn-teal" id="btn-f4-jsonl">dila_pasaport_v1.jsonl İndir</button>
+          <button type="button" class="btn" id="btn-f4-copy">JSONL Kopyala</button>
+        </div>
+        <p class="status-note" id="f4-status"></p>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">50.000 KAPI RCOMBO ADRESLEME &amp; 8 KONSEPT ZİNCİRİ</p>
+        <h2>Deterministik Kapı &amp; 2-Bit Bitmap Koordinatı</h2>
+        <div class="grid-2" id="f4-gate-kpis"></div>
+        <div class="alert alert-ok" id="f4-gate-explain"></div>
+        <h3>İmzalı Pasaport Kaydı (dila_pasaport_v1.jsonl)</h3>
+        <pre class="mono-box" id="f4-jsonl-out"></pre>
+      </article>
+    </section>
+
+    <section class="card card-gold" aria-labelledby="f4-verify-baslik">
+      <p class="eyebrow">CANLI META-DOĞRULAMA · “EMİN OLDUĞUNUZDAN NASIL EMİN OLUYORSUNUZ?”</p>
+      <h2 id="f4-verify-baslik">Canlı 1-Bayt SHA-256 Sabotaj Testi (Kendin Dene)</h2>
+      <p class="lead">
+        Aşağıdaki pasaport JSONL metnini doğrulayabilir veya <strong>“1 Bayt Sabotaj Yap”</strong> düğmesine basıp tek bir
+        karakteri değiştirerek kriptografik SHA-256 mührünün sahteciliği nasıl anında yakaladığını canlı test edebilirsin.
+      </p>
+      <div class="field">
+        <label for="f4-verify-input"><span>Doğrulanacak Pasaport JSONL Satırı</span></label>
+        <input type="text" id="f4-verify-input" aria-label="Doğrulanacak pasaport JSONL metni">
+      </div>
+      <div class="btn-row">
+        <button type="button" class="btn btn-teal" id="btn-f4-verify">SHA-256 Mührünü Doğrula</button>
+        <button type="button" class="btn" id="btn-f4-tamper">Bilerek 1 Bayt Sabotaj Yap &amp; Test Et</button>
+        <button type="button" class="btn btn-gold" id="btn-f4-reset-verify">Orijinal Mührü Geri Yükle</button>
+      </div>
+      <div class="alert alert-ok" id="f4-verify-result">Henüz sınanmadı — doğrulamaya hazır.</div>
+    </section>
+
+    <footer class="foot">
+      <span>Front 4 / 4 · DİLA × AFAIR Tam Zincir Pasaportu · Saf WebCrypto SHA-256 + Canvas (0 dış CDN, 0 sunucu veritabanı)</span>
+      <a href="./index.html">Komuta Merkezine Dön →</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "schema": "prizma.live-bundle.v2",
-  "generated_utc": "2026-11-24T22:13:16.057Z",
+  "generated_utc": "2026-11-24T22:19:32.391Z",
   "csp_strict_safe": true,
   "zero_cdn": true,
   "zero_xss": true,
@@ -11,7 +11,7 @@
     "https://www.afair.live/prizma/"
   ],
   "video_studio": "video.html + 4x RTX 3090 NVENC MP4 + Higgsfield Cloud API Adapter",
-  "file_count": 29,
+  "file_count": 31,
   "files": [
     {
       "file": "dila_8_konsept_senkron.jsonl",
@@ -33,33 +33,39 @@
     },
     {
       "file": "filo.html",
-      "bytes": 3494,
-      "sha256": "678c956e33854ecfb59d3d376a928aba7c33c32f9c662ad6b20a770f59bdc7c8",
-      "sha16": "678c956e33854ecf"
+      "bytes": 3542,
+      "sha256": "4f006bfc3e99888a27f2f469c954e8c4ed1f65ddc19b417eab549cf546af5262",
+      "sha16": "4f006bfc3e99888a"
     },
     {
       "file": "front1.html",
-      "bytes": 9561,
-      "sha256": "6a27036187c4a86ba2c0e12d330d77bc972bd7918156b64e7aad0c96f69dacdc",
-      "sha16": "6a27036187c4a86b"
+      "bytes": 9609,
+      "sha256": "ec8e89715b7434e8f65dd3f0cd4d6ff5bb9fee3011ed776197f1ba42d907e2bf",
+      "sha16": "ec8e89715b7434e8"
     },
     {
       "file": "front2.html",
-      "bytes": 7154,
-      "sha256": "2fa300d03d0becef8529a6fe0fd137c9d72900c3d3a2e3144894958db48ce31e",
-      "sha16": "2fa300d03d0becef"
+      "bytes": 7202,
+      "sha256": "a3f26baeeca9e5e0a6225f9fc02234c087bbeb9dc9332f3015acd828da6c8c93",
+      "sha16": "a3f26baeeca9e5e0"
     },
     {
       "file": "front3.html",
-      "bytes": 4673,
-      "sha256": "bf0ff4257a200d57a3d00665bb105084f5fa8b2f0da4ca6ec85b84e738995ef4",
-      "sha16": "bf0ff4257a200d57"
+      "bytes": 4748,
+      "sha256": "eafdd5f85152c3dd8c6b8ccfca8db390bc22b86fe1e1ac588177e40a53e78587",
+      "sha16": "eafdd5f85152c3dd"
+    },
+    {
+      "file": "front4.html",
+      "bytes": 5632,
+      "sha256": "cd06cb6a47f2918895d89259ace8695ec91e15750b6adefb5102917ba4705085",
+      "sha16": "cd06cb6a47f29188"
     },
     {
       "file": "index.html",
-      "bytes": 8128,
-      "sha256": "a73c44c734644a91119d751abf6023e07b9b30045f7d29f93362ba5585e5d42c",
-      "sha16": "a73c44c734644a91"
+      "bytes": 8156,
+      "sha256": "01f660042b52994f25d91d0e1f3703a7bf3c71f121f217de38e30dad07bc1dd5",
+      "sha16": "01f660042b52994f"
     },
     {
       "file": "prizma-data.js",
@@ -92,6 +98,12 @@
       "sha16": "b941e09df08b88e2"
     },
     {
+      "file": "prizma-front4.js",
+      "bytes": 12972,
+      "sha256": "12ce29b34d2265ff0f982b092ee6d122138419b0efd87f9ce4c893062d156a07",
+      "sha16": "12ce29b34d2265ff"
+    },
+    {
       "file": "prizma-hub.js",
       "bytes": 4606,
       "sha256": "61ca0a701b255725e173f02fb224072155e3217e0bf5fe06e500bfa0c5d474f0",
@@ -111,9 +123,9 @@
     },
     {
       "file": "video.html",
-      "bytes": 8207,
-      "sha256": "0b78dc9735651e092bb4b70c2f340737b81fd2e60aaeae7495758be4b470aa1c",
-      "sha16": "0b78dc9735651e09"
+      "bytes": 8261,
+      "sha256": "003294d80dd8cc268b89470448c5e30039a240ab0902094794ddf0d927077cc5",
+      "sha16": "003294d80dd8cc26"
     },
     {
       "file": "video/DILA_01_IKI_MEZURA_TERZI.jpg",
