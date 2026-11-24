@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFAIR LIVE × STUDIO · DİLA AI — 8 Konsept Senkron Sahnesi (Front 1)</title>
+<link rel="stylesheet" href="/dila-prova.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <h1>AFAIR LIVE × STUDIO · DİLA AI</h1>
+    <p>Örnek ölçülerle deneyin. Renk, galeri ve sekiz tasarım kartı tarayıcıda güncellenir. Bu prova model çağrısı yapmaz, veri göndermez ve randevu oluşturmaz.</p>
+    <p><a href="/dila">Dila ana deneyimi</a></p>
+    <p class="mono">Front 1 / 4 · İki Mezura + Renk Analizi + AI Galeri Art + 8 Senkron Konsept · 0 CDN · Çevrimdışı</p>
+  </div>
+  <nav class="tabs" aria-label="Bölümler">
+    <button class="tab-btn active" data-tab="studio" type="button">🌺 Dila DNA &amp; 8 Senkron Konsept</button>
+    <button class="tab-btn" data-tab="epistem" type="button">🔬 Kapasite &amp; Eminlik Cevabı</button>
+    <button class="tab-btn" data-tab="prompts" type="button">⚡ 8 Paralel Prompt &amp; 5 Soru</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="hero-quote">
+    <div>
+      <blockquote>“Öyle bir site istiyorum ki yaptığımız şey bir sonraki sıçramaları etkilesin.”</blockquote>
+      <small>Tek bir <strong>dila_dna_v1</strong> analizi (AFAIR Live) → aynı anda AFAIR Studio AI Galerisi, Estetik, Kıyafet, Sanart, Permakültür, Gitar Atmosferi ve Dijital Pasaportu senkronize eder.</small>
+    </div>
+    <div class="prova-inline-1">
+      <button class="btn outline" id="btnChord" type="button">🎸 Akustik Frekansı Dinle (K7)</button>
+      <button class="btn" id="btnExportDna" type="button">⬇️ dila_dna_v1.jsonl İndir</button>
+    </div>
+  </div>
+
+  <!-- TAB 1: FRONT 1 LIVE INTERACTIVE STUDIO -->
+  <section class="panel active" id="tab-studio">
+    <div class="grid-main">
+      <!-- LEFT: TWO TAPE MEASURES + COLOR INPUTS -->
+      <aside class="card">
+        <h2>📏 İki Mezura &amp; Renk Girdisi</h2>
+        <div class="field">
+          <label for="inName">Misafir Adı</label>
+          <input id="inName" type="text" value="Dila">
+        </div>
+        <div class="field">
+          <label for="selTone">Cilt Alt Tonu</label>
+          <select id="selTone">
+            <option value="warm" selected>Sıcak / Altın Alt Ton (Saf siyah söndürür!)</option>
+            <option value="olive">Nötr / Zeytin Alt Ton</option>
+            <option value="cool">Soğuk / Gül &amp; Porselen Alt Ton</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="selContrast">Yüz &amp; Saç Kontrastı</label>
+          <select id="selContrast">
+            <option value="soft" selected>Yumuşak / İpeksi Kontrast</option>
+            <option value="medium">Orta / Dengeli Kontrast</option>
+            <option value="high">Yüksek / Keskin Kontrast</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="selLight">Ölçüm Işığı (Belirsizlik Bandı)</label>
+          <select id="selLight">
+            <option value="daylight" selected>Doğal Pencere Gün Işığı (5500K · Yüksek Güven)</option>
+            <option value="lamp">Sıcak İç Mekân Lambası (2700K · Belirsiz!)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="selArt">AFAIR Studio Galeri Dili</label>
+          <select id="selArt">
+            <option value="minimal" selected>Minimalist Mimari &amp; Boşluk</option>
+            <option value="organic">Organik Doku &amp; Permakültür Pigment</option>
+            <option value="chiaroscuro">Dramatik Işık &amp; Heykelsi Form</option>
+          </select>
+        </div>
+        <h3>Evde Alınan Mezura Ölçüleri (cm)</h3>
+        <div class="measure-grid">
+          <div class="field"><label for="mShoulder">Omuz</label><input id="mShoulder" type="number" value="40" min="32" max="58"></div>
+          <div class="field"><label for="mChest">Göğüs</label><input id="mChest" type="number" value="88" min="70" max="135"></div>
+          <div class="field"><label for="mWaist">Bel</label><input id="mWaist" type="number" value="66" min="52" max="125"></div>
+          <div class="field"><label for="mHeight">Boy</label><input id="mHeight" type="number" value="171" min="145" max="205"></div>
+        </div>
+        <div class="prova-inline-2 mono" id="dnaHashBox">DNA SHA-16 hesaplanıyor...</div>
+      </aside>
+
+      <!-- RIGHT: DILA AI DIAGNOSIS + STUDIO GALLERY + 8 CONCEPTS SYNC -->
+      <div>
+        <div class="card">
+          <h2>✨ AFAIR LIVE · “AFAIR’dan Dila Ben” Canlı Analizi</h2>
+          <div class="dila-voice">
+            <span class="dila-badge">AFAIR’DAN DİLA BEN · CANLI STİL &amp; RENK KARARI</span>
+            <p id="dilaSpeech" class="prova-inline-3"></p>
+            <div id="lightNotice"></div>
+          </div>
+
+          <h3>Altın Palet &amp; “Yeni Siyah” Önerisi</h3>
+          <div class="swatches" id="goldSwatches"></div>
+
+          <h3>Yasak Renkler (Cildi Söndüren / Sertleştiren)</h3>
+          <div class="swatches" id="forbidSwatches"></div>
+
+          <div class="gallery-stage">
+            <div class="art-frame" id="artFrameHost"></div>
+            <div>
+              <span class="prova-inline-4 dila-badge">K2 · AFAIR STUDIO · AI GALERİ ART</span>
+              <h3 id="artTitle" class="prova-inline-5"></h3>
+              <p id="artDesc" class="prova-inline-6"></p>
+              <div class="prova-inline-7 mono" id="artMeta"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>🔄 1 Ana + 7 Yan = 8 Konsept Canlı Senkronizasyonu (Sıçrama Zinciri)</h2>
+          <div class="sync-grid" id="syncGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2: EPISTEMOLOGY ANSWER -->
+  <section class="panel" id="tab-epistem">
+    <div class="card">
+      <h2>🔬 Dila’nın Sorusu: Kapasite Yüzdesi, Eminlik ve Meta-Doğrulama</h2>
+      <p class="prova-inline-8">
+        <em>“Kapasitenizin yüzde kaçını kullandığınızı nasıl hesaplıyorsunuz, rakamlardan ne kadar eminsiniz, emin olduğunuzdan nasıl emin oluyorsunuz ve bu sorunun cevabının doğruluğundan yüzde kaç eminsin?”</em>
+      </p>
+      <div class="ep-grid">
+        <div class="sync-card">
+          <div class="sync-id">1 · KAPASİTE HESAPLAMA</div>
+          <h4>Donanım Sensörü (%) ≠ Model Zekâ Yüzdesi</h4>
+          <p>Donanım sayaçları yerel kullanım hakkında bilgi verir. Bulut modelinin toplam kapasitesi için ölçülmüş bir üst sınır gerekir. Bu ekranda test kabul oranı ve tekrar tutarlılığı ayrı ölçülür.</p>
+        </div>
+        <div class="sync-card">
+          <div class="sync-id">2 · RAKAMLARDAN EMİNLİK</div>
+          <h4>3 Ayrı Güven Katmanı</h4>
+          <p><strong>Katman A (Kriptografik/Sensör):</strong> SHA-256 özeti (6d4b505329d32ecc), dosya baytı, HTTP 200, atomik O_EXCL kilit (0 çifte). <strong>Katman B (Gözlem Bandı):</strong> HTTP ms ve hızlanma oranı tek sayı değil, aralıkla verilir. <strong>Katman C (Tahmin):</strong> Ölçülmeyen her veri açıkça “ölçülmedi” damgası taşır.</p>
+        </div>
+        <div class="sync-card">
+          <div class="sync-id">3 · META-DOĞRULAMA</div>
+          <h4>Emin Olduğumuzdan Nasıl Emin Oluyoruz?</h4>
+          <p>Kendi sözümüze güvenmeyiz: (1) <strong>Üreten Ölçmez</strong> (producer ≠ verifier), (2) <strong>Sabotaj Testi</strong> (1 bayt bozup denetçinin yakaladığını kanıtlama), (3) <strong>Canlı Read-Back</strong> (URL’den geri indirip SHA-16 kontrolü), (4) <strong>ADRES.jsonl k="eksik"</strong> zorunlu şeffaflık kaydı.</p>
+        </div>
+        <div class="sync-card main">
+          <div class="sync-id">4 · BU CEVAPTAN YÜZDE KAÇ EMİNSİN?</div>
+          <h4>Sahte Kesinlik (False Precision) Yasak!</h4>
+          <p>Bu cevaba “%96,8 eminim” gibi bir rakam yapıştırmam; çünkü kalibrasyon deneyi (ör. 100 kör soruda Brier skoru) yapılmadan verilen yüzde <strong>uydurmadır</strong>. İlkelerin mühendislik tutarlılığı yüksek güvenlidir; ölçmediğim tekil yüzdeyi uydurmamak doğruluğun kendisidir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 3: 8 PARALLEL PROMPTS + 5 CREATIVE QUESTIONS -->
+  <section class="panel" id="tab-prompts">
+    <div class="card">
+      <h2>⚡ Aynı Anda 8 Paralel GPT’ye Girilecek Promptlar (D01..D08)</h2>
+      <div id="promptsHost"></div>
+    </div>
+    <div class="card">
+      <h2>💡 Dila’ya 5 Yaratıcı &amp; Sıçrama Ateşleyen Soru</h2>
+      <div class="ep-grid" id="questionsHost"></div>
+    </div>
+  </section>
+</main>
+
+<script src="/dila-prova.js" defer></script>
+</body>
+</html>
