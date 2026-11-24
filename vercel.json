@@ -25,6 +25,11 @@
       "source": "/afair-studio-vitrin.html",
       "destination": "/",
       "permanent": false
+    },
+    {
+      "source": "/afair-studio-vitrin",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }
