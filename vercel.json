@@ -31,5 +31,31 @@
       "destination": "/",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/dila",
+      "destination": "/dila/index.html"
+    },
+    {
+      "source": "/dila/",
+      "destination": "/dila/index.html"
+    },
+    {
+      "source": "/teknik-sergi",
+      "destination": "/teknik-sergi/index.html"
+    },
+    {
+      "source": "/teknik-sergi/",
+      "destination": "/teknik-sergi/index.html"
+    },
+    {
+      "source": "/podyum-sahne/kapi",
+      "destination": "/podyum-sahne/kapi/index.html"
+    },
+    {
+      "source": "/podyum-sahne/kapi/",
+      "destination": "/podyum-sahne/kapi/index.html"
+    }
   ]
 }
