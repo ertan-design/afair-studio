@@ -47,5 +47,14 @@
     "automatic_site_generation": false,
     "assets": "local relative URLs; no external media CDN dependency",
     "next_stage": "Server-only API credentials, authenticated generation requests, bounded budget, durable job queue, verified completion webhook and durable media storage would be needed for website-triggered generation."
+  },
+  "browser_qa": {
+    "both_played_to_end": true,
+    "width": 1280,
+    "console_errors": 0,
+    "height": 720,
+    "actual_duration_seconds": 5.041667,
+    "tested_url": "https://www.afair.studio/dila-hareket-atolyesi/",
+    "media_errors": 0
   }
 }
