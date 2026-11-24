@@ -130,3 +130,22 @@ h3 { font-size: 17px; margin-bottom: 10px; color: var(--altin); }
 @media (max-width: 920px) {
   .kahraman-ic, .iki-sutun { grid-template-columns: 1fr; }
 }
+
+/* Dila tercih ve podyum provası */
+#bu-gece,#podyum-prova,#iki-mezura,#galeri {scroll-margin-top:9rem}
+#bu-gece .dila-onay,#bu-gece .dila-ziyaret {display:flex;flex-wrap:wrap;align-items:center;gap:.7em;margin-block:1.2em .6em}
+#bu-gece input[type=checkbox] {width:1.25em;height:1.25em;accent-color:#7fffd4;flex:none}
+#bu-gece .dila-onay {cursor:pointer}
+#bu-gece .dila-ziyaret select {max-width:100%;color:inherit;background:#18233e;font:inherit;border:1px solid #536385;border-radius:.35rem;padding:.4em}
+#bu-gece button:disabled {opacity:.5;cursor:default}
+#bu-gece :focus-visible,#podyum-prova :focus-visible {outline:3px solid #7fffd4;outline-offset:3px}
+.dila-podyum canvas {display:block;width:100%;height:auto;border-radius:.45rem;background:#10192e}
+.dila-podyum figcaption {margin-top:.65em;color:var(--soluk)}
+@media(max-width:640px) {#bu-gece .dila-tercih,#podyum-prova .dila-podyum{grid-template-columns:minmax(0,1fr)}}
+@media(min-width:3200px) {
+  #bu-gece,#podyum-prova {max-width:4400px;font-size:48px}
+  #bu-gece h2,#podyum-prova h2 {font-size:80px}
+  #bu-gece h3 {font-size:54px}
+  #bu-gece label,#bu-gece button,#bu-gece .btn,#bu-gece input,#bu-gece select,#bu-gece .deger,#bu-gece .durum-satiri,#bu-gece .kucuk-etiket,#podyum-prova .kucuk-etiket,#podyum-prova .aciklama {font-size:48px}
+  #bu-gece .baslik-satiri,#podyum-prova .baslik-satiri {gap:36px}
+}
