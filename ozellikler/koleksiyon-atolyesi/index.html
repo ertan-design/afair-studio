@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eee9df">
+<title>AFFFAIR Studio — Koleksiyon Atölyesi</title>
+<link rel="stylesheet" href="./style-1.css">
+<link rel="stylesheet" href="../restore.css"></head>
+<body><a class="af-restore-back" href="/ozellikler/">← Tüm özellikler</a>
+<header class="top"><div class="wrap"><a href="#baslik" class="brand">AFFFAIR<span>STUDIO</span></a><a class="mastlink" href="#atolye">Atölyeye git</a></div></header>
+<main class="wrap" id="baslik">
+  <section class="hero" aria-labelledby="main-title">
+    <h1 id="main-title">Koleksiyon <em>atölyesi</em></h1>
+    <p>Kumaş, renk ve görselleri bir araya getir. Koleksiyonu düzenlerken serginin nasıl görüneceğine bak.</p>
+  </section>
+  <div class="grid">
+    <section class="editor" id="atolye" aria-labelledby="editor-title">
+      <div class="heading"><h2 id="editor-title">Çalışma alanı</h2><button id="newDraft" type="button" class="plain">Yeni taslak</button></div>
+      <label class="field"><span>Taslaklar</span><select id="drafts"></select></label>
+      <form id="profileForm">
+        <div class="pair"><label class="field"><span>Tasarımcı</span><input id="designer" maxlength="70" required></label><label class="field"><span>Stüdyo adres etiketi</span><input id="slug" maxlength="40" required pattern="[a-z0-9](?:[a-z0-9]|-(?=[a-z0-9])){0,39}" title="Küçük Latin harfler, rakamlar ve tekli tire" spellcheck="false"></label></div>
+        <label class="field"><span>Koleksiyon adı</span><input id="title" maxlength="85" required></label>
+        <label class="field"><span>Sergi metni</span><textarea id="note" maxlength="500" rows="2"></textarea></label>
+        <button class="btn" type="submit">Taslağı kaydet</button>
+      </form>
+      <details class="lookform" open>
+        <summary>Parça ekle ve düzenle</summary>
+        <form id="lookForm">
+          <label class="field"><span>Parça adı</span><input id="lookName" maxlength="80" required></label>
+          <div class="pair"><label class="field"><span>Malzeme</span><input id="material" maxlength="70"></label><label class="field"><span>Renk</span><input id="swatch" type="color" value="#596255"></label></div>
+          <label class="field"><span>Görsel <small>(isteğe bağlı)</small></span><input id="image" type="file" accept="image/png,image/jpeg,image/webp"></label>
+          <p class="meta">Resimler cihazında küçültülür. En çok 12 parça.</p>
+          <div class="tools"><button class="btn" id="saveLook" type="submit">Parça ekle</button><button class="plain" id="cancelEdit" type="button" hidden>Vazgeç</button></div>
+        </form>
+      </details>
+      <div class="lookform">
+        <div class="tools"><button id="exportHtml" class="plain" type="button">Sergiyi indir</button><button id="exportJson" class="plain" type="button">Taslağı dışa aktar</button><button id="importBtn" class="plain" type="button">Taslak içe aktar</button></div>
+        <input type="file" id="importFile" accept=".json,application/json" hidden>
+        <p id="status" role="status" class="status"></p>
+      </div>
+    </section>
+    <section class="previewcolumn" aria-labelledby="preview-title">
+      <div class="previewbar"><strong id="preview-title">Sergi önizlemesi</strong><code id="tenant"></code></div>
+      <div class="preview"><div id="cover" class="cover"><div class="covertext"><small id="previewDesigner"></small><h2 id="previewTitle"></h2><p id="previewNote"></p></div></div>
+      <ul class="looks" id="looks" aria-label="Koleksiyon parçaları"></ul><p id="empty" class="empty">Koleksiyonda parça yok. Atölyeden ilk numuneyi ekleyebilirsin.</p></div>
+    </section>
+  </div>
+  <footer class="foot"><span>Taslaklar bu tarayıcıda saklanır. İndirilen sergi HTML dosyası çevrimdışı açılır.</span><span>Stüdyo adresi yerel önizlemedir. Alt alan adı için yayın altyapısı gerekir.</span></footer>
+</main>
+<script src="./script-3.js"></script>
+</body>
+</html>
+

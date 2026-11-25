@@ -1,0 +1,6 @@
+document.querySelector('[data-restore-click="h5"]').addEventListener('click',function(event){const result=(function(event){setFabric(0,this)}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});
+document.querySelector('[data-restore-click="h6"]').addEventListener('click',function(event){const result=(function(event){setFabric(1,this)}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});
+document.querySelector('[data-restore-click="h7"]').addEventListener('click',function(event){const result=(function(event){setFabric(2,this)}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});
+document.querySelector('[data-restore-click="h8"]').addEventListener('click',function(event){const result=(function(event){setFabric(3,this)}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});
+document.querySelector('[data-restore-click="h9"]').addEventListener('click',function(event){const result=(function(event){toggle8D()}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});
+document.querySelector('[data-restore-click="h10"]').addEventListener('click',function(event){const result=(function(event){toggleAuto()}).call(this,event);if(result===false){event.preventDefault();event.stopPropagation();}});

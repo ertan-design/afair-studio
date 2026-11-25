@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>AFAIR x DILA · 3D Spatial Reality &amp; VR Vitrin</title>
+<link rel="stylesheet" href="./style-1.css">
+<link rel="stylesheet" href="./attributes.css"><link rel="stylesheet" href="../restore.css"></head>
+<body><a class="af-restore-back" href="/ozellikler/">← Tüm özellikler</a>
+<canvas id="gl"></canvas>
+<div class="vr-div"></div>
+
+<video id="v1" class="srcvid" src="/prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4" autoplay muted loop playsinline crossorigin="anonymous"></video>
+<video id="v2" class="srcvid" src="/prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4" autoplay muted loop playsinline crossorigin="anonymous"></video>
+
+<header class="hud-top">
+  <div class="brand">
+    <span class="dot"></span>
+    <strong>AFAIR × DILA</strong>
+    <span>3D SPATIAL REALITY</span>
+  </div>
+  <div class="ctrls">
+    <button class="btn on" id="btnAuto">Oto-Sinema</button>
+    <button class="btn" id="btnVR">VR Stereo 3D</button>
+    <button class="btn on" id="btnFeed">Akis: Higgsfield Seedance</button>
+    <button class="btn" id="btnPalette">Palet: Gece Laciverti &amp; Bronz</button>
+    <a class="btn" id="btnEnter" href="https://www.afair.live/" target="_blank" rel="noopener" data-restore-style="s1">Siteye Gir ↗</a>
+    <a class="btn" href="/dila/sinema.html" data-restore-style="s2">Video Studyo</a>
+    <a class="btn" href="/prizma/" data-restore-style="s3">8-Senkron</a>
+    <a class="btn" href="/" data-restore-style="s4">Ana OS</a>
+  </div>
+</header>
+
+<section class="hud-bottom">
+  <div class="panel">
+    <div class="eyebrow" id="stageTag">SAHNE 01 · AFAIR.LIVE × IKI MEZURA</div>
+    <h1 id="stageTitle">2D Kartlar Bitti. 3D Uzamsal Galeriye Hos Geldin.</h1>
+    <p id="stageDesc">Surukle (orbit), tekerlekle yaklas, WASD ile uc veya VR Stereo'ya gec. Havada suzulen 3D sinema monolitleri gercek H.264 Dila x AFAIR videolarini canli WebGL dokusu olarak oynatir (%0 saf siyah).</p>
+    <div class="portals" id="portalBtns">
+      <button class="pbtn on" data-cam="0">01 · afair.live (Iki Mezura)</button>
+      <button class="pbtn" data-cam="1">02 · afair.studio (AI Galeri)</button>
+      <button class="pbtn" data-cam="2">03 · Atasehir 3D Kent</button>
+      <button class="pbtn" data-cam="3">04 · Genel VR Kus Bakisi</button>
+    </div>
+  </div>
+  <div class="tele" id="tele">
+    <div>ENGINE: <b>Custom WebGL 3D</b></div>
+    <div>FPS: <b id="fps">--</b> · MODE: <b id="modeTxt">SPATIAL</b></div>
+    <div>CAM: <b id="camTxt">0.0, 1.4, 7.5</b></div>
+    <div>VIDEO TEX: <b id="vidTxt">YUKLENIYOR</b></div>
+  </div>
+</section>
+
+<script src="./script-2.js"></script>
+</body>
+</html>
