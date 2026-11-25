@@ -1,0 +1,8 @@
+# AFFFAIR Studio & Live × Başka İstanbul Yok — GPT & Agent Rehberi
+
+- Amaç: İnsanlar için kafa yormayan, görür görmez hareketli Quiet Luxury 360° 8D rüzgârlı kumaş ve 3-Kule uçuş deneyimi; GPT'ler için sıfır-PII programatik kontrol.
+- Canlı Kumaş Sahnesi (360° 8D Verlet Fizik): https://www.afair.studio/
+- Canlı 3-Kule Ataşehir Uçuş Sahnesi: https://www.afair.studio/dokuma-ufuk/
+- Canlı Terzi & Yaşam Sahnesi: https://www.afair.live/
+- Makine-Okunur Tam GPT Sözleşmesi: /gpt.json
+- Tarayıcı İçi JS Kontrolcüsü: `window.AFAIR_GPT_API` (`purpose()`, `getState()`, `setFabric(0..5)`, `setOrbit360(yaw,pitch,zoom)`, `setWind(strength,deg)`, `setSurreal8D(bool)`, `ripple(x,y)`, `selectTower(0..3)`, `steerFlight(dx,dy,progress)`, `book(service)`).

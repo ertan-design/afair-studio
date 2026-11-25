@@ -1,0 +1,166 @@
+{
+  "schema": "afffair.dila.8kural.gpt.v2",
+  "updated": "2026-11-25T04:32:46+03:00",
+  "purpose": {
+    "why_built": "AFFFAIR Quiet Luxury 360° 8D rüzgârlı gerçek kumaş simülasyonu (afair.studio), eve iki-mezura canlı terzi masası (afair.live) ve Google Maps kullanmayan 3-Kule yönlendirilebilir Ataşehir/İstanbul yaşam uçuşunu (dokuma-ufuk & baskaistanbulyok) hem insanlar için sıfır karmaşayla hem GPT ajanlar için %100 programatik API ile birleştirmek.",
+    "dila_8_laws_verified": {
+      "1_no_clutter": true,
+      "2_instant_entry_motion": true,
+      "3_gen_z_interactive": true,
+      "4_quiet_luxury_afffair": true,
+      "5_short_child_clear_copy_and_gpt_ready": true,
+      "6_zero_cognitive_load": true,
+      "7_real_verlet_cloth_physics_8d_lowkey_shadows": true,
+      "8_full_360_and_steerable_user_control": true
+    },
+    "pure_black_veto": "STRICT_NO_000000_ALLOWED",
+    "pii_stored": 0
+  },
+  "programmatic_browser_api": {
+    "global_object": "window.AFAIR_GPT_API",
+    "methods": [
+      "purpose()",
+      "getState()",
+      "setFabric(0..5)",
+      "setOrbit360(yawDeg, pitchDeg, zoom)",
+      "setWind(strength_0_200, angleDeg_0_360)",
+      "setSurreal8D(enabledBool)",
+      "ripple(normX, normY)",
+      "selectTower(0..3)",
+      "steerFlight(yawDelta, pitchDelta, progress_0_1)",
+      "book(service_tailor_or_agro, slotLabel)"
+    ],
+    "url_query_controls": "?fabric=0..5&wind=0..200&windDeg=0..360&yaw=0..360&pitch=-65..65&surreal=0|1&tower=0..3"
+  },
+  "fabrics_pantone_tcx": [
+    {
+      "id": 0,
+      "code": "PANTONE 19-3924 TCX",
+      "name": "Gece İpeği",
+      "sub": "19 Momme Ham İpek · Siyah İkamesi",
+      "rgb": [
+        0.16,
+        0.21,
+        0.32
+      ],
+      "sheen": 0.85,
+      "trans": 0.28,
+      "weave": 95.0
+    },
+    {
+      "id": 1,
+      "code": "PANTONE 13-1008 TCX",
+      "name": "Ham Keten",
+      "sub": "Doğal Bezayağı Keten · 215 g/m²",
+      "rgb": [
+        0.86,
+        0.81,
+        0.72
+      ],
+      "sheen": 0.22,
+      "trans": 0.35,
+      "weave": 64.0
+    },
+    {
+      "id": 2,
+      "code": "PANTONE 19-2428 TCX",
+      "name": "Mürdüm Kaşmir",
+      "sub": "Balıksırtı Kaşmir · 290 g/m²",
+      "rgb": [
+        0.38,
+        0.16,
+        0.29
+      ],
+      "sheen": 0.38,
+      "trans": 0.12,
+      "weave": 72.0
+    },
+    {
+      "id": 3,
+      "code": "PANTONE 18-5616 TCX",
+      "name": "Adaçayı Kadife",
+      "sub": "Kesik Hav İpek Kadife · 340 g/m²",
+      "rgb": [
+        0.17,
+        0.35,
+        0.3
+      ],
+      "sheen": 0.65,
+      "trans": 0.08,
+      "weave": 84.0
+    },
+    {
+      "id": 4,
+      "code": "PANTONE 16-0948 TCX",
+      "name": "Kehribar Dimi",
+      "sub": "Merinos-İpek Twill · 260 g/m²",
+      "rgb": [
+        0.76,
+        0.55,
+        0.24
+      ],
+      "sheen": 0.54,
+      "trans": 0.18,
+      "weave": 78.0
+    },
+    {
+      "id": 5,
+      "code": "PANTONE 17-1518 TCX",
+      "name": "Sürreal Organze",
+      "sub": "Şeffaf Sıvı İpek · 48 g/m²",
+      "rgb": [
+        0.72,
+        0.5,
+        0.53
+      ],
+      "sheen": 0.92,
+      "trans": 0.68,
+      "weave": 115.0
+    }
+  ],
+  "atasehir_3tower_routes": [
+    {
+      "id": 0,
+      "name": "Kule 1 · Watergarden",
+      "from": "43. Kat Çatı (+148m)",
+      "to": "Watergarden AVM & Sanat",
+      "color": "#c89b54",
+      "tx": -210,
+      "tz": -55
+    },
+    {
+      "id": 1,
+      "name": "Kule 2 · Finanskent",
+      "from": "35. Kat Çatı (+121m)",
+      "to": "Finanskent Fırsat & Elektronik",
+      "color": "#6ba6b8",
+      "tx": 205,
+      "tz": -135
+    },
+    {
+      "id": 2,
+      "name": "Kule 3 · Maltepe Sahil",
+      "from": "25. Kat Çatı (+88m)",
+      "to": "Sahil Konser & Spor Alanı",
+      "color": "#4d8b7a",
+      "tx": -95,
+      "tz": 215
+    },
+    {
+      "id": 3,
+      "name": "Üst Halka · İstanbul",
+      "from": "Termik Yükseliş (+420m)",
+      "to": "Başka İstanbul Yok · Tüm Şehir",
+      "color": "#a86b8c",
+      "tx": 20,
+      "tz": -210
+    }
+  ],
+  "live_surfaces": [
+    "https://www.afair.studio/",
+    "https://www.afair.studio/dokuma-ufuk/",
+    "https://www.afair.live/",
+    "https://ertanaraz.com/baskaistanbulyok",
+    "https://ertanaraz.com/dila_8kural_gpt_manifest.json"
+  ]
+}

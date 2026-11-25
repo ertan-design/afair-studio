@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFFFAIR · Dokun. Çevir. Dalgalansın.</title>
+<meta name="description" content="Kumaşı 360° her açıdan incele, rüzgârı parmağınla yönet.">
+<link rel="stylesheet" href="/karbon-8d/afffair8d.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "AFFFAIR Studio — 360° 8D Kumaş ve Canlı Terzi Sahnesi", "description": "Kumaşa dokun, 360 derece çevir, rüzgârı yönet; eve iki-mezura terzi çağır.", "url": "https://www.afair.studio/", "potentialAction": [{"@type": "ControlAction", "name": "SelectPantoneFabric", "target": "https://www.afair.studio/?fabric={fabric_0_5}&yaw={yaw_0_360}&wind={wind_0_200}&surreal={0_or_1}"}, {"@type": "ReserveAction", "name": "RequestBespokeTailor", "target": "https://www.afair.live/?fabric={fabric_0_5}"}]}</script>
+<script id="afair-gpt-state" type="application/json">{}</script>
+<script src="/karbon-8d/afffair8d.js" defer></script>
+</head>
+<body data-scene="cloth">
+<div class="stage-wrap">
+  <canvas id="stageCanvas" class="gl-canvas" aria-label="360 derece yönlendirilebilir 8D rüzgârlı kumaş sahnesi"></canvas>
+
+  <header class="top-whisper">
+    <a class="brand-mark" href="https://www.afair.studio/karbon-8d/">AFFFAIR</a>
+    <nav class="top-links" aria-label="Sahne geçişi">
+      <a href="https://www.afair.studio/karbon-8d/" class="on">8D Kumaş</a>
+      <a href="https://www.afair.studio/karbon-ucus/" class="">Ataşehir Uçuş</a>
+      <a href="https://www.afair.live/karbon-8d/" class="">Canlı Terzi</a>
+      <a href="gpt.json">GPT</a>
+    </nav>
+  </header>
+
+  <div class="hero-copy">
+    <p class="hero-eyebrow">AFFFAIR · QUIET LUXURY 8D ATÖLYE</p>
+    <h1 class="hero-title">Dokun. Çevir. Dalgalansın.</h1>
+    <p class="hero-sub">Kumaşı 360° her açıdan incele, rüzgârı parmağınla yönet.</p>
+  </div>
+
+  <div class="dock" role="region" aria-label="Kumaş, 360 açı ve rüzgâr kontrolleri">
+    <div class="sw-group">
+      <button type="button" class="sw-dot f0 on" aria-label="Gece İpeği"></button>
+      <button type="button" class="sw-dot f1" aria-label="Ham Keten"></button>
+      <button type="button" class="sw-dot f2" aria-label="Mürdüm Kaşmir"></button>
+      <button type="button" class="sw-dot f3" aria-label="Adaçayı Kadife"></button>
+      <button type="button" class="sw-dot f4" aria-label="Kehribar Dimi"></button>
+      <button type="button" class="sw-dot f5" aria-label="Sürreal Organze"></button>
+      <div class="fab-label" id="fabName">Gece İpeği<small>PANTONE 19-3924 TCX</small></div>
+    </div>
+
+    <div class="sliders">
+      <label class="sl-item">360° Çevir
+        <input id="rngYaw" type="range" min="0" max="360" value="24">
+      </label>
+      <label class="sl-item">Rüzgâr Dalgası
+        <input id="rngWind" type="range" min="0" max="200" value="95">
+      </label>
+    </div>
+
+    <div class="pill-group">
+      <button type="button" id="btnTouchMode" class="pill-btn">✋ Kumaşa Dokun</button>
+      <button type="button" id="btn8D" class="pill-btn on">✦ 8D Sürreal</button>
+      <button type="button" id="btnAudio8D" class="pill-btn">🎧 8D Ses</button>
+    </div>
+  </div>
+</div>
+
+<section class="below-fold" aria-label="Hızlı yaşam ve dikim erişimi">
+  <article class="q-card">
+    <div>
+      <h2>Eve İki Mezura</h2>
+      <p>Seçtiğin kumaşla terzin kapına gelsin, ölçünü yerinde alsın.</p>
+    </div>
+    <div>
+      <button type="button" class="pill-btn on" data-book="tailor">Terzi Çağır · Müsait</button>
+      <div class="q-status" id="msg-tailor"></div>
+    </div>
+  </article>
+  <article class="q-card">
+    <div>
+      <h2>Balkon &amp; Toprak</h2>
+      <p>Evinin güneşine ve rüzgârına göre bitki ve tarım danışmanı çağır.</p>
+    </div>
+    <div>
+      <button type="button" class="pill-btn" data-book="agro">Danışman Randevusu</button>
+      <div class="q-status" id="msg-agro"></div>
+    </div>
+  </article>
+  <article class="q-card">
+    <div>
+      <h2>Çatıdan Şehre Uç</h2>
+      <p>Ataşehir'in 3 kulesinden AVM, Finans veya Sahile kanat aç.</p>
+    </div>
+    <div>
+      <a class="pill-btn" href="https://www.afair.studio/dokuma-ufuk/">Uçuş Sahnesine Geç ↗</a>
+    </div>
+  </article>
+</section>
+</body>
+</html>
