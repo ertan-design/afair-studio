@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>İpek Rüzgâr · AFAIR Studio</title>
+  <meta name="description" content="Kumaşı 360° çevir, rüzgârı sen yönet. Loş ışıkta dalgalanan ipek, keten ve kadife.">
+  <link rel="stylesheet" href="/ipek-ruzgar/ipek.css">
+  <script src="/ipek-ruzgar/ipek.js" defer></script>
+</head>
+<body>
+  <canvas id="sahne" aria-label="Rüzgârda dalgalanan kumaş. Sürükleyerek 360 derece çevir."></canvas>
+  <header class="ust">
+    <a class="marka" href="/">AFAIR / STUDIO</a>
+    <span class="ipucu" id="ipucu">Sürükle · çevir</span>
+  </header>
+  <main class="yazi">
+    <p class="ust-baslik">İPEK RÜZGÂR</p>
+    <h1>Kumaşı çevir.<br><em>Rüzgârı sen ver.</em></h1>
+  </main>
+  <form class="panel" id="panel" aria-label="Kumaş ve rüzgâr ayarları">
+    <fieldset class="kumaslar">
+      <legend>Kumaş</legend>
+      <label><input type="radio" name="kumas" value="ipek" checked><span>İpek</span></label>
+      <label><input type="radio" name="kumas" value="keten"><span>Keten</span></label>
+      <label><input type="radio" name="kumas" value="kadife"><span>Kadife</span></label>
+    </fieldset>
+    <label class="kaydir" for="guc">Rüzgâr <output id="guc-o">40</output><input id="guc" type="range" min="0" max="100" value="40"></label>
+    <label class="kaydir" for="yon">Yön <output id="yon-o">45°</output><input id="yon" type="range" min="0" max="359" value="45"></label>
+    <label class="kaydir" for="agirlik">Yerçekimi <output id="agirlik-o">%40</output><input id="agirlik" type="range" min="0" max="100" value="40"></label>
+    <div class="dugmeler">
+      <button type="button" id="oynat" aria-pressed="true">Durdur</button>
+      <button type="button" id="sifirla">Sıfırla</button>
+    </div>
+  </form>
+  <p class="not" id="not">Ekranda üretilen simülasyon. Gerçek kumaş taraması değildir.</p>
+</body>
+</html>
