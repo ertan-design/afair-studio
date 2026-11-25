@@ -67,5 +67,6 @@
       "destination": "/podyum-sahne/kapi/index.html"
     }
   ],
-  "buildCommand": "node yayin-kontrol.cjs"
+  "buildCommand": "",
+  "outputDirectory": "."
 }
