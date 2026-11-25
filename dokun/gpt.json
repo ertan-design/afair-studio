@@ -1,7 +1,7 @@
 {
  "ad": "AFAIR / STUDIO · Dokun",
  "amac": "Kumaşı gerçek fizikle göstermek: asılı bir kumaş rüzgârla dalgalanır, kullanıcı tutup çeker, 360 derece döner. Kumaş seçimi bir ürün kartının önizlemesidir.",
- "adres": "/kumas/",
+ "adres": "/dokun/",
  "sayfa_api": {
   "nesne": "window.KUMAS",
   "malzemeler": {"saten": "İpek saten", "kadife": "Kadife", "keten": "Keten"},
