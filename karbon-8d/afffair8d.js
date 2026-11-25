@@ -142,13 +142,13 @@
         const vz = (pos[ix + 2] - old[ix + 2]) * 0.955;
         old[ix] = pos[ix]; old[ix + 1] = pos[ix + 1]; old[ix + 2] = pos[ix + 2];
 
-        const travelWave = Math.sin(pos[ix] * 2.4 - simTime * 2.2 + pos[ix + 1] * 1.5)
-                         + 0.5 * Math.cos(pos[ix + 1] * 2.6 - simTime * 1.7 - pos[ix] * 1.2);
-        const billow = (v * v) * travelWave * wMag * 0.65;
+        const travelWave = Math.sin(pos[ix] * 2.8 - simTime * 2.4 + pos[ix + 1] * 1.7)
+                         + 0.5 * Math.cos(pos[ix + 1] * 3.0 - simTime * 1.8 - pos[ix] * 1.3);
+        const billow = (v * v) * travelWave * wMag * 0.55;
 
-        pos[ix] += vx + wx * v + state.gustX * v * 0.008;
-        pos[ix + 1] += vy - 0.0012 + state.gustY * v * 0.005;
-        pos[ix + 2] += vz + wz * v + billow * 1.35;
+        pos[ix] += vx + state.gustX * v * 0.012;
+        pos[ix + 1] += vy - 0.0012 + state.gustY * v * 0.008;
+        pos[ix + 2] += vz + billow;
       }
     }
     state.gustX *= 0.90;
