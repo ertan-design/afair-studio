@@ -1,0 +1,505 @@
+{
+  "schema": "gaia.feature-directory.v1",
+  "site": "afair-studio",
+  "origin": "https://www.afair.studio",
+  "homepage_preserved": true,
+  "entry_count": 55,
+  "restored_count": 6,
+  "entries": [
+    {
+      "path": "ozellikler/dila-atolyesi/index.html",
+      "title": "Dila renk ve prova atölyesi",
+      "category": "Geri getirilen",
+      "restored": true,
+      "description": "Önceki Dila atölyesinin renk, prova ve galeri ekranına dön.",
+      "url": "https://www.afair.studio/ozellikler/dila-atolyesi/index.html",
+      "sha256": "6fe815891953e22b6d2f0e2bbab8191651e2c9fdce9d913ce35dd987e73e3fcc"
+    },
+    {
+      "path": "ozellikler/dila-reel/index.html",
+      "title": "Dört Dila filmi",
+      "description": "Dört üretilmiş filmi sırayla izle; duraklat ve klipler arasında geç.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/ozellikler/dila-reel/index.html",
+      "sha256": "2592a78ad1a18b711c63477710785a51506e47f2e73e6637bd1c4856bf119d70"
+    },
+    {
+      "path": "ozellikler/koleksiyon-atolyesi/index.html",
+      "title": "Koleksiyon atölyesi",
+      "description": "Parça ekle, taslağı sakla, JSON ve çevrimdışı sergi dosyası indir.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/ozellikler/koleksiyon-atolyesi/index.html",
+      "sha256": "7aa0461d0a8f647fddfb0ecb7737995a727d93f2d9ca8edb9414ec2fcc60c1f0"
+    },
+    {
+      "path": "ozellikler/paket-atolyesi/index.html",
+      "title": "Paket atölyesi",
+      "description": "ZIP paketini aç, dosyaları incele, manifest ve yeni ZIP indir.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/ozellikler/paket-atolyesi/index.html",
+      "sha256": "ea3fe263b8d81c1ec5b05186d77ef600bf991b8efc57b88beeff2f4a0d1340f8"
+    },
+    {
+      "path": "ozellikler/ruzgar-dokuma/index.html",
+      "title": "Rüzgâr ve dokuma",
+      "description": "İpliğin rüzgâr, dalga ve ışıkla hareketini değiştir.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/ozellikler/ruzgar-dokuma/index.html",
+      "sha256": "9ccbcb509bab0abe8e23ef5251bd74f66cd4fc7fb11089aa44a84b304ae6cd25"
+    },
+    {
+      "path": "ozellikler/uzamsal-galeri/index.html",
+      "title": "Üç boyutlu Dila galerisi",
+      "description": "Galeriyi döndür; iki film ekranı ve çift göz görünümünü dene.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/ozellikler/uzamsal-galeri/index.html",
+      "sha256": "5cc55b12a79d6d8d174c28a7bfecd057d710f6d2b47f0a8e564634544b50889a"
+    },
+    {
+      "path": "prizma/filo.html",
+      "title": "44 Tekil Alan Adının Dürüst Canlı Envanteri.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/filo.html",
+      "sha256": "019ff217c2e1b074a034d2d229847ff971cb07efe387f358a93982862ebd03af"
+    },
+    {
+      "path": "podyum-sahne/kapi/index.html",
+      "title": "444.050 kapı. Her piksel bir kapı adresi.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.afair.studio/podyum-sahne/kapi/index.html",
+      "sha256": "84b91283caf4ea1c217f4fff70d113542b978c0b7d690875efa53c42cd778880"
+    },
+    {
+      "path": "dila-prova.html",
+      "title": "AFAIR LIVE × STUDIO · DİLA AI",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/dila-prova.html",
+      "sha256": "4b1744081b908bad5e47365684b1d8a7e88e786f64ed2b51adca650d66b152e5"
+    },
+    {
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/uc-cati/index.html",
+      "sha256": "b9cbe5f9d21c8d02f0d9f41f553276e0c4e800de4623da5557c8540521a10361"
+    },
+    {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.afair.studio/dila/sinema.html",
+      "sha256": "4dd356a6bc4c77c7454bd161dc95ded8f86b4d77dadea155648e2259ebf5d830"
+    },
+    {
+      "path": "dila-filmler/index.html",
+      "title": "Dila filmleri",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.afair.studio/dila-filmler/index.html",
+      "sha256": "78b817c9b9eed5c2d7bcd2231c69c53a49b703d901887509caca2fae17987afe"
+    },
+    {
+      "path": "dila-8d.html",
+      "title": "Dila Sekiz Boyutlu Dokuma",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila-8d.html",
+      "sha256": "e175b4bc573ac191060d77283de6929709b1739bd9105bee956fcfbbc5ab516e"
+    },
+    {
+      "path": "dila-8/index.html",
+      "title": "Dila'nın 8 kuralı",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila-8/index.html",
+      "sha256": "ac8d1a755c68613bf5f4997ecc0a4fa6699d15fb070fca62a949fae40ff90b21"
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "Dokuma numunesi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/dokuma-ufuk/index.html",
+      "sha256": "e856b18a164db82c90b0cb0a16606b04f862aa3ffa9c92e1404ab8ebdbd473d9"
+    },
+    {
+      "path": "dokun/index.html",
+      "title": "Dokun.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/dokun/index.html",
+      "sha256": "885a254a55afe08a16bb30e7ade6dd69ae30aabd687d683e50e3261664c3fb7e"
+    },
+    {
+      "path": "karbon-8d/index.html",
+      "title": "Dokun. Çevir. Dalgalansın.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/karbon-8d/index.html",
+      "sha256": "42a00649d0595c09e9f820f98f46e9568089f30356a2a96ca8317da70fba0233"
+    },
+    {
+      "path": "dila-dokunus/index.html",
+      "title": "Dokun. Çevir. Hisset.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/dila-dokunus/index.html",
+      "sha256": "0e1cf284c056eb3233fc78bf90d6f59b1b47e94ddf9b36a3ec4b2792960e796f"
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Dokun. Çevir. Şehre uç.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma-atolye/index.html",
+      "sha256": "93bc37d4443723750ba0dd0b518e48ab3aa7f226a014f0440ace94e2c6ff543e"
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Fikrini bir koleksiyona dönüştür.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/calisma-notu.html",
+      "sha256": "94351e5b6d4878d7499c1b79abf9567b1f5d9f8051a142142fdf41ae7760452d"
+    },
+    {
+      "path": "kharibulbul-ipek/index.html",
+      "title": "Harıbülbül ipeğini çevir.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/kharibulbul-ipek/index.html",
+      "sha256": "8aa75853df4d0122b1e68762c6df6875e2c3138a4b52ea2e9032de193f1244a3"
+    },
+    {
+      "path": "teknik-sergi/index.html",
+      "title": "Her kapı bir sahne.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç.",
+      "url": "https://www.afair.studio/teknik-sergi/index.html",
+      "sha256": "70d0d5d8965ee1eb97ce655b14e59a1dbd0c63d7391880656399e91e0e53d220"
+    },
+    {
+      "path": "prizma/video.html",
+      "title": "Higgsfield Üretimleri +faststart Onarıldı, Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/video.html",
+      "sha256": "bf843b9f3e1f67e75a8727ea2fd3f7c2a4f545b8f4bf20d9650e2e910e15a6e8"
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "İlk kıvrımı sen seç.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/dokuma-ufuk/ilk-kurgu.html",
+      "sha256": "7c8105c5c77b51ea06f83c77ff447ff7b7a7c4b545548678b31c9f6793e2966e"
+    },
+    {
+      "path": "tasarimci-alanlari.html",
+      "title": "Kendi alanın. Canlı sergin.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/tasarimci-alanlari.html",
+      "sha256": "633a1e184391a5ec33c801552c2055373b4fdc6e1d509baa501846aadd81f68c"
+    },
+    {
+      "path": "tasarimci-studyo/index.html",
+      "title": "Kendi atölyeni çevir.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/tasarimci-studyo/index.html",
+      "sha256": "0498a9b45e4558b047d9f2ba90f7da54825ebcfb38feb021280e7e12b8d543e5"
+    },
+    {
+      "path": "calisma-rehberi/koleksiyon.html",
+      "title": "Koleksiyon sergisi",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/calisma-rehberi/koleksiyon.html",
+      "sha256": "61532951ba19e95c3e79451fec4b0408bcbafdfe3d3e7a3bc9348cdcedaa1d4c"
+    },
+    {
+      "path": "lif-atolyesi-giris.html",
+      "title": "Kumaş fikrini bul.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/lif-atolyesi-giris.html",
+      "sha256": "3624fc39acbdd49d350e90fa7d1d4c7383dd30cbc9a0c4958c61da91df2430bf"
+    },
+    {
+      "path": "dila-hareket-atolyesi/index.html",
+      "title": "Kumaş hareket eder. Fikir sahneye çıkar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila-hareket-atolyesi/index.html",
+      "sha256": "47d54ae2eb11eb7d328a6cc9f9ce45d11462789daf268608a39bc4e520223071"
+    },
+    {
+      "path": "calisma-rehberi/kumas.html",
+      "title": "Kumaş incelemesi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/calisma-rehberi/kumas.html",
+      "sha256": "7dea58e14fc826c432dc4b1235469a397a6e374379f7e5968672076b73066578"
+    },
+    {
+      "path": "kumas.html",
+      "title": "Kumaşa dokun.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/kumas.html",
+      "sha256": "a45e214bc80deda9cad4bf15f4bb2dc5d040f5991038ee98256632908cab3173"
+    },
+    {
+      "path": "kumas-studyo/index.html",
+      "title": "Kumaşa dokun. Rüzgârı değiştir.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/kumas-studyo/index.html",
+      "sha256": "0f36954905425e4d02131c8daa4fbb3c2b72787b264cd4c6e762ec57b703f60b"
+    },
+    {
+      "path": "dila-saten/index.html",
+      "title": "Kumaşa hayat ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/dila-saten/index.html",
+      "sha256": "f66b74b97eb1ecd46fb26287b38c3bef178a6636998b4f1cd2206b1a6c81cf39"
+    },
+    {
+      "path": "kumas-360/index.html",
+      "title": "Kumaşı hisset.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/kumas-360/index.html",
+      "sha256": "3d9644648726461cfb194f7a52b0e0d6ac96c1b93cdda7b59940f0f3737dcc77"
+    },
+    {
+      "path": "ipek-ruzgar/index.html",
+      "title": "Kumaşı çevir. Rüzgârı sen ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/ipek-ruzgar/index.html",
+      "sha256": "bfbbe92d5a062add3da8b70e8e05efcc065bede017d483bfee4a87efeb080b15"
+    },
+    {
+      "path": "doku-masasi/index.html",
+      "title": "Kumaşı ışığa tut.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/doku-masasi/index.html",
+      "sha256": "7539440868072aec144cd101072d38fd63f3d09ca865c0a8f04d98c4980f8d2c"
+    },
+    {
+      "path": "prizma/atolye/index.html",
+      "title": "Kumaşına dokun. İpliğe yaklaş.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/atolye/index.html",
+      "sha256": "3d390a6da6f7f81d3bc56e7fddea9ef617b20cf855c51a144e7cb6926aa9a181"
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila/yasam-alani.html",
+      "sha256": "7c8e5e51f750499d91416075e1e43a44662c6c78fb59082fbd227f18c1365263"
+    },
+    {
+      "path": "lif-inceleme.html",
+      "title": "Lifi yakından tanı.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/lif-inceleme.html",
+      "sha256": "9ecb3b4bf5f2f651e45f9ddf09042abc57c5c949776980fd479dff5a83cc9d7d"
+    },
+    {
+      "path": "prizma/front2.html",
+      "title": "Mezura-A Bedeni Okur, Mezura-B Hareket &amp; Işık Payını Çizer.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/front2.html",
+      "sha256": "8dd233ba6aba767ae9471df54d0f2837ea96f10cbd658dfe8b0f25d7818a10e8"
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/dila/iki-mezura.html",
+      "sha256": "f45439991a196672d6fa558c03b5ccceee02b573905545ca06834b20c417982b"
+    },
+    {
+      "path": "lif-atolyesi/index.html",
+      "title": "Rengi ekranda gör. Kararı kumaşla ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.afair.studio/lif-atolyesi/index.html",
+      "sha256": "d9371603133a2931e00fccacea81452cf8a70bc701e73d249ce1fd90fddc3b73"
+    },
+    {
+      "path": "rufat.html",
+      "title": "Rufat İsmail Özel Atölye",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/rufat.html",
+      "sha256": "d50bd7ad28d42bc2df170f4df15aef98af61545da0fcd359eb7c90d0845bdc4f"
+    },
+    {
+      "path": "prizma/tasarimci-kapsulu/index.html",
+      "title": "Saf siyah neden yasaktır? Işıkta dene.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/tasarimci-kapsulu/index.html",
+      "sha256": "2e6fd45e0448981e50db0c9f06691018e4000249cb3a996b5e06fe901d7ec3e3"
+    },
+    {
+      "path": "prizma/index.html",
+      "title": "Sekiz konsept. Tek renk imzası.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/index.html",
+      "sha256": "ff4661c2b8e555f5dfa90f1b08bcbfd08148ee7b31d0b40fea0d5b6862218248"
+    },
+    {
+      "path": "prizma/front1.html",
+      "title": "Siyah Asla Giymemen Gerekiyor: Yeni Siyahını Bul, 8 Konsepti Senkronla.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/front1.html",
+      "sha256": "532de2f812396c1083c1cc82bd9c63f4ee7e31700ed8099b4d99b5b3c561df60"
+    },
+    {
+      "path": "rufat-sumakh/index.html",
+      "title": "Sumakh ipeğine dokun.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/rufat-sumakh/index.html",
+      "sha256": "29dca929bca6c5e78041c04d4443fa3d440d0c2bd9dc74727277d39992335ec1"
+    },
+    {
+      "path": "calisma-rehberi/tasarimci.html",
+      "title": "Tasarımcı masası",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.afair.studio/calisma-rehberi/tasarimci.html",
+      "sha256": "e15b106a9269ac4748d60e61bbc045734de30bd3e9d3885d4cc0b39378f2ea26"
+    },
+    {
+      "path": "prizma/front4.html",
+      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta: 4 Front + Video + 50.000 Kapı Mührü.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/front4.html",
+      "sha256": "27e8f02bf776280a74a71a8d577e62a6fa624fbff36cd9d5965e892a8ebf4594"
+    },
+    {
+      "path": "dila-rehber.html",
+      "title": "Uygulama rehberi",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila-rehber.html",
+      "sha256": "ae2c2a12cb85d2cdbd05895b23c1227f98f974f804c18bf93bfd36158fdcf2a9"
+    },
+    {
+      "path": "dila.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/dila.html",
+      "sha256": "516533cf63f16d22c65ac2c8c7e1f692a87cf748aeef29745325aef789c1e935"
+    },
+    {
+      "path": "gaia-lounge-farm/index.html",
+      "title": "Çalışırken GAIA büyüsün.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/gaia-lounge-farm/index.html",
+      "sha256": "d1d8e595731754728929a933b095b44b0ab5444598bb496e9cfd329ca2317880"
+    },
+    {
+      "path": "karbon-ucus/index.html",
+      "title": "Çatıdan uç. Şehre in.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/karbon-ucus/index.html",
+      "sha256": "d26e7f108a577af21a0587f7326272ccd63636c825268f89b23d31857b70d1d2"
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.afair.studio/dila/canli-podyum.html",
+      "sha256": "112a3987e7744a5c324a484fd110c1bf3e0c9fc793f886fff00f3c010846cbac"
+    },
+    {
+      "path": "prizma/front3.html",
+      "title": "Üstündeki Ceketle Evindeki Tablo Aynı Işıkta ve Aynı Akorda Konuşsun.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.afair.studio/prizma/front3.html",
+      "sha256": "7c098c7fd406af36556917f6c13a4b6449720123d2237b7c06a0eab3664b4250"
+    }
+  ]
+}

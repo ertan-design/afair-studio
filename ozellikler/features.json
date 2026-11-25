@@ -2,6 +2,20 @@
   "site": "afair-studio",
   "entries": [
     {
+      "path": "ozellikler/dila-atolyesi/index.html",
+      "title": "Dila renk ve prova atölyesi",
+      "category": "Geri getirilen",
+      "restored": true,
+      "description": "Önceki Dila atölyesinin renk, prova ve galeri ekranına dön."
+    },
+    {
+      "path": "ozellikler/dila-reel/index.html",
+      "title": "Dört Dila filmi",
+      "description": "Dört üretilmiş filmi sırayla izle; duraklat ve klipler arasında geç.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "ozellikler/koleksiyon-atolyesi/index.html",
       "title": "Koleksiyon atölyesi",
       "description": "Parça ekle, taslağı sakla, JSON ve çevrimdışı sergi dosyası indir.",
@@ -9,9 +23,9 @@
       "restored": true
     },
     {
-      "path": "ozellikler/uzamsal-galeri/index.html",
-      "title": "Üç boyutlu Dila galerisi",
-      "description": "Galeriyi döndür; iki film ekranı ve çift göz görünümünü dene.",
+      "path": "ozellikler/paket-atolyesi/index.html",
+      "title": "Paket atölyesi",
+      "description": "ZIP paketini aç, dosyaları incele, manifest ve yeni ZIP indir.",
       "category": "Geri getirilen",
       "restored": true
     },
@@ -23,116 +37,11 @@
       "restored": true
     },
     {
-      "path": "calisma-notu.html",
-      "title": "Fikrini bir koleksiyona dönüştür.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/koleksiyon.html",
-      "title": "Koleksiyon sergisi",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/kumas.html",
-      "title": "Kumaş incelemesi",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/tasarimci.html",
-      "title": "Tasarımcı masası",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "dila-8d.html",
-      "title": "Dila Sekiz Boyutlu Dokuma",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "dila-prova.html",
-      "title": "AFAIR LIVE × STUDIO · DİLA AI",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "dila-rehber.html",
-      "title": "Uygulama rehberi",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "dila.html",
-      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "dila/canli-podyum.html",
-      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
-      "category": "Sahne ve film",
-      "restored": false,
-      "description": "Sahne ve film deneyimini aç."
-    },
-    {
-      "path": "dila/iki-mezura.html",
-      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "dila/sinema.html",
-      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
-      "category": "Sahne ve film",
-      "restored": false,
-      "description": "Sahne ve film deneyimini aç."
-    },
-    {
-      "path": "dila/yasam-alani.html",
-      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "dokuma-ufuk/ilk-kurgu.html",
-      "title": "İlk kıvrımı sen seç.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "kumas.html",
-      "title": "Kumaşa dokun.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "lif-atolyesi-giris.html",
-      "title": "Kumaş fikrini bul.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "lif-inceleme.html",
-      "title": "Lifi yakından tanı.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
+      "path": "ozellikler/uzamsal-galeri/index.html",
+      "title": "Üç boyutlu Dila galerisi",
+      "description": "Galeriyi döndür; iki film ekranı ve çift göz görünümünü dene.",
+      "category": "Geri getirilen",
+      "restored": true
     },
     {
       "path": "prizma/filo.html",
@@ -142,67 +51,32 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "prizma/front1.html",
-      "title": "Siyah Asla Giymemen Gerekiyor: Yeni Siyahını Bul, 8 Konsepti Senkronla.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/front2.html",
-      "title": "Mezura-A Bedeni Okur, Mezura-B Hareket &amp; Işık Payını Çizer.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/front3.html",
-      "title": "Üstündeki Ceketle Evindeki Tablo Aynı Işıkta ve Aynı Akorda Konuşsun.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/front4.html",
-      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta: 4 Front + Video + 50.000 Kapı Mührü.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/video.html",
-      "title": "Higgsfield Üretimleri +faststart Onarıldı, Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
+      "path": "podyum-sahne/kapi/index.html",
+      "title": "444.050 kapı. Her piksel bir kapı adresi.",
       "category": "Sahne ve film",
       "restored": false,
       "description": "Sahne ve film deneyimini aç."
     },
     {
-      "path": "rufat.html",
-      "title": "Rufat İsmail Özel Atölye",
+      "path": "dila-prova.html",
+      "title": "AFAIR LIVE × STUDIO · DİLA AI",
       "category": "Ölçü ve atölye",
       "restored": false,
       "description": "Ölçü ve atölye deneyimini aç."
     },
     {
-      "path": "tasarimci-alanlari.html",
-      "title": "Kendi alanın. Canlı sergin.",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "dila-8/index.html",
-      "title": "Dila'nın 8 kuralı",
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "dila-dokunus/index.html",
-      "title": "Dokun. Çevir. Hisset.",
-      "category": "Kumaş ve tasarım",
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
       "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
+      "description": "Sahne ve film deneyimini aç."
     },
     {
       "path": "dila-filmler/index.html",
@@ -212,32 +86,18 @@
       "description": "Sahne ve film deneyimini aç."
     },
     {
-      "path": "dila-hareket-atolyesi/index.html",
-      "title": "Kumaş hareket eder. Fikir sahneye çıkar.",
+      "path": "dila-8d.html",
+      "title": "Dila Sekiz Boyutlu Dokuma",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "dila-saten/index.html",
-      "title": "Kumaşa hayat ver.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "dila/index.html",
-      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "path": "dila-8/index.html",
+      "title": "Dila'nın 8 kuralı",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "doku-masasi/index.html",
-      "title": "Kumaşı ışığa tut.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
     },
     {
       "path": "dokuma-ufuk/index.html",
@@ -254,20 +114,6 @@
       "description": "Kumaş ve tasarım deneyimini aç."
     },
     {
-      "path": "gaia-lounge-farm/index.html",
-      "title": "Çalışırken GAIA büyüsün.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "ipek-ruzgar/index.html",
-      "title": "Kumaşı çevir. Rüzgârı sen ver.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
       "path": "karbon-8d/index.html",
       "title": "Dokun. Çevir. Dalgalansın.",
       "category": "Şehir ve yaşam",
@@ -275,8 +121,22 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "karbon-ucus/index.html",
-      "title": "Çatıdan uç. Şehre in.",
+      "path": "dila-dokunus/index.html",
+      "title": "Dokun. Çevir. Hisset.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Dokun. Çevir. Şehre uç.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Fikrini bir koleksiyona dönüştür.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
@@ -289,64 +149,29 @@
       "description": "Kumaş ve tasarım deneyimini aç."
     },
     {
-      "path": "kumas-360/index.html",
-      "title": "Kumaşı hisset.",
-      "category": "Kumaş ve tasarım",
+      "path": "teknik-sergi/index.html",
+      "title": "Her kapı bir sahne.",
+      "category": "Araçlar",
       "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
+      "description": "Araçlar deneyimini aç."
     },
     {
-      "path": "kumas-studyo/index.html",
-      "title": "Kumaşa dokun. Rüzgârı değiştir.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "lif-atolyesi/index.html",
-      "title": "Rengi ekranda gör. Kararı kumaşla ver.",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "podyum-sahne/kapi/index.html",
-      "title": "444.050 kapı. Her piksel bir kapı adresi.",
+      "path": "prizma/video.html",
+      "title": "Higgsfield Üretimleri +faststart Onarıldı, Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
       "category": "Sahne ve film",
       "restored": false,
       "description": "Sahne ve film deneyimini aç."
     },
     {
-      "path": "prizma-atolye/index.html",
-      "title": "Dokun. Çevir. Şehre uç.",
-      "category": "Şehir ve yaşam",
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "İlk kıvrımı sen seç.",
+      "category": "Kumaş ve tasarım",
       "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
+      "description": "Kumaş ve tasarım deneyimini aç."
     },
     {
-      "path": "prizma/atolye/index.html",
-      "title": "Kumaşına dokun. İpliğe yaklaş.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/index.html",
-      "title": "Sekiz konsept. Tek renk imzası.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma/tasarimci-kapsulu/index.html",
-      "title": "Saf siyah neden yasaktır? Işıkta dene.",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "rufat-sumakh/index.html",
-      "title": "Sumakh ipeğine dokun.",
+      "path": "tasarimci-alanlari.html",
+      "title": "Kendi alanın. Canlı sergin.",
       "category": "Ölçü ve atölye",
       "restored": false,
       "description": "Ölçü ve atölye deneyimini aç."
@@ -359,15 +184,204 @@
       "description": "Ölçü ve atölye deneyimini aç."
     },
     {
-      "path": "teknik-sergi/index.html",
-      "title": "Her kapı bir sahne.",
-      "category": "Araçlar",
+      "path": "calisma-rehberi/koleksiyon.html",
+      "title": "Koleksiyon sergisi",
+      "category": "Şehir ve yaşam",
       "restored": false,
-      "description": "Araçlar deneyimini aç."
+      "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "uc-cati/index.html",
-      "title": "Burada yaşam yere sığmaz.",
+      "path": "lif-atolyesi-giris.html",
+      "title": "Kumaş fikrini bul.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "dila-hareket-atolyesi/index.html",
+      "title": "Kumaş hareket eder. Fikir sahneye çıkar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/kumas.html",
+      "title": "Kumaş incelemesi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "kumas.html",
+      "title": "Kumaşa dokun.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "kumas-studyo/index.html",
+      "title": "Kumaşa dokun. Rüzgârı değiştir.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "dila-saten/index.html",
+      "title": "Kumaşa hayat ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "kumas-360/index.html",
+      "title": "Kumaşı hisset.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "ipek-ruzgar/index.html",
+      "title": "Kumaşı çevir. Rüzgârı sen ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "doku-masasi/index.html",
+      "title": "Kumaşı ışığa tut.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "prizma/atolye/index.html",
+      "title": "Kumaşına dokun. İpliğe yaklaş.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "lif-inceleme.html",
+      "title": "Lifi yakından tanı.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "prizma/front2.html",
+      "title": "Mezura-A Bedeni Okur, Mezura-B Hareket &amp; Işık Payını Çizer.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "lif-atolyesi/index.html",
+      "title": "Rengi ekranda gör. Kararı kumaşla ver.",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "rufat.html",
+      "title": "Rufat İsmail Özel Atölye",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "prizma/tasarimci-kapsulu/index.html",
+      "title": "Saf siyah neden yasaktır? Işıkta dene.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "prizma/index.html",
+      "title": "Sekiz konsept. Tek renk imzası.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/front1.html",
+      "title": "Siyah Asla Giymemen Gerekiyor: Yeni Siyahını Bul, 8 Konsepti Senkronla.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "rufat-sumakh/index.html",
+      "title": "Sumakh ipeğine dokun.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/tasarimci.html",
+      "title": "Tasarımcı masası",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "prizma/front4.html",
+      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta: 4 Front + Video + 50.000 Kapı Mührü.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila-rehber.html",
+      "title": "Uygulama rehberi",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "gaia-lounge-farm/index.html",
+      "title": "Çalışırken GAIA büyüsün.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "karbon-ucus/index.html",
+      "title": "Çatıdan uç. Şehre in.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "prizma/front3.html",
+      "title": "Üstündeki Ceketle Evindeki Tablo Aynı Işıkta ve Aynı Akorda Konuşsun.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
