@@ -373,7 +373,7 @@
 
   function val(id, defVal) {
     var el = document.getElementById(id);
-    return el ? el.value : defVal;
+    return String(el ? el.value : defVal).replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
   }
 
   function atolyeHesapla() {
@@ -606,7 +606,7 @@
       sonCiktiNesnesi = { sema: 'gaia.kafe.farm.v1', aktifIstasyon: masa, gunlukSaat: saatF, mekan: mekF, uretilenTflopSaat: Number(tflops), kazanilanDugumGun: Number(yeniDugum) };
     }
 
-    sonucEl.innerHTML = html;
+    sonCiktiNesnesi.durum='SENARYO_TASLAGI'; sonCiktiNesnesi.gercekHizmetOnayi=false; sonucEl.innerHTML='<strong>Varsayımlı örnek senaryo</strong><br>'+html;
     if (svgKutu && svgBag) {
       if (svgStr) {
         svgKutu.innerHTML = svgStr;
