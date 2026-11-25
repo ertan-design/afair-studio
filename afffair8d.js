@@ -207,7 +207,7 @@
       attribute vec2 aUv;
       uniform mat4 uProj;
       uniform mat4 uView;
-      uniform int uPass;
+      uniform float uPass;
       uniform float uScale;
       uniform vec3 uOffset;
       varying vec3 vPos;
@@ -215,7 +215,7 @@
       varying vec2 vUv;
       void main() {
         vec3 p = aPos * uScale + uOffset;
-        if (uPass == 1) {
+        if (uPass > 0.5 && uPass < 1.5) {
           p.x += p.y * 0.28;
           p.z += p.y * 0.22;
           p.y = -1.24;
@@ -230,7 +230,7 @@
       varying vec3 vPos;
       varying vec3 vNrm;
       varying vec2 vUv;
-      uniform int uPass;
+      uniform float uPass;
       uniform vec3 uCam;
       uniform vec3 uColor;
       uniform vec3 uSpec;
@@ -239,12 +239,12 @@
       uniform float uWeave;
       uniform float uTime;
       void main() {
-        if (uPass == 1) {
+        if (uPass > 0.5 && uPass < 1.5) {
           float fade = smoothstep(0.54, 0.08, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
           gl_FragColor = vec4(0.038, 0.041, 0.058, 0.48 * fade);
           return;
         }
-        if (uPass == 3) {
+        if (uPass > 2.5) {
           gl_FragColor = vec4(uSpec, 0.42);
           return;
         }
@@ -278,7 +278,7 @@
 
         // Strict Dila Pure-Black Veto: lifted warm obsidian floor
         col = max(col, vec3(0.056, 0.062, 0.086));
-        float alpha = (uPass == 2) ? 0.26 : 1.0;
+        float alpha = (uPass > 1.5 && uPass < 2.5) ? 0.26 : 1.0;
         gl_FragColor = vec4(pow(clamp(col, 0.0, 1.0), vec3(0.92)), alpha);
       }`;
 
@@ -379,12 +379,12 @@
       const dx = e.clientX - lx, dy = e.clientY - ly;
       lx = e.clientX; ly = e.clientY;
       // Direct 360° camera rotation + momentum inertia + directional wind wave!
-      const dYaw = -dx * 0.0135;
-      const dPitch = dy * 0.0095;
+      const dYaw = -dx * 0.019;
+      const dPitch = dy * 0.011;
       state.yaw += dYaw;
       state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + dPitch));
-      state.velYaw = dYaw * 0.65;
-      state.velPitch = dPitch * 0.55;
+      state.velYaw = dYaw * 0.84;
+      state.velPitch = dPitch * 0.72;
       state.windAngle = Math.atan2(dx, -dy || 1);
       state.gustX = Math.max(-2.5, Math.min(2.5, dx * 0.08));
       state.gustY = Math.max(-2.5, Math.min(2.5, -dy * 0.08));
@@ -464,7 +464,7 @@
       if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
 
       if (state.autoOrbit) {
-        state.yaw += 0.0038;
+        state.yaw += 0.0014;
       } else if (!dragging) {
         state.yaw += state.velYaw;
         state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + state.velPitch));
@@ -517,7 +517,7 @@
       gl.enable(gl.BLEND);
       gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
       gl.depthMask(false);
-      gl.uniform1i(uLoc.uPass, 1);
+      gl.uniform1f(uLoc.uPass, 1.0);
       gl.uniform1f(uLoc.uScale, 1.0);
       gl.uniform3f(uLoc.uOffset, 0, 0, 0);
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
@@ -527,7 +527,7 @@
       gl.vertexAttribPointer(aLoc.pos, 3, gl.FLOAT, false, 0, 0);
       gl.disableVertexAttribArray(aLoc.nrm);
       gl.disableVertexAttribArray(aLoc.uv);
-      gl.uniform1i(uLoc.uPass, 3);
+      gl.uniform1f(uLoc.uPass, 3.0);
       gl.drawArrays(gl.LINES, 0, ringVerts.length / 3);
 
       // Re-enable cloth buffers for main drape + surreal 8D twin veil
@@ -539,7 +539,7 @@
       // Pass 3: Main Couture Pleated Silk Drape
       gl.depthMask(true);
       gl.disable(gl.BLEND);
-      gl.uniform1i(uLoc.uPass, 0);
+      gl.uniform1f(uLoc.uPass, 0.0);
       gl.uniform1f(uLoc.uScale, 1.0);
       gl.uniform3f(uLoc.uOffset, 0, 0, 0);
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
@@ -547,7 +547,7 @@
       // Pass 4: Surreal 8D Translucent Shadow Veil
       gl.enable(gl.BLEND);
       gl.depthMask(false);
-      gl.uniform1i(uLoc.uPass, 2);
+      gl.uniform1f(uLoc.uPass, 2.0);
       gl.uniform1f(uLoc.uScale, 1.09);
       gl.uniform3f(uLoc.uOffset, 0.06 * Math.sin(simTime * 0.9), 0.06, -0.34);
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);

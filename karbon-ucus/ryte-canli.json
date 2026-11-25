@@ -1,8 +1,8 @@
 {
   "sema": "afffair.ryte-canli-kopru.v3",
   "durum": "CANLI_AKTIF",
-  "uretim_ts": "2026-11-25T04:58:40+03:00",
-  "uretim_utc": "2026-11-25T01:58:40Z",
+  "uretim_ts": "2026-11-25T05:05:46+03:00",
+  "uretim_utc": "2026-11-25T02:05:46Z",
   "aciklama": "AFFFAIR Quiet Luxury 8-Kural sahneleri, C:\\ryte canli alt-ajan agi ve GPT/WebMCP tam islevsel kontrol koprusu (sifir yerel kullanici yolu, sifir PII).",
   "aktif_alt_ajanlar": [
     {
@@ -66,10 +66,31 @@
   ],
   "son_odalar": [
     {
+      "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
+      "guncelleme_utc": "2026-11-25T02:01:31Z",
+      "ust_dosya_sayisi": 12,
+      "ust_bayt": 165103,
+      "muhur_var": true
+    },
+    {
+      "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
+      "guncelleme_utc": "2026-11-25T02:01:29Z",
+      "ust_dosya_sayisi": 7,
+      "ust_bayt": 30238,
+      "muhur_var": true
+    },
+    {
       "oda": "00001903_20261124_212500_CLAUDE_MASA_BIRLESIK_ARAYUZ_TEKNIK_SERGISI",
-      "guncelleme_utc": "2026-11-25T01:52:44Z",
+      "guncelleme_utc": "2026-11-25T02:00:40Z",
       "ust_dosya_sayisi": 4,
-      "ust_bayt": 10141,
+      "ust_bayt": 10340,
+      "muhur_var": true
+    },
+    {
+      "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
+      "guncelleme_utc": "2026-11-25T01:59:05Z",
+      "ust_dosya_sayisi": 11,
+      "ust_bayt": 177411,
       "muhur_var": true
     },
     {
@@ -99,20 +120,6 @@
       "ust_dosya_sayisi": 7,
       "ust_bayt": 40401,
       "muhur_var": false
-    },
-    {
-      "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
-      "guncelleme_utc": "2026-11-25T01:33:10Z",
-      "ust_dosya_sayisi": 11,
-      "ust_bayt": 174342,
-      "muhur_var": true
-    },
-    {
-      "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
-      "guncelleme_utc": "2026-11-25T01:32:56Z",
-      "ust_dosya_sayisi": 11,
-      "ust_bayt": 139003,
-      "muhur_var": true
     },
     {
       "oda": "🖤_20261125_GEMINI_DILA_8KURAL_QUIET_LUXURY_360_8D_KUMAS_VE_CANLI_RYTE",
@@ -175,13 +182,6 @@
       "guncelleme_utc": "2026-11-24T22:49:57Z",
       "ust_dosya_sayisi": 9,
       "ust_bayt": 109505,
-      "muhur_var": true
-    },
-    {
-      "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
-      "guncelleme_utc": "2026-11-24T22:48:14Z",
-      "ust_dosya_sayisi": 6,
-      "ust_bayt": 27227,
       "muhur_var": true
     },
     {

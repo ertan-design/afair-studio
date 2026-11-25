@@ -59,11 +59,11 @@
   // Dynamic 3D Woven Silk-Horizon Terrain & Flight Arc Lines
   function buildLines(t, route) {
     const L = [];
-    for (let z = -2.4; z <= 2.4; z += 0.32) {
+    for (let z = -2.4; z <= 2.4; z += 0.36) {
       for (let x = -2.4; x < 2.4; x += 0.24) {
-        const y1 = -1.06 + Math.sin(x * 1.8 + t * 1.9) * 0.05 + Math.cos(z * 1.7 - t * 1.3) * 0.05;
+        const y1 = -1.06 + Math.sin(x * 1.6 + t * 0.9) * 0.025 + Math.cos(z * 1.5 - t * 0.7) * 0.025;
         const nx = x + 0.24;
-        const y2 = -1.06 + Math.sin(nx * 1.8 + t * 1.9) * 0.05 + Math.cos(z * 1.7 - t * 1.3) * 0.05;
+        const y2 = -1.06 + Math.sin(nx * 1.6 + t * 0.9) * 0.025 + Math.cos(z * 1.5 - t * 0.7) * 0.025;
         L.push(x, y1, z, nx, y2, z);
       }
     }
@@ -251,11 +251,11 @@
       if (!down) return;
       const dx = e.clientX - lx, dy = e.clientY - ly;
       lx = e.clientX; ly = e.clientY;
-      const dYaw = -dx * 0.0135;
-      const dPitch = dy * 0.0085;
+      const dYaw = -dx * 0.0195;
+      const dPitch = dy * 0.0105;
       st.yaw += dYaw;
       st.pitch = Math.max(-0.25, Math.min(1.15, st.pitch + dPitch));
-      st.velYaw = dYaw * 0.65;
+      st.velYaw = dYaw * 0.84;
       st.steerX = Math.max(-1.35, Math.min(1.35, st.steerX + dx * 0.009));
       st.steerY = Math.max(-0.65, Math.min(0.85, st.steerY - dy * 0.007));
       syncUI();
@@ -305,13 +305,13 @@
 
   let tClock = 0;
   function render() {
-    tClock += 0.022;
-    st.progress += 0.0042;
+    tClock += 0.020;
+    st.progress += 0.0026;
     if (st.progress > 0.98) st.progress = 0.04;
     if (!down) {
       st.steerX *= 0.985;
       st.steerY *= 0.985;
-      if (st.autoOrbit) st.yaw += 0.0032;
+      if (st.autoOrbit) st.yaw += 0.0009;
       else { st.yaw += st.velYaw; st.velYaw *= 0.92; }
     }
 
