@@ -1,1 +1,53 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Dila · Kumaşa Dokun</title><meta name="description" content="Kumaşı döndür. Rüzgârı, dalgayı ve ışığı sen yönet."><link rel="stylesheet" href="./dila-saten/saten.css"><script src="./dila-saten/saten.js" defer></script></head><body><header><a href="/" class="brand">AFAIR / STUDIO <span>· DİLA</span></a><nav><a href="#kontrol">Dokun</a><a href="/lif-atolyesi/">Malzemeyi tanı</a><a href="https://www.afair.live/yasam-destegi/?konu=terzi">Terziyle görüş ↗</a><a href="/dila-dokunus/">Kumaşa dokun · 3B stüdyo</a></nav></header><main><section class="hero"><div class="copy"><p class="eyebrow">SESSİZ BİR İDDİA.</p><h1>Kumaşa<br><em>hayat ver.</em></h1><p>Döndür. Rüzgârı değiştir.<br>Işığı kendine çevir.</p><a class="cta" href="#kontrol">Sen yönet ↓</a></div><div class="stage"><canvas id="cloth" tabindex="0" aria-label="Üç boyutlu dalgalanan kumaş. Sürükleyerek veya aşağıdaki açı kontrolüyle 360 derece döndür."></canvas><div class="stage-caption"><span>Sürükle · Döndür</span><button id="motion" type="button" aria-pressed="true">Durdur</button></div><p id="fallback" hidden>3B görüntü açılamadı. Ayarlarını seçip tasarım kartını yine indirebilirsin.</p></div></section><section id="kontrol" class="controls" aria-label="Kumaş kontrolleri"><div class="control-head"><h2>Hareket senin.</h2><div class="modes"><button id="dream" type="button" aria-pressed="false">Rüya modu</button><button id="reset" type="button">Başa dön</button></div></div><div class="sliders"><label>Açı <output id="angle-value">0°</output><input id="angle" type="range" min="0" max="360" value="0" step="1"></label><label>Rüzgâr <output id="wind-value">35</output><input id="wind" type="range" min="0" max="100" value="35"></label><label>Dalga <output id="wave-value">45</output><input id="wave" type="range" min="0" max="100" value="45"></label><label>Işık <output id="light-value">45°</output><input id="light" type="range" min="0" max="360" value="45"></label></div><div class="swatches" role="group" aria-label="Kumaş renk niyeti"><button type="button" data-color="blue" aria-pressed="true">Gece mavisi</button><button type="button" data-color="aqua" aria-pressed="false">Akuamarin</button><button type="button" data-color="apricot" aria-pressed="false">Kayısı</button><button type="button" data-color="coral" aria-pressed="false">Mercan</button></div><p id="state" role="status" aria-live="polite">Kumaş hazırlanıyor.</p></section><section class="next"><div><p class="eyebrow">EKRANDAN HAYATA.</p><h2>Gör. Hisset.<br>Sonra seç.</h2><p>Bu bir kumaş hareketi simülasyonu. Dokuyu ve rengi gerçek numuneyle birlikte değerlendir.</p></div><div class="links"><button id="export" type="button">Tasarım kartını indir ↓</button><a href="/lif-atolyesi/">Lif ve dokumayı karşılaştır ↗</a><a href="/dila-hareket-atolyesi/">Dila filmlerini izle ↗</a><a href="https://www.xn--ataehirmodern-ktc.com/uc-yon/">Evinden çık. Şehri keşfet. ↗</a></div></section></main><footer><span>AFAIR · DİLA</span><a href="./dila-saten/agent-manifest.json">GPT çalışma kartı · JSON ↗</a><a href="/onceki-giris-0f65ba6d63.html">Önceki deneyim ↗</a></footer></body></html>
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kumaşı 360° çevir. Rüzgârı, ışığı ve dokuyu değiştir. AFAIR Studio’nun etkileşimli kumaş sahnesi.">
+<title>AFAIR Studio · Kumaşı hisset</title>
+<link rel="stylesheet" href="/kumas-360/kumas.b95c75f807.css"><script src="/kumas-360/kumas.1a8d96aa32.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="mast"><a class="mark" href="https://www.afair.studio/">AFAIR <span>STUDIO</span></a><nav aria-label="Ana menü"><a href="#dokuma">Kumaş</a><a href="https://www.afair.studio/dila/">Dila</a><a href="https://www.afair.studio/dila-hareket-atolyesi/">Filmler</a><a href="/dilaemre-onceki.html">Lif rehberi</a></nav></header>
+<main id="ana">
+<section class="hero" aria-labelledby="baslik">
+  <div class="intro">
+    <p class="tone">DOKUMA ATÖLYESİ</p>
+    <h1 id="baslik">Kumaşı <em>hisset.</em></h1>
+    <p>Kumaşı döndür. Rüzgârı aç. Işığı değiştir.</p>
+    <a class="primary" href="#dokuma">Kumaşı keşfet ↓</a>
+  </div>
+  <div id="dokuma" class="work" aria-labelledby="scene-title">
+    <h2 id="scene-title" class="sr">360 derece kumaş sahnesi</h2>
+    <div class="stage"><canvas id="kumas" tabindex="0" aria-label="Kumaş sahnesi. Ok tuşları döndürür, artı ve eksi yakınlaştırır."></canvas><img id="yedek" src="/kumas-360/dimi.webp" alt="Gerçek dimi dokuma kumaşın yakın çekimi" width="960" height="830" hidden>
+    <div class="stage-badge"><strong id="material-name">Dimi</strong><output id="degree" aria-label="Yatay kamera açısı">0°</output></div></div>
+    <div class="controls" aria-label="Sahne kumandaları">
+      <button id="sol" type="button" title="Sola çevir" aria-label="Sola çevir">←</button>
+      <button id="sag" type="button" title="Sağa çevir" aria-label="Sağa çevir">→</button>
+      <button id="dur" class="play" type="button" aria-pressed="false">Duraklat</button>
+      <button id="basa" type="button">Açıyı sıfırla</button>
+      <label for="ruzgar">Rüzgâr <output id="ruzgar-deger" for="ruzgar">45</output></label><input id="ruzgar" type="range" min="0" max="100" value="45">
+    </div>
+    <details class="advanced">
+      <summary id="pantone-tezgah">Doku ve ışık ayarları</summary>
+      <div class="settings">
+        <label>Doku<select id="malzeme"><option value="dimi">Dimi · fotoğraf</option><option value="denim">Kot lifi · fotoğraf</option><option value="ipek">İpek · tasarım</option></select></label>
+        <label>Rüzgâr yönü<select id="yon"><option value="1">Soldan sağa</option><option value="-1">Sağdan sola</option></select></label>
+        <label>Işık <output id="isik-deger" for="isik">Loş</output><input id="isik" type="range" min="0" max="100" value="36"></label>
+        <label>Yakınlık<input id="yakin" type="range" min="0" max="100" value="48"></label>
+        <label>Biçim<select id="askilar"><option value="aski">Asılı kumaş</option><option value="kanat">Kanat</option></select></label>
+        <label>Tempo<input id="tempo" type="range" min="25" max="100" value="75"></label>
+      </div>
+    </details>
+    <p class="feedback" id="durum" role="status">Sahne hazırlanıyor.</p>
+  </div>
+</section>
+<section class="notes" aria-labelledby="niyet">
+  <div><h2 id="niyet">Aynı kumaş, başka ışık.</h2><p>Terziye gitmeden önce dokuyu ve kumaşın hareketini karşılaştır. Rüzgârın değeri sahne ayarıdır.</p></div>
+  <div><a href="https://www.afair.studio/dila/#bu-gece">Dila ile provaya geç ↗</a><a id="ucus-sahnesi" href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/">GAIA ile şehri gör ↗</a><a href="https://www.afair.studio/lif-atolyesi/">Lif ve numune kayıtları ↗</a></div>
+</section>
+<details class="sources"><summary>Doku kaynakları</summary><p>İki gerçek kumaş fotoğrafı yüzeye uygulanıyor. Döküm, gölge ve rüzgâr simülasyondur. Fiziksel Pantone veya gramaj ölçümü bu ekranda yapılmaz.</p>
+<ul><li>Dimi dokuma, SMcCandlish. Boyut ve dosya biçimi değişti. <a href="https://commons.wikimedia.org/wiki/File:Tartan_cloth_closeup.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></li><li>Kot lifi, Rickfrombaltimore. Boyut küçültüldü. <a href="https://commons.wikimedia.org/wiki/File:Denim_Fibers.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li></ul>
+</details>
+</main>
+<footer><span>AFAIR STUDIO</span><a href="https://www.afair.studio/lif-atolyesi/">Lif Atölyesi</a></footer>
+</body></html>
