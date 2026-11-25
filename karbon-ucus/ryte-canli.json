@@ -1,8 +1,8 @@
 {
   "sema": "afffair.ryte-canli-kopru.v3",
   "durum": "CANLI_AKTIF",
-  "uretim_ts": "2026-11-25T05:15:02+03:00",
-  "uretim_utc": "2026-11-25T02:15:02Z",
+  "uretim_ts": "2026-11-25T05:17:57+03:00",
+  "uretim_utc": "2026-11-25T02:17:57Z",
   "aciklama": "AFFFAIR Quiet Luxury 8-Kural sahneleri, C:\\ryte canli alt-ajan agi ve GPT/WebMCP tam islevsel kontrol koprusu (sifir yerel kullanici yolu, sifir PII).",
   "aktif_alt_ajanlar": [
     {
@@ -67,21 +67,21 @@
   "son_odalar": [
     {
       "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
-      "guncelleme_utc": "2026-11-25T02:11:16Z",
+      "guncelleme_utc": "2026-11-25T02:15:26Z",
       "ust_dosya_sayisi": 11,
-      "ust_bayt": 178344,
+      "ust_bayt": 178825,
       "muhur_var": true
     },
     {
       "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
-      "guncelleme_utc": "2026-11-25T02:11:02Z",
+      "guncelleme_utc": "2026-11-25T02:15:11Z",
       "ust_dosya_sayisi": 12,
-      "ust_bayt": 164808,
+      "ust_bayt": 164977,
       "muhur_var": true
     },
     {
       "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
-      "guncelleme_utc": "2026-11-25T02:10:50Z",
+      "guncelleme_utc": "2026-11-25T02:15:02Z",
       "ust_dosya_sayisi": 7,
       "ust_bayt": 30238,
       "muhur_var": true

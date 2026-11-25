@@ -412,10 +412,10 @@
     if (e.key === 'ArrowDown' || e.key === 's') { state.pitch = Math.max(-1.12, state.pitch - 0.08); }
   });
 
-  function selectFabric(idx) {
+  function selectFabric(idx, withPulse = true) {
     state.fabricIdx = Math.max(0, Math.min(FABRICS.length - 1, Number(idx) || 0));
     document.querySelectorAll('.sw-dot').forEach((d, i) => d.classList.toggle('on', i === state.fabricIdx));
-    injectWave(0, 0.1, 0.30);
+    if (withPulse) injectWave(0, 0.1, 0.28);
     syncStateJson();
   }
 
@@ -631,7 +631,7 @@
   }
 
   // Pre-settle couture drape equilibrium so Frame 1 opens in poised fluid silk folds
-  for (let w = 0; w < 90; w++) stepPhysics();
-  selectFabric(state.fabricIdx);
+  for (let w = 0; w < 180; w++) stepPhysics();
+  selectFabric(state.fabricIdx, false);
   requestAnimationFrame(render);
 })();
