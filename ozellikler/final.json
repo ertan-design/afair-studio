@@ -3,9 +3,63 @@
   "site": "afair-studio",
   "origin": "https://www.afair.studio",
   "homepage_preserved": true,
-  "entry_count": 55,
-  "restored_count": 6,
+  "entry_count": 61,
+  "restored_count": 12,
   "entries": [
+    {
+      "path": "final/kroma-aynasi/index.html",
+      "title": "Pantone & Kelvin Kroma Aynası",
+      "description": "Günışığı sıcaklığına göre kumaş alt-tonunu ve ΔE kontrastını ölçen renk laboratuvarı.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/kroma-aynasi/index.html",
+      "sha256": "412aef4f19323c77adf5727f44fdb58e75de104c50e2517ec1426f8a65c5f0c9"
+    },
+    {
+      "path": "final/dila-kimlik-arsivi/index.html",
+      "title": "Dila Nedir? · PRXS Kimlik Arşivi",
+      "description": "dila_arsiv içinden kurtarılan orijinal Dila × PRXS görsel ve kavramsal kimlik sahnesi.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/dila-kimlik-arsivi/index.html",
+      "sha256": "2eea060ee29eed00a0597210593d70e473891908b081b34397468b8874834eda"
+    },
+    {
+      "path": "final/sekiz-konsept-kapasite/index.html",
+      "title": "8 Eşzamanlı Prompt & Kapasite",
+      "description": "Dila'nın kapasite ve ikinci-derece doğruluk sorusunu yanıtlayan 8-konsept komuta masası.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/sekiz-konsept-kapasite/index.html",
+      "sha256": "98c575e1381c969317a35b09cd55eca11224bd7f75abbc80a057cc6bff345d94"
+    },
+    {
+      "path": "final/dort-front-senkron/index.html",
+      "title": "Dila 4-Front Canlı Senkron",
+      "description": "Galeri, iki-mezura, kroma ve podyum önyüzlerini canlı senkronlayan sıçrama panosu.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/dort-front-senkron/index.html",
+      "sha256": "0cd0d4fdc39f44919a299ec841c45041587960e4995ca9f18d57544336b26f2d"
+    },
+    {
+      "path": "final/wildcard-alt-domain/index.html",
+      "title": "Sıfır-Klasör Alt-Domain Motoru",
+      "description": "Her tasarımcıya ve bina düğümüne tek motorla sınırsız alt-alan adı açan yönlendirici.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/wildcard-alt-domain/index.html",
+      "sha256": "df2ac24edde28f4a05a0c47ca6782e3d940a9c5f7eeaa96805e2649e34302f20"
+    },
+    {
+      "path": "final/atolye-8d-ses-ucus/index.html",
+      "title": "6-Pantone TCX 8B İpek & Ses",
+      "description": "Kurtarılan tam sürüm 360° ipek dokuma, Sürreal 8B atmosfer, WebAudio ses ve kanat uçuşu.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/final/atolye-8d-ses-ucus/index.html",
+      "sha256": "dbd21f62967ff3f01d26de2159043443e21605d9de921e673d1dc438a7820568"
+    },
     {
       "path": "ozellikler/dila-atolyesi/index.html",
       "title": "Dila renk ve prova atölyesi",

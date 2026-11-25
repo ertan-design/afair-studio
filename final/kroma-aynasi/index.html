@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DILA FRONT-03 · Anti-Siyah Kromatik Otorite ve Kelvin Optik Aynasi</title>
+
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar"><span class="kf-title">AFFFAIR STUDIO · Pantone TCX &amp; Kelvin Sıfır-Siyah Aynası</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="/">← Ana Sayfa</a><a href="/ozellikler/">Tüm Özellikler Dizini</a></div></div>
+<div class="wrap">
+  
+  <div class="dila-nav">
+    <div><strong>DİLA × AFFAIR 8-KONSEPT SENKRON AĞI</strong></div>
+    <div class="dila-nav-links"><a href="/dila-front1" class="">Front-01: AI Sanat Galerisi</a><a href="/dila-front2" class="">Front-02: İki Mezura & Terzi</a><a href="/dila-front3" class="active">Front-03: Anti-Siyah Kroma Aynası</a><a href="/dila-front4" class="">Front-04: 8-Konsept & 8-Prompt Komuta</a></div>
+  </div>
+  <header>
+    <div>
+      <div class="eyebrow">RYTE · KROMA OTORİTESİ · "SİYAH ASLA GİYMEMEN GEREKİYOR" · FRONT 3 / 4</div>
+      <h1>AI Renk Analizi, ΔE Kontrast &amp; Optik Gölge Kırılımı Aynası</h1>
+    </div>
+    <span class="pill" id="f3Verdict"></span>
+  </header>
+
+  <div class="grid-2">
+    <div class="card">
+      <h2>1. Cilt Alt Tonu &amp; Gün Işığı (Kelvin) Kalibrasyonu</h2>
+      <p class="sub">Alt ton seçildiğinde sistem saf siyahı (<code>#0e1017</code>) optik gerekçesiyle mühürler ve 8 konsepte yeni "İmza Koyu Ton" atar.</p>
+
+      <label class="ctrl"><span>Cilt Alt Tonu ve Damar Kontrastı</span></label>
+      <select id="undertoneSel">
+        <option value="sicak_altin">Sıcak Altın &amp; Zeytin Damar &rarr; Yanık Espreso (#241914)</option>
+        <option value="notr_fildisi">Nötr Fildişi &amp; Kehribar Göz &rarr; Oksit Mürdüm (#2E1622)</option>
+        <option value="serin_porselen">Serin Porselen &amp; Yüksek Kontrast &rarr; Gece Çiviti (#162238)</option>
+        <option value="toprak_bronz">Toprak Bronz &amp; Sıcak Kontrast &rarr; Derin Çam (#182923)</option>
+      </select>
+
+      <label class="ctrl"><span>Mekan / Galeri Işık Sıcaklığı (Kelvin)</span><strong id="kelVal"></strong></label>
+      <input type="range" id="kelIn" min="2700" max="5600" step="100" value="3400">
+
+      <div class="swatch-row" id="swatches"></div>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" id="lockAllBtn">Bu Renk Hükmünü Tüm 8 Konsepte Kilitle</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. Optik Kanıt: Saf Siyah (#0e1017) vs Dila İmza Koyu Tonu</h2>
+      <p class="sub">Sol yarıda saf siyahın çene altında oluşturduğu sert gri kırılım; sağ yarıda imza tonun sıcak yansıması.</p>
+      <canvas id="opticCanvas" width="520" height="230" style="width:100%;border-radius:8px;border:1px solid var(--border)"></canvas>
+      <div style="margin-top:10px;font-family:monospace;font-size:12px" id="deltaNote"></div>
+    </div>
+  </div>
+
+  <h2 style="font-size:15px;font-weight:normal;margin-bottom:6px">Canlı Sıçrama Günlüğü</h2>
+  <div class="log-box" id="logBox"></div>
+</div>
+
+</body>
+</html>

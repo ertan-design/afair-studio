@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DILA FRONT-01 · Affair Studio AI Sanat Galerisi ve Sicrama Vitrini</title>
+
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar"><span class="kf-title">AFFFAIR STUDIO · Dila 4-Front Senkron &amp; AI Sanat Galerisi Sıçraması</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="/">← Ana Sayfa</a><a href="/ozellikler/">Tüm Özellikler Dizini</a></div></div>
+<div class="wrap">
+  
+  <div class="dila-nav">
+    <div><strong>DİLA × AFFAIR 8-KONSEPT SENKRON AĞI</strong></div>
+    <div class="dila-nav-links"><a href="/dila-front1" class="active">Front-01: AI Sanat Galerisi</a><a href="/dila-front2" class="">Front-02: İki Mezura & Terzi</a><a href="/dila-front3" class="">Front-03: Anti-Siyah Kroma Aynası</a><a href="/dila-front4" class="">Front-04: 8-Konsept & 8-Prompt Komuta</a></div>
+  </div>
+  <header>
+    <div>
+      <div class="eyebrow">RYTE · DİLA × AFAIR.STUDIO &amp; AFAIR.LIVE · FRONT 1 / 4</div>
+      <h1>"Affair'dan Dila Ben" — Yaşayan AI Sanat Galerisi &amp; Sıçrama Vitrini</h1>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span class="pill" id="lockBadge"></span>
+      <span class="pill" id="jumpBadge"></span>
+    </div>
+  </header>
+
+  <div class="grid-2">
+    <div class="card">
+      <h2>1. Çekirdek Sıçrama Kontrolleri (4 Front Senkron)</h2>
+      <p class="sub">Buradaki her hamle <code>localStorage</code> ve <code>BroadcastChannel</code> ile diğer 3 Front'u ve 8 konsepti aynı anda değiştirir.</p>
+      <label class="ctrl"><span>Mezura-1 (Beden Oran İndeksi)</span><strong id="m1Txt"></strong></label>
+      <input type="range" id="m1Range" min="145" max="185" value="162">
+      <label class="ctrl"><span>Mezura-2 (Duvar &amp; Bakış Ölçeği cm)</span><strong id="m2Txt"></strong></label>
+      <input type="range" id="m2Range" min="160" max="420" value="240">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+        <button class="btn" id="btnBlack"></button>
+        <button class="btn sec" id="btnCopyJsonl">Durumu (.jsonl) Kopyala</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. afair.studio — AI Yaşayan Kürasyon (Tabloya Tıkla &rarr; Terziye Sıçrat)</h2>
+      <p class="sub">Tabloya tıkladığında eserin dokusu Front-02'deki terzi kalıbına tersine sıçrama olarak işlenir.</p>
+      <div class="grid-3" id="artGrid" style="margin-bottom:0"></div>
+    </div>
+  </div>
+
+  <h2 style="font-size:18px;font-weight:normal;margin-bottom:10px">3. 1 Ana + 7 Yan = 8 Senkronize Konsept Durumu</h2>
+  <div class="grid-4" id="cGrid"></div>
+
+  <h2 style="font-size:15px;font-weight:normal;margin-bottom:6px">Canlı Sıçrama Günlüğü</h2>
+  <div class="log-box" id="logBox"></div>
+</div>
+
+</body>
+</html>

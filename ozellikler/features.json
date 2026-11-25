@@ -2,6 +2,48 @@
   "site": "afair-studio",
   "entries": [
     {
+      "path": "final/kroma-aynasi/index.html",
+      "title": "Pantone & Kelvin Kroma Aynası",
+      "description": "Günışığı sıcaklığına göre kumaş alt-tonunu ve ΔE kontrastını ölçen renk laboratuvarı.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/dila-kimlik-arsivi/index.html",
+      "title": "Dila Nedir? · PRXS Kimlik Arşivi",
+      "description": "dila_arsiv içinden kurtarılan orijinal Dila × PRXS görsel ve kavramsal kimlik sahnesi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/sekiz-konsept-kapasite/index.html",
+      "title": "8 Eşzamanlı Prompt & Kapasite",
+      "description": "Dila'nın kapasite ve ikinci-derece doğruluk sorusunu yanıtlayan 8-konsept komuta masası.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/dort-front-senkron/index.html",
+      "title": "Dila 4-Front Canlı Senkron",
+      "description": "Galeri, iki-mezura, kroma ve podyum önyüzlerini canlı senkronlayan sıçrama panosu.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/wildcard-alt-domain/index.html",
+      "title": "Sıfır-Klasör Alt-Domain Motoru",
+      "description": "Her tasarımcıya ve bina düğümüne tek motorla sınırsız alt-alan adı açan yönlendirici.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/atolye-8d-ses-ucus/index.html",
+      "title": "6-Pantone TCX 8B İpek & Ses",
+      "description": "Kurtarılan tam sürüm 360° ipek dokuma, Sürreal 8B atmosfer, WebAudio ses ve kanat uçuşu.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "ozellikler/dila-atolyesi/index.html",
       "title": "Dila renk ve prova atölyesi",
       "category": "Geri getirilen",
