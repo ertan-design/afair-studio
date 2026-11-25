@@ -8,7 +8,7 @@
     pitch: 0.18,
     velYaw: 0.0,
     velPitch: 0.0,
-    zoom: 3.25,
+    zoom: 3.88,
     windStrength: 1.0,
     windAngle: 0.62,
     surreal8D: 0.85,
@@ -119,10 +119,10 @@
 
   let simTime = 0;
   function stepPhysics() {
-    simTime += 0.018;
-    const wMag = 0.0022 * (0.35 + state.windStrength);
-    const wx = Math.sin(state.windAngle + Math.sin(simTime * 0.6) * 0.35) * wMag;
-    const wz = Math.cos(state.windAngle + Math.cos(simTime * 0.5) * 0.30) * wMag;
+    simTime += 0.015;
+    const wMag = 0.00085 * (0.35 + state.windStrength);
+    const wx = Math.sin(state.windAngle + Math.sin(simTime * 0.5) * 0.30) * wMag;
+    const wz = Math.cos(state.windAngle + Math.cos(simTime * 0.4) * 0.25) * wMag;
 
     for (let y = 0; y < N; y++) {
       const v = y / (N - 1);
@@ -137,18 +137,18 @@
           continue;
         }
 
-        const vx = (pos[ix] - old[ix]) * 0.976;
-        const vy = (pos[ix + 1] - old[ix + 1]) * 0.976;
-        const vz = (pos[ix + 2] - old[ix + 2]) * 0.976;
+        const vx = (pos[ix] - old[ix]) * 0.968;
+        const vy = (pos[ix + 1] - old[ix + 1]) * 0.968;
+        const vz = (pos[ix + 2] - old[ix + 2]) * 0.968;
         old[ix] = pos[ix]; old[ix + 1] = pos[ix + 1]; old[ix + 2] = pos[ix + 2];
 
-        const travelWave = Math.sin(pos[ix] * 2.5 - simTime * 2.4 + pos[ix + 1] * 1.6)
-                         + 0.5 * Math.cos(pos[ix + 1] * 2.8 - simTime * 1.9 - pos[ix] * 1.3);
+        const travelWave = Math.sin(pos[ix] * 2.4 - simTime * 2.1 + pos[ix + 1] * 1.5)
+                         + 0.5 * Math.cos(pos[ix + 1] * 2.6 - simTime * 1.6 - pos[ix] * 1.2);
         const billow = (0.25 + 0.85 * v) * travelWave * wMag;
 
-        pos[ix] += vx + wx * v + state.gustX * v * 0.006;
-        pos[ix + 1] += vy - 0.0018 + state.gustY * v * 0.004;
-        pos[ix + 2] += vz + wz * v + billow * 1.25;
+        pos[ix] += vx + wx * v + state.gustX * v * 0.008;
+        pos[ix + 1] += vy - 0.0012 + state.gustY * v * 0.005;
+        pos[ix + 2] += vz + wz * v + billow * 1.35;
       }
     }
     state.gustX *= 0.90;
@@ -251,9 +251,9 @@
         }
         vec3 N = normalize(vNrm);
         if (!gl_FrontFacing) N = -N;
-        float wx = sin(vUv.x * uWeave * 6.28318);
-        float wy = sin(vUv.y * uWeave * 6.28318);
-        N = normalize(N + vec3(wx * 0.095, wy * 0.095, 0.0));
+        float wx = sin(vUv.x * uWeave * 14.0);
+        float wy = sin(vUv.y * uWeave * 14.0);
+        N = normalize(N + vec3(wx * 0.028, wy * 0.028, 0.0));
 
         vec3 V = normalize(uCam - vPos);
         vec3 L1 = normalize(vec3(1.55, 2.15, 1.75));
@@ -465,7 +465,7 @@
       if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
 
       if (state.autoOrbit) {
-        state.yaw += 0.0014;
+        state.yaw += 0.00075;
       } else if (!dragging) {
         state.yaw += state.velYaw;
         state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + state.velPitch));
@@ -630,6 +630,8 @@
     } catch (_) {}
   }
 
+  // Pre-settle couture drape equilibrium so Frame 1 opens in poised fluid silk folds
+  for (let w = 0; w < 90; w++) stepPhysics();
   selectFabric(state.fabricIdx);
   requestAnimationFrame(render);
 })();
