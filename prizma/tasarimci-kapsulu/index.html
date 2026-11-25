@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR STUDIO · Tasarımcı Kapsülü & Yasak Siyah Kelvin Masası</title>
+  <meta name="description" content="AFAIR Studio ikinci bağımsız alt sayfası: 2700K–5600K galeri ışık spektrumu, saf #000000 siyah yasağı kanıtı ve tasarımcı kapsül kartı.">
+  <link rel="stylesheet" href="./kapsul.css">
+  <script defer src="./kapsul.js"></script>
+</head>
+<body>
+  <header class="cap-head">
+    <strong>AFAIR STUDIO · KELVİN &amp; KAPSÜL</strong>
+    <span>Alt-Sayfa #2 · Sıfır Çapraz Dosya</span>
+  </header>
+
+  <main class="cap-wrap">
+    <section class="cap-hero">
+      <p class="kicker">DİLA RENK EPİSTEMOLOJİSİ · 2700K–5600K</p>
+      <h1>Saf siyah neden yasaktır? Işıkta dene.</h1>
+      <p class="sub">Düz #000000 ekran ışığını yutar ve kumaşın dokusunu öldürür. Kelvin sürgüsünü oynat; organik koyu tonların ışık altında nasıl nefes aldığını canlı gör.</p>
+    </section>
+
+    <section class="lab-grid">
+      <div class="canvas-card">
+        <canvas id="kelvin-canvas" width="840" height="440" aria-label="Kelvin ışık altında kumaş ton karşılaştırma tuvali"></canvas>
+        <div class="meter-row">
+          <span id="kelvin-read">3200 K · Sıcak Galeri Spotu</span>
+          <span id="delta-read">Kontrast Derinliği: Canlı</span>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <h2>Işık &amp; Alt-Domain Kontrolü</h2>
+        <label for="kelvin-slider">Işık Sıcaklığı (Kelvin) <strong id="kelvin-val">3200 K</strong></label>
+        <input id="kelvin-slider" type="range" min="2700" max="5600" step="50" value="3200">
+
+        <div class="preset-row" id="kelvin-presets">
+          <button type="button" class="kbtn is-on" data-k="2700">2700K Mum</button>
+          <button type="button" class="kbtn" data-k="3200">3200K Galeri</button>
+          <button type="button" class="kbtn" data-k="4400">4400K Atölye</button>
+          <button type="button" class="kbtn" data-k="5600">5600K Gün Işığı</button>
+        </div>
+
+        <label for="sub-input">Tasarımcı Alt-Alan Adı Taslağı</label>
+        <div class="sub-box">
+          <input id="sub-input" type="text" maxlength="24" value="rufat" aria-label="Tasarımcı kısa adı">
+          <span>.afair.studio</span>
+        </div>
+        <p class="sub-preview" id="sub-preview">Önizleme adresi: rufat.afair.studio (yerel taslak; gerçek DNS/hesap tahsisi arka uç ister)</p>
+
+        <div class="rule-list" id="rule-list"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
