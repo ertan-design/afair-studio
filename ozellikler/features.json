@@ -434,6 +434,27 @@
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "final-terazi/karbon-atolye-v2/index.html",
+      "title": "Dila atölye v2",
+      "description": "İki mezura ölçüsü ve renk seçimiyle sıçrayan AI galeri; seçimin bir sonraki eseri belirler.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/uzamsal-vr-galeri/index.html",
+      "title": "3B uzamsal VR galeri",
+      "description": "Kapılarında Dila filmleri oynayan 3B galeri; VR stereo görünüm ve 6 palet.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/quiet-luxury-360/index.html",
+      "title": "Quiet luxury 360° kumaş",
+      "description": "Loş ışıkta 360° çevrilen rüzgârlı kumaş; rüzgâr ve ışığı sen ayarla.",
+      "category": "Geri getirilen",
+      "restored": true
     }
   ]
 }

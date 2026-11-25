@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-fo1]').forEach(el=>el.addEventListener('click',function(event){
+setFabric('silk',this)
+}));
+  document.querySelectorAll('[data-fo2]').forEach(el=>el.addEventListener('click',function(event){
+setFabric('emerald',this)
+}));
+  document.querySelectorAll('[data-fo3]').forEach(el=>el.addEventListener('click',function(event){
+setFabric('ivory',this)
+}));
+});

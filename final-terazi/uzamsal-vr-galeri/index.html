@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFAIR.STUDIO × DİLA — 3D Spatial VR Galeri & Video Motoru</title>
+
+<script src="olay.js" defer></script>
+<link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="ft-nav.css">
+</head>
+<body class="siyah-yasak">
+<a class="ft-geri" href="/">← Ana sayfa</a>
+<canvas id="bgCanvas"></canvas>
+
+<div class="hud-top">
+  <div class="hud-group">
+    <span class="pill live">● 3D SPATIAL VR · RTX 3090 VIDEO API</span>
+    <button class="pill active" data-fo1="">🎨 Galeri Art</button>
+    <button class="pill" data-fo2="">🧵 İki Mezura</button>
+    <button class="pill" data-fo3="">⚡ Next-Leap</button>
+  </div>
+  <div class="hud-group">
+    <button class="pill active" id="btnNoBlack" data-fo4="">✨ Siyah Yasak (Zümrüt)</button>
+    <button class="pill" id="btnTerra" data-fo5="">🏛️ Terracotta Galeri</button>
+    <button class="pill" id="btnVR" data-fo6="">🥽 VR Stereo</button>
+  </div>
+</div>
+
+<div class="viewport" id="viewport">
+  <div class="world" id="world">
+    <div class="floor"></div>
+    <div class="mezura-ring"></div>
+    <div class="mezura-ring r2"></div>
+
+    <div class="holo-plaque">
+      <h1>AFAIR.STUDIO × DİLA</h1>
+      <p>3D SANAL GERÇEKLİK ATÖLYESİ · YAPTIKLARIN SONRAKİ SIÇRAMAYI DİKER</p>
+    </div>
+
+    <div class="monolith" id="m-left" data-fo7="">
+      <video id="vid-left" src="/videos/dila_01_iki_mezura_atelier.mp4" autoplay loop muted playsinline></video>
+      <div class="caption">
+        <div><div class="tag">AFAIR.LIVE · KAPI 01</div><div>İki Mezura Eve Geliyor · Dila Renk Analizi</div></div>
+        <span>1280×720</span>
+      </div>
+    </div>
+
+    <div class="monolith" id="m-center" data-fo8="">
+      <video id="vid-center" src="/videos/dila_02_ai_galeri_art.mp4" autoplay loop muted playsinline></video>
+      <div class="caption">
+        <div><div class="tag">AFAIR.STUDIO · KAPI 02</div><div>AI Galeri Art · Kişisel Palet Kürasyonu</div></div>
+        <span>RTX 3090 NVENC</span>
+      </div>
+    </div>
+
+    <div class="monolith" id="m-right" data-fo9="">
+      <video id="vid-right" src="/videos/dila_03_next_leap_podyum.mp4" autoplay loop muted playsinline></video>
+      <div class="caption">
+        <div><div class="tag">NEXT-LEAP · KAPI 03</div><div>Sıçrama Podyumu · 8 Konsept Senkron</div></div>
+        <span>30 FPS MP4</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hint">Fareyle sürükle: 360° Bak · Tekerlek / W-A-S-D: 3D İlerle</div>
+
+<div class="hud-bottom">
+  <input id="promptInput" value="Dila Affair zümrüt ipek couture podyum, siyah yasak, sıcak altın ışık" placeholder="Yeni Dila videosu için prompt yaz...">
+  <select id="presetSel">
+    <option value="atelier">Atölye (İki Mezura)</option>
+    <option value="gallery">AI Galeri Art</option>
+    <option value="podium">3D Podyum</option>
+  </select>
+  <button class="btn-gen" id="btnGen" data-fo10="">🎬 Tek Tetik Video Üret</button>
+  <div id="apiStatus">
+    <span id="statusLeft">API Hazır: /api/v1/generate (Higgsfield uyumlu · Yerel RTX 3090 NVENC)</span>
+    <span id="statusRight">3D FPS: 60</span>
+  </div>
+</div>
+
+<script src="kod-1.js"></script>
+</body>
+</html>

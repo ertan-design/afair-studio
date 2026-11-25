@@ -1,0 +1,32 @@
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-fo1]').forEach(el=>el.addEventListener('click',function(event){
+goF(1,this)
+}));
+  document.querySelectorAll('[data-fo2]').forEach(el=>el.addEventListener('click',function(event){
+goF(2,this)
+}));
+  document.querySelectorAll('[data-fo3]').forEach(el=>el.addEventListener('click',function(event){
+goF(3,this)
+}));
+  document.querySelectorAll('[data-fo4]').forEach(el=>el.addEventListener('click',function(event){
+goF(4,this)
+}));
+  document.querySelectorAll('[data-fo5]').forEach(el=>el.addEventListener('click',function(event){
+leapNext()
+}));
+  document.querySelectorAll('[data-fo6]').forEach(el=>el.addEventListener('input',function(event){
+syncUI()
+}));
+  document.querySelectorAll('[data-fo7]').forEach(el=>el.addEventListener('input',function(event){
+syncUI()
+}));
+  document.querySelectorAll('[data-fo8]').forEach(el=>el.addEventListener('change',function(event){
+leapNext()
+}));
+  document.querySelectorAll('[data-fo9]').forEach(el=>el.addEventListener('input',function(event){
+syncUI()
+}));
+  document.querySelectorAll('[data-fo10]').forEach(el=>el.addEventListener('click',function(event){
+copyAllPrompts()
+}));
+});
