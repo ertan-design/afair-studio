@@ -79,9 +79,9 @@
   var indeksler = new Uint16Array(idxArr);
 
   function yuzeyHesapla(t) {
-    var wGuc = 0.20 + durum.ruzgarGuc * 0.22 + durum.itki * 0.55;
+    var wGuc = 0.16 + durum.ruzgarGuc * 0.16 + durum.itki * 0.55;
     durum.itki *= 0.93;
-    var faz = t * (0.48 + durum.ruzgarGuc * 0.32);
+    var faz = t * (0.32 + durum.ruzgarGuc * 0.22);
     for (var j = 0; j < N; j++) {
       var v = j / (N - 1);
       for (var i = 0; i < N; i++) {
@@ -90,8 +90,8 @@
         var px = 0.0, py = 0.0, pz = 0.0;
         
         var daralma = 1.0 - v * 0.30;
-        var dalga = Math.sin(v * 5.4 - faz * 1.02 + Math.sin(u * 4.8)) * (0.09 + v * 0.22) * wGuc;
-        px = (u - 0.5) * 2.68 * daralma + dalga * 0.20;
+        var dalga = Math.sin(v * 4.8 - faz * 0.72 + Math.sin(u * 4.2)) * (0.05 + v * 0.13) * wGuc;
+        px = (u - 0.5) * 2.68 * daralma + dalga * 0.16;
         py = (0.54 - v) * 2.20;
         pz = Math.cos((u - 0.5) * 3.0) * 0.54 + (u - 0.5) * 0.34 + dalga;
     
