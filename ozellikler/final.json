@@ -3,9 +3,18 @@
   "site": "afair-studio",
   "origin": "https://www.afair.studio",
   "homepage_preserved": true,
-  "entry_count": 61,
-  "restored_count": 12,
+  "entry_count": 62,
+  "restored_count": 13,
   "entries": [
+    {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.studio/kartela/index.html",
+      "sha256": "63b6ce7eaf5bb3cd86fd97e40795d1d856ff1b44b581e3e04b54c4cb66e2e542"
+    },
     {
       "path": "final/kroma-aynasi/index.html",
       "title": "Pantone & Kelvin Kroma Aynası",

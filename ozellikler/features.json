@@ -2,6 +2,13 @@
   "site": "afair-studio",
   "entries": [
     {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "final/kroma-aynasi/index.html",
       "title": "Pantone & Kelvin Kroma Aynası",
       "description": "Günışığı sıcaklığına göre kumaş alt-tonunu ve ΔE kontrastını ölçen renk laboratuvarı.",
