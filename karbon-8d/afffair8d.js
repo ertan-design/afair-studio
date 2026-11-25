@@ -40,15 +40,14 @@
   const old = new Float32Array(COUNT * 3);
   const nrm = new Float32Array(COUNT * 3);
   const uvs = new Float32Array(COUNT * 2);
-  const spanX = 2.45, spanY = 2.25;
-  const restX = spanX / (N - 1), restY = spanY / (N - 1);
+  const spanX = 2.20, spanY = 2.05;
 
   function anchorPos(x, t) {
     const u = x / (N - 1);
-    const pleat = Math.sin(u * Math.PI * 7.0) * 0.19;
-    const arcX = (u - 0.5) * spanX * 0.88;
-    const arcY = 1.06 + Math.cos((u - 0.5) * 2.6) * 0.12 + Math.sin(t * 1.5 + u * 4.0) * 0.035;
-    const arcZ = pleat + Math.sin((u - 0.5) * 2.2) * 0.24;
+    const pleatZ = Math.sin(u * Math.PI * 8.0) * 0.16;
+    const arcX = (u - 0.5) * spanX;
+    const arcY = 0.96 + Math.cos((u - 0.5) * 2.4) * 0.08 + Math.sin(t * 1.1 + u * 3.0) * 0.015;
+    const arcZ = pleatZ + Math.cos((u - 0.5) * 2.2) * 0.18;
     return [arcX, arcY, arcZ];
   }
 
@@ -57,15 +56,15 @@
       const v = y / (N - 1);
       for (let x = 0; x < N; x++) {
         const i = y * N + x;
+        const u = x / (N - 1);
         const [ax, ay, az] = anchorPos(x, 0);
-        const flare = 1.0 + v * 0.18;
-        const px = ax * flare;
-        const py = ay - v * spanY * 0.94;
-        const pz = az * (1.0 + v * 0.55) + Math.sin(v * 4.2 + x * 0.18) * 0.14;
+        const px = ax * (1.0 + v * 0.10);
+        const py = ay - v * spanY;
+        const pz = az * (1.0 + v * 0.65) + Math.sin(u * Math.PI * 8.0 + v * 1.4) * (0.08 * v);
         pos[i * 3] = old[i * 3] = px;
         pos[i * 3 + 1] = old[i * 3 + 1] = py;
         pos[i * 3 + 2] = old[i * 3 + 2] = pz;
-        uvs[i * 2] = x / (N - 1);
+        uvs[i * 2] = u;
         uvs[i * 2 + 1] = v;
       }
     }
@@ -73,17 +72,20 @@
   initCloth();
 
   const springs = [];
+  function linkSpring(ia, ib) {
+    const a = ia * 3, b = ib * 3;
+    const len = Math.hypot(pos[b] - pos[a], pos[b + 1] - pos[a + 1], pos[b + 2] - pos[a + 2]);
+    springs.push(ia, ib, len);
+  }
   for (let y = 0; y < N; y++) {
     for (let x = 0; x < N; x++) {
       const i = y * N + x;
-      if (x + 1 < N) springs.push(i, i + 1, restX);
-      if (y + 1 < N) springs.push(i, i + N, restY);
+      if (x + 1 < N) linkSpring(i, i + 1);
+      if (y + 1 < N) linkSpring(i, i + N);
       if (x + 1 < N && y + 1 < N) {
-        const diag = Math.hypot(restX, restY);
-        springs.push(i, i + N + 1, diag, i + 1, i + N, diag);
+        linkSpring(i, i + N + 1);
+        linkSpring(i + 1, i + N);
       }
-      if (x + 2 < N) springs.push(i, i + 2, restX * 2.0);
-      if (y + 2 < N) springs.push(i, i + 2 * N, restY * 2.0);
     }
   }
   const spArr = new Float32Array(springs);
@@ -117,17 +119,17 @@
 
   let simTime = 0;
   function stepPhysics() {
-    simTime += 0.022;
-    const wMag = 0.0048 * (0.35 + state.windStrength);
-    const wx = Math.sin(state.windAngle + Math.sin(simTime * 0.7) * 0.4) * wMag;
-    const wz = Math.cos(state.windAngle + Math.cos(simTime * 0.5) * 0.35) * wMag;
+    simTime += 0.018;
+    const wMag = 0.0022 * (0.35 + state.windStrength);
+    const wx = Math.sin(state.windAngle + Math.sin(simTime * 0.6) * 0.35) * wMag;
+    const wz = Math.cos(state.windAngle + Math.cos(simTime * 0.5) * 0.30) * wMag;
 
     for (let y = 0; y < N; y++) {
       const v = y / (N - 1);
       for (let x = 0; x < N; x++) {
         const i = y * N + x;
         const ix = i * 3;
-        if (y === 0 && (x % 4 === 0 || x === N - 1)) {
+        if (y === 0) {
           const [ax, ay, az] = anchorPos(x, simTime);
           pos[ix] = old[ix] = ax;
           pos[ix + 1] = old[ix + 1] = ay;
@@ -135,23 +137,22 @@
           continue;
         }
 
-        const vx = (pos[ix] - old[ix]) * 0.984;
-        const vy = (pos[ix + 1] - old[ix + 1]) * 0.984;
-        const vz = (pos[ix + 2] - old[ix + 2]) * 0.984;
+        const vx = (pos[ix] - old[ix]) * 0.976;
+        const vy = (pos[ix + 1] - old[ix + 1]) * 0.976;
+        const vz = (pos[ix + 2] - old[ix + 2]) * 0.976;
         old[ix] = pos[ix]; old[ix + 1] = pos[ix + 1]; old[ix + 2] = pos[ix + 2];
 
-        const travelWave = Math.sin(pos[ix] * 2.6 - simTime * 3.2 + pos[ix + 1] * 1.8)
-                         + 0.6 * Math.cos(pos[ix + 1] * 3.1 - simTime * 2.4 - pos[ix] * 1.5);
-        const billow = (0.35 + 0.85 * v) * travelWave * wMag;
-        const nx = nrm[ix], ny = nrm[ix + 1], nz = nrm[ix + 2] || 1.0;
+        const travelWave = Math.sin(pos[ix] * 2.5 - simTime * 2.4 + pos[ix + 1] * 1.6)
+                         + 0.5 * Math.cos(pos[ix + 1] * 2.8 - simTime * 1.9 - pos[ix] * 1.3);
+        const billow = (0.25 + 0.85 * v) * travelWave * wMag;
 
-        pos[ix] += vx + wx * (0.5 + v) + nx * billow * 0.45 + state.gustX * v * 0.008;
-        pos[ix + 1] += vy - 0.00145 + ny * billow * 0.25 + state.gustY * v * 0.006;
-        pos[ix + 2] += vz + wz * (0.6 + v) + billow * 1.15 + nz * billow * 0.45;
+        pos[ix] += vx + wx * v + state.gustX * v * 0.006;
+        pos[ix + 1] += vy - 0.0018 + state.gustY * v * 0.004;
+        pos[ix + 2] += vz + wz * v + billow * 1.25;
       }
     }
-    state.gustX *= 0.91;
-    state.gustY *= 0.91;
+    state.gustX *= 0.90;
+    state.gustY *= 0.90;
 
     for (let it = 0; it < 4; it++) {
       for (let s = 0; s < spArr.length; s += 3) {
@@ -159,9 +160,9 @@
         const a = ia * 3, b = ib * 3;
         const dx = pos[b] - pos[a], dy = pos[b + 1] - pos[a + 1], dz = pos[b + 2] - pos[a + 2];
         const d = Math.hypot(dx, dy, dz) || 0.0001;
-        const diff = (d - len) / d * 0.46;
-        const pinA = ia < N && (ia % 4 === 0 || ia === N - 1);
-        const pinB = ib < N && (ib % 4 === 0 || ib === N - 1);
+        const diff = (d - len) / d * 0.22;
+        const pinA = ia < N;
+        const pinB = ib < N;
         if (!pinA) { pos[a] += dx * diff; pos[a + 1] += dy * diff; pos[a + 2] += dz * diff; }
         if (!pinB) { pos[b] -= dx * diff; pos[b + 1] -= dy * diff; pos[b + 2] -= dz * diff; }
       }

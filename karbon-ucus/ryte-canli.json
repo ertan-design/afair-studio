@@ -1,8 +1,8 @@
 {
   "sema": "afffair.ryte-canli-kopru.v3",
   "durum": "CANLI_AKTIF",
-  "uretim_ts": "2026-11-25T05:05:46+03:00",
-  "uretim_utc": "2026-11-25T02:05:46Z",
+  "uretim_ts": "2026-11-25T05:10:50+03:00",
+  "uretim_utc": "2026-11-25T02:10:50Z",
   "aciklama": "AFFFAIR Quiet Luxury 8-Kural sahneleri, C:\\ryte canli alt-ajan agi ve GPT/WebMCP tam islevsel kontrol koprusu (sifir yerel kullanici yolu, sifir PII).",
   "aktif_alt_ajanlar": [
     {
@@ -66,31 +66,31 @@
   ],
   "son_odalar": [
     {
-      "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
-      "guncelleme_utc": "2026-11-25T02:01:31Z",
-      "ust_dosya_sayisi": 12,
-      "ust_bayt": 165103,
-      "muhur_var": true
-    },
-    {
-      "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
-      "guncelleme_utc": "2026-11-25T02:01:29Z",
-      "ust_dosya_sayisi": 7,
-      "ust_bayt": 30238,
-      "muhur_var": true
-    },
-    {
       "oda": "00001903_20261124_212500_CLAUDE_MASA_BIRLESIK_ARAYUZ_TEKNIK_SERGISI",
-      "guncelleme_utc": "2026-11-25T02:00:40Z",
+      "guncelleme_utc": "2026-11-25T02:06:36Z",
       "ust_dosya_sayisi": 4,
-      "ust_bayt": 10340,
+      "ust_bayt": 10539,
       "muhur_var": true
     },
     {
       "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
-      "guncelleme_utc": "2026-11-25T01:59:05Z",
+      "guncelleme_utc": "2026-11-25T02:06:09Z",
       "ust_dosya_sayisi": 11,
-      "ust_bayt": 177411,
+      "ust_bayt": 177864,
+      "muhur_var": true
+    },
+    {
+      "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
+      "guncelleme_utc": "2026-11-25T02:05:53Z",
+      "ust_dosya_sayisi": 12,
+      "ust_bayt": 164974,
+      "muhur_var": true
+    },
+    {
+      "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
+      "guncelleme_utc": "2026-11-25T02:05:46Z",
+      "ust_dosya_sayisi": 7,
+      "ust_bayt": 30238,
       "muhur_var": true
     },
     {
