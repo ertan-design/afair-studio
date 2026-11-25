@@ -111,6 +111,38 @@
     {
       "source": "/podyum-sahne/kapi/",
       "destination": "/podyum-sahne/kapi/index.html"
+    },
+    {
+      "source": "/final-kromatik-8konsept",
+      "destination": "/final-kromatik-8konsept/index.html"
+    },
+    {
+      "source": "/final-kromatik-8konsept/",
+      "destination": "/final-kromatik-8konsept/index.html"
+    },
+    {
+      "source": "/final-rufat-kalip-cad",
+      "destination": "/final-rufat-kalip-cad/index.html"
+    },
+    {
+      "source": "/final-rufat-kalip-cad/",
+      "destination": "/final-rufat-kalip-cad/index.html"
+    },
+    {
+      "source": "/final-higgsfield-sinema",
+      "destination": "/final-higgsfield-sinema/index.html"
+    },
+    {
+      "source": "/final-higgsfield-sinema/",
+      "destination": "/final-higgsfield-sinema/index.html"
+    },
+    {
+      "source": "/final-kapasite-terazi",
+      "destination": "/final-kapasite-terazi/index.html"
+    },
+    {
+      "source": "/final-kapasite-terazi/",
+      "destination": "/final-kapasite-terazi/index.html"
     }
   ],
   "buildCommand": "",
