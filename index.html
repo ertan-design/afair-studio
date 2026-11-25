@@ -135,6 +135,7 @@ html, body {
 
   <div class="dock-bar" role="region" aria-label="Sahne yönlendirme seçenekleri">
     <label class="orbit-control">Açı <input id="orbit-angle" type="range" min="0" max="360" value="21"> <span id="orbit-value" aria-hidden="true">21°</span></label>
+    <button type="button" id="motion-toggle" class="dock-pill" hidden>Duraklat</button>
     <button type="button" class="dock-pill on" data-preset="0">Bakır Atlas</button>
     <button type="button" class="dock-pill" data-preset="1">Şampanya İpek</button>
     <button type="button" class="dock-pill" data-preset="2">Mürdüm Kadife</button>
@@ -594,9 +595,23 @@ html, body {
   }
   orbitAngle.addEventListener('input', () => setOrbit(orbitAngle.value));
 
+  const motionToggle = document.getElementById('motion-toggle');
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let motionPaused;
+  function setMotionPaused(paused) {
+    motionPaused = paused;
+    st.velYaw = 0;
+    st.velPitch = 0;
+    motionToggle.textContent = paused ? 'Hareketi başlat' : 'Duraklat';
+  }
+  setMotionPaused(motionPreference.matches);
+  motionToggle.hidden = false;
+  motionToggle.addEventListener('click', () => setMotionPaused(!motionPaused));
+  motionPreference.addEventListener('change', event => setMotionPaused(event.matches));
+
   function frame() {
-    stepSim();
-    if (!down) {
+    if (!motionPaused) stepSim();
+    if (!motionPaused && !down) {
       st.gustX *= 0.90; st.gustY *= 0.90;
       if (st.autoOrbit) st.yaw += (SCENE_ID <= 1 ? 0.0001 : 0.0011);
       else { st.yaw += st.velYaw; st.pitch = Math.max(-0.95, Math.min(1.12, st.pitch + st.velPitch)); st.velYaw *= 0.92; st.velPitch *= 0.92; }
@@ -663,7 +678,7 @@ html, body {
     relocationProof: true,
     externalDependencies: 0,
     purpose: () => ({"page": "afair-studio-360-loom", "brand": "AFFFAIR STUDIO", "whyBuilt": "rufat.afair.studio ve dila.afair.studio mantığında tasarımcıların hem üretim yaptığı hem aynı anda sergilediği 360° WebGL2 dokuma stüdyosu."}),
-    getState: () => ({ preset: PRESETS[st.idx], yawDeg: currentAngle(), zoom: st.zoom }),
+    getState: () => ({ preset: PRESETS[st.idx], yawDeg: currentAngle(), zoom: st.zoom, motionPaused }),
     setPreset: i => { st.idx = Math.max(0, Math.min(PRESETS.length - 1, Number(i) || 0)); return window.AFAIR_GPT_API.getState(); },
     setOrbit360: deg => { setOrbit(deg); return window.AFAIR_GPT_API.getState(); }
   };
