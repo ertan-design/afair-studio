@@ -1,0 +1,9 @@
+{
+  "schema": "site.identity.v1",
+  "site_id": "afair-studio",
+  "site_name": "AFAIR Studio",
+  "role": "Tasarımcı ve malzeme çalışma alanı",
+  "origin": "https://www.afair.studio",
+  "catalog": "/sayfalar/",
+  "publishing": "Git snapshot + reviewed patch; no link to local disk"
+}

@@ -66,5 +66,6 @@
       "source": "/podyum-sahne/kapi/",
       "destination": "/podyum-sahne/kapi/index.html"
     }
-  ]
+  ],
+  "buildCommand": "node yayin-kontrol.cjs"
 }

@@ -450,9 +450,9 @@
     btn.addEventListener('click', () => {
       const svc = btn.dataset.book;
       const code = 'AFF-' + Math.abs((Date.now() ^ (state.fabricIdx * 7919)) % 89999 + 10000);
-      state.bookings.push({ service: svc, fabric: FABRICS[state.fabricIdx].code, code });
+      state.bookings.push({ service: svc, fabric: FABRICS[state.fabricIdx].code, code, submitted: false, reservation_status: 'unconfirmed' });
       const out = document.getElementById('msg-' + svc);
-      if (out) out.textContent = `✓ Hazır (${code}) · ${FABRICS[state.fabricIdx].name}`;
+      if (out) out.textContent = `Taslak hazır · onay yok (${code}) · ${FABRICS[state.fabricIdx].name}`;
       syncStateJson();
     });
   });
@@ -563,10 +563,10 @@
     version: '3.0',
     purpose: () => ({
       brand: 'AFFFAIR',
-      whyBuilt: '360° steerable real WebGL2 pleated couture silk + 8D wind & lowkey shadows + instant bespoke two-tape-measure concierge',
+      whyBuilt: '360-degree controllable simulated cloth using WebGL2 + 8D wind & lowkey shadows + instant bespoke two-tape-measure concierge',
       manifestUrl: './gpt.json',
       ryteLiveUrl: './ryte-canli.json',
-      pendingTasks: 0
+      pendingTasks: null
     }),
     getState: () => ({
       webgl2: isGL2,

@@ -1,6 +1,6 @@
 {
   "sema": "afffair.ryte-canli-kopru.v3",
-  "durum": "CANLI_AKTIF",
+  "durum": "STATIK_KAYIT",
   "uretim_ts": "2026-11-25T05:31:56+03:00",
   "uretim_utc": "2026-11-25T02:31:56Z",
   "aciklama": "AFFFAIR Quiet Luxury 8-Kural sahneleri, C:\\ryte canli alt-ajan agi ve GPT/WebMCP tam islevsel kontrol koprusu (sifir yerel kullanici yolu, sifir PII).",
@@ -8,22 +8,22 @@
     {
       "id": "ryte-auditor-53d84c2a",
       "rol": "RYTE Local Sites 8-Rule Auditor",
-      "durum": "CANLI_DOGRULANDI"
+      "durum": "DOGRULANMADI"
     },
     {
       "id": "afair-mesh-8a9f202c",
       "rol": "AFAIR Repos & RYTE Live Mesh Inspector",
-      "durum": "CANLI_DOGRULANDI"
+      "durum": "DOGRULANMADI"
     },
     {
       "id": "gpt-ux-08e822c9",
       "rol": "GPT Functionality & Quiet-Luxury UX Architect",
-      "durum": "CANLI_DOGRULANDI"
+      "durum": "DOGRULANMADI"
     },
     {
       "id": "studio-router-ba6da935",
       "rol": "AFAIR Studio Live Routing & 8-Law Auditor",
-      "durum": "CANLI_DOGRULANDI"
+      "durum": "DOGRULANMADI"
     }
   ],
   "toplam_oda": 118,
@@ -380,5 +380,8 @@
       "ust_bayt": 61131,
       "muhur_var": true
     }
-  ]
+  ],
+  "source_kind": "static_inventory",
+  "live_proof": false,
+  "note": "Bu dosya kayıt anındaki envanterdir; çalışan ajan veya anlık faaliyet kanıtı değildir."
 }

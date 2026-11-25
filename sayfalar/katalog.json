@@ -1,0 +1,451 @@
+{
+  "schema": "site.pages.v1",
+  "site": "AFAIR Studio",
+  "origin": "https://www.afair.studio",
+  "role": "Tasarımcı ve malzeme çalışma alanı",
+  "source_commit": "5182794f6278ec11bbeb942404bb071e60b0a507",
+  "generated_at": "2026-11-25T03:08:16.637Z",
+  "verification": "Repository snapshot; live HTTP checks recorded separately",
+  "items": [
+    {
+      "url": "/calisma-notu",
+      "title": "Fikrini bir koleksiyona dönüştür.",
+      "category": "Keşif",
+      "source_file": "calisma-notu.html",
+      "source_blob": "7473b627b5e8c3c5e8d228319d4d8b264d9ee71b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/koleksiyon",
+      "title": "Koleksiyon sergisi",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/koleksiyon.html",
+      "source_blob": "60b0a57b14b54dafc1b2b823618837e8b3e17857",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/kumas",
+      "title": "Kumaş incelemesi",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/kumas.html",
+      "source_blob": "ede1ec007e1eb7a57495170da3ad32d293fc4497",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/tasarimci",
+      "title": "Tasarımcı masası",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/tasarimci.html",
+      "source_blob": "18c1d6c41e93a3c0636d375a842834ba64bd5864",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-8/",
+      "title": "Dila'nın 8 kuralı",
+      "category": "Malzeme",
+      "source_file": "dila-8/index.html",
+      "source_blob": "0d758ff4d0c33f141c0409411cb5e274783ab190",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-dokunus/",
+      "title": "Dokun.Çevir. Hisset.",
+      "category": "Malzeme",
+      "source_file": "dila-dokunus/index.html",
+      "source_blob": "b8d478acc8740d75271dc5895a048d9c5c70cc4a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-filmler/",
+      "title": "Dila filmleri",
+      "category": "Görüntü",
+      "source_file": "dila-filmler/index.html",
+      "source_blob": "e665db46b7e8f16bacdd2f3634cd1cbb56a62b2a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-hareket-atolyesi/",
+      "title": "Kumaş hareket eder.Fikir sahneye çıkar.",
+      "category": "Malzeme",
+      "source_file": "dila-hareket-atolyesi/index.html",
+      "source_blob": "dd1192a6eb1a7403da03c5d5e8b6c6d310c23bdd",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-prova",
+      "title": "AFAIR LIVE × STUDIO · DİLA AI",
+      "category": "Hazırlık",
+      "source_file": "dila-prova.html",
+      "source_blob": "e06f09832b49f964981feca2a20792882bd27ef6",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-rehber",
+      "title": "Uygulama rehberi",
+      "category": "Hazırlık",
+      "source_file": "dila-rehber.html",
+      "source_blob": "d02dd132f9342342bcd19a06b60a2c9adc9f1097",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-saten/",
+      "title": "Kumaşahayat ver.",
+      "category": "Malzeme",
+      "source_file": "dila-saten/index.html",
+      "source_blob": "d5e32604cbd068e22e75ab949f935c32e9aceb15",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila",
+      "title": "Yaptığın her seçim,bir sonraki sıçramayı diker.",
+      "category": "Malzeme",
+      "source_file": "dila.html",
+      "source_blob": "3e0992240367c57f9bfbb1b55c59ca0040bd3552",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/canli-podyum",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Görüntü",
+      "source_file": "dila/canli-podyum.html",
+      "source_blob": "fc236f2db2957c49fd40866b647e34ddd082a58c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/iki-mezura",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Hazırlık",
+      "source_file": "dila/iki-mezura.html",
+      "source_blob": "8d3e31492edba4378f99b37cf1084e0b8955751a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/",
+      "title": "Yaptığın her seçim,bir sonraki sıçramayı diker.",
+      "category": "Malzeme",
+      "source_file": "dila/index.html",
+      "source_blob": "57d12340b99854443052705f37c60c397c8210ec",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/sinema",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik & Açık Kapılar",
+      "category": "Görüntü",
+      "source_file": "dila/sinema.html",
+      "source_blob": "5d1281e86c500612d51a24bce9b0f66b35bdc693",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/yasam-alani",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Hazırlık",
+      "source_file": "dila/yasam-alani.html",
+      "source_blob": "b25a0d7d261cae877c10e2651840a1172a1dedeb",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/doku-masasi/",
+      "title": "Kumaşı ışığa tut.",
+      "category": "Malzeme",
+      "source_file": "doku-masasi/index.html",
+      "source_blob": "6e41c3979269d0f297abb0f1e8927a1c0b789212",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/ilk-kurgu",
+      "title": "Kumaşahayat ver.",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/ilk-kurgu.html",
+      "source_blob": "995640f9c327b43d402543fedf55cc8f5c305dfc",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/",
+      "title": "Dokuma numunesi",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/index.html",
+      "source_blob": "e611474b80cf489a2ad501c168231536f9676795",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokun/",
+      "title": "Dokun.",
+      "category": "Malzeme",
+      "source_file": "dokun/index.html",
+      "source_blob": "989960654ce29fdee72feedfabdfe4ca8af84e93",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/ipek-ruzgar/",
+      "title": "Kumaşı çevir.Rüzgârı sen ver.",
+      "category": "Malzeme",
+      "source_file": "ipek-ruzgar/index.html",
+      "source_blob": "469aa5730c7d754be22d60cc1b1dc99f4f22adfe",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kapi-evreni/",
+      "title": "İş başlar.Sonuç görünür.",
+      "category": "Teknik",
+      "source_file": "kapi-evreni/index.html",
+      "source_blob": "e5a4ebd53097185f122317dc33a544e7698d7f9a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/karbon-8d/",
+      "title": "Dokun. Çevir. Dalgalansın.",
+      "category": "Keşif",
+      "source_file": "karbon-8d/index.html",
+      "source_blob": "acecce94489753c636e63db12d577e273e4969d4",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/karbon-ucus/",
+      "title": "Çatıdan uç.Şehre in.",
+      "category": "Keşif",
+      "source_file": "karbon-ucus/index.html",
+      "source_blob": "d904bd70eb7970f458b82d746e827023e522fcbd",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kumas-360/",
+      "title": "Kumaşı hisset.",
+      "category": "Malzeme",
+      "source_file": "kumas-360/index.html",
+      "source_blob": "ec979b8392ccb8da20a766750e5b0a459a843e28",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kumas-studyo/",
+      "title": "Kumaşa dokun.Rüzgârı değiştir.",
+      "category": "Malzeme",
+      "source_file": "kumas-studyo/index.html",
+      "source_blob": "ec91abc81798bded19291c1fc4488002d3e44cfc",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kumas",
+      "title": "Kumaşa dokun.",
+      "category": "Malzeme",
+      "source_file": "kumas.html",
+      "source_blob": "7bc1478973663e6be4feaf65e061df2b3b323543",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/lif-atolyesi-giris",
+      "title": "Kumaşa dokun.Rüzgârı değiştir.",
+      "category": "Malzeme",
+      "source_file": "lif-atolyesi-giris.html",
+      "source_blob": "bfc9a0ee7223eff4781f57494ee89d5bf50044ed",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/lif-atolyesi/",
+      "title": "Rengi ekranda gör.Kararı kumaşla ver.",
+      "category": "Malzeme",
+      "source_file": "lif-atolyesi/index.html",
+      "source_blob": "fd72b9441815ad72bba6d78aa4f5827306cc6be6",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/lif-inceleme",
+      "title": "Rengi ekranda gör.Kararı kumaşla ver.",
+      "category": "Malzeme",
+      "source_file": "lif-inceleme.html",
+      "source_blob": "6c821d8f6e84d02892f7bd0a79d0d1b08db9c6d4",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/podyum-sahne/kapi/",
+      "title": "444.050 kapı. Her piksel bir kapı adresi.",
+      "category": "Teknik",
+      "source_file": "podyum-sahne/kapi/index.html",
+      "source_blob": "c46bea44dbcbd8132bac991276f69f58e01e828b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma-atolye/",
+      "title": "Dokun. Çevir. Şehre uç.",
+      "category": "Keşif",
+      "source_file": "prizma-atolye/index.html",
+      "source_blob": "5dd0f5158200e73bc5c639b4b9d28183df816f20",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/atolye/",
+      "title": "Kumaşına dokun.Evinden uç.",
+      "category": "Keşif",
+      "source_file": "prizma/atolye/index.html",
+      "source_blob": "2a9ebb127166f95d0df8539ccf0283e66a9dc21f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/filo",
+      "title": "44 Tekil Alan Adının Dürüst Canlı Envanteri.",
+      "category": "Keşif",
+      "source_file": "prizma/filo.html",
+      "source_blob": "f30af2cc0da70656241ab4ccb4b6938712c4685f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front1",
+      "title": "Siyah Asla Giymemen Gerekiyor:Yeni Siyahını Bul, 8 Konsepti Senkronla.",
+      "category": "Keşif",
+      "source_file": "prizma/front1.html",
+      "source_blob": "36df91944da0db0cec58d33ad8f24c2bab8aa675",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front2",
+      "title": "Mezura-A Bedeni Okur,Mezura-B Hareket & Işık Payını Çizer.",
+      "category": "Keşif",
+      "source_file": "prizma/front2.html",
+      "source_blob": "14b29daefb162f3b73e4aca3027c6013cdcf0d34",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front3",
+      "title": "Üstündeki Ceketle Evindeki TabloAynı Işıkta ve Aynı Akorda Konuşsun.",
+      "category": "Keşif",
+      "source_file": "prizma/front3.html",
+      "source_blob": "13c3cc9d93d63b285973caf25447ff77f7e0bc7c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front4",
+      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta:4 Front + Video + 50.000 Kapı Mührü.",
+      "category": "Keşif",
+      "source_file": "prizma/front4.html",
+      "source_blob": "6c346534eeee63ddfc23c2170af95a205fcbaff2",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/",
+      "title": "Tek DNA Profili, 3 Canlı Front,8 Senkron Konsept & 50.000 Kapı.",
+      "category": "Keşif",
+      "source_file": "prizma/index.html",
+      "source_blob": "b5e289089cf0c5046d1b0ebb1f84313b4187b32b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/video",
+      "title": "Higgsfield Üretimleri +faststart Onarıldı,Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
+      "category": "Görüntü",
+      "source_file": "prizma/video.html",
+      "source_blob": "d8a1b5c273407724199cc864fbf12bcc05738532",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/teknik-sergi/",
+      "title": "Her kapı bir sahne.",
+      "category": "Teknik",
+      "source_file": "teknik-sergi/index.html",
+      "source_blob": "b8b2ece0be740806e70ab34067106035acb40f79",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-cati/",
+      "title": "Burada yaşamyere sığmaz.",
+      "category": "Keşif",
+      "source_file": "uc-cati/index.html",
+      "source_blob": "49253ee0833046842db8c56eac89c39a6f8a2897",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/yayin-dizini",
+      "title": "Dört site.Açık bağlantılar.",
+      "category": "Keşif",
+      "source_file": "yayin-dizini.html",
+      "source_blob": "55e2b3dc2cf216bb0ae098a9fa78f14da254874b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    }
+  ]
+}

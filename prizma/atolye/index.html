@@ -1,15 +1,13 @@
-<!doctype html>
-<html lang="tr">
-<head>
+<!DOCTYPE html><html lang="tr"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AFFFAIR × PRIZMA — Kumaşına Dokun. Evinden Uç.</title>
+  <title>Kumaşına dokun.Evinden uç. · AFAIR Studio</title>
   <meta name="description" content="Sana özel kumaş. Üç kule. Özgür İstanbul. 360° rüzgarlı WebGL 3D kumaş, Sürreal 8D atmosfer, yönlendirilebilir Ataşehir Modern uçuşu ve 4-site yaşam.">
-  <link rel="stylesheet" href="./atolye.css">
-  <script src="./atolye-veri.js" defer></script>
-  <script src="./atolye-webgl-kumas.js" defer></script>
-  <script src="./atolye-webgl-ucus.js" defer></script>
-</head>
+  <link rel="stylesheet" href="/prizma/atolye/atolye.css">
+  <script src="/prizma/atolye/atolye-veri.js" defer=""></script>
+  <script src="/prizma/atolye/atolye-webgl-kumas.js" defer=""></script>
+  <script src="/prizma/atolye/atolye-webgl-ucus.js" defer=""></script>
+<meta name="site-identity" content="afair-studio"><link rel="stylesheet" href="/sayfalar/kimlik.css"></head>
 <body>
   <header class="top-nav">
     <a class="wordmark" href="#sahne-kumas">
@@ -20,7 +18,7 @@
       <a href="#sahne-kumas">360° Kumaş</a>
       <a href="#sahne-ucus">3 Kule Uçuş</a>
       <a href="#sahne-yasam">Yaşam</a>
-      <a href="./gpt.json">GPT API</a>
+      <a href="/prizma/atolye/gpt.json">GPT API</a>
     </nav>
   </header>
 
@@ -90,7 +88,7 @@
 
         <div class="flight-viewport">
           <canvas id="flight-webgl" class="flight-canvas" width="1280" height="672" aria-label="Sürükleyerek veya ok tuşlarıyla yönlendirilebilen 3D uçuş sahnesi"></canvas>
-          <video id="genie-video" class="flight-video is-hidden" hidden controls playsinline loop muted preload="none" poster="./medya/genie_ucus_referans.jpg" src="./medya/genie_ucus_referans.mp4"></video>
+          <video id="genie-video" class="flight-video is-hidden" hidden="" controls="" playsinline="" loop="" muted="" preload="none" poster="/prizma/atolye/medya/genie_ucus_referans.jpg" src="/prizma/atolye/medya/genie_ucus_referans.mp4"></video>
 
           <div class="flight-hud-bar">
             <div class="hud-stats" aria-live="polite">
@@ -124,15 +122,15 @@
 
         <div class="macro-triptych">
           <figure class="macro-card" data-pick-fabric="zumrut">
-            <img src="./medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ipek ve organik keten makro dokusu">
+            <img src="/prizma/atolye/medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ipek ve organik keten makro dokusu">
             <figcaption><span>PANTONE 19-5918 · 12-0710</span><span>3D Sahneye Al ↑</span></figcaption>
           </figure>
           <figure class="macro-card" data-pick-fabric="espresso">
-            <img src="./medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu gabardin ve patlıcan ipek krep makro dokusu">
+            <img src="/prizma/atolye/medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu gabardin ve patlıcan ipek krep makro dokusu">
             <figcaption><span>PANTONE 19-1111 · 19-2024</span><span>3D Sahneye Al ↑</span></figcaption>
           </figure>
           <figure class="macro-card" data-pick-fabric="antrasit">
-            <img src="./medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesi ve Marmara Adaları günbatımı">
+            <img src="/prizma/atolye/medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesi ve Marmara Adaları günbatımı">
             <figcaption><span>Flex 43K · Balance 35K · Grand 25K</span><span>Başka İstanbul Yok</span></figcaption>
           </figure>
         </div>
@@ -163,8 +161,8 @@
               <p>Seçtiğin Pantone kumaşla aynı tonda tablo ve salon ışığı.</p>
             </div>
             <div class="tile-actions">
-              <a class="btn-dark" href="https://www.afair.studio/prizma/front3">Galeri Odaları ↗</a>
-              <a class="btn-quiet-light" href="https://www.afair.studio/prizma/video">6 Dila Filmi ↗</a>
+              <a class="btn-dark" href="/prizma/front3">Galeri Odaları ↗</a>
+              <a class="btn-quiet-light" href="/prizma/video">6 Dila Filmi ↗</a>
             </div>
           </article>
 
@@ -176,7 +174,7 @@
               <select class="mini-select" id="sel-tarim-slot" aria-label="Tarım danışmanı konusu">
                 <option value="Teras Permakultur · Video 20dk">Teras Permakültür · 20 dk</option>
                 <option value="Gokceada 189/2 Hasat">Gökçeada 189/2 Hasat</option>
-                <option value="Dogal Lif & Boya Kokeni">Doğal Lif &amp; Boya Kökeni</option>
+                <option value="Dogal Lif &amp; Boya Kokeni">Doğal Lif &amp; Boya Kökeni</option>
               </select>
               <p class="tile-receipt" id="out-tarim-rec"></p>
             </div>
@@ -194,7 +192,7 @@
             </div>
             <div class="tile-actions">
               <a class="btn-dark" href="https://ertanaraz.com/prizma/front4">50K Pasaport ↗</a>
-              <a class="btn-quiet-light" href="./gpt.json">gpt.json (GPT API) ↗</a>
+              <a class="btn-quiet-light" href="/prizma/atolye/gpt.json">gpt.json (GPT API) ↗</a>
             </div>
           </article>
         </div>
@@ -205,13 +203,14 @@
   <footer class="foot-minimal">
     <span>AFFFAIR × PRIZMA · Ataşehir Modern · Başka İstanbul Yok · 0 Google Maps · 0 Saf Siyah</span>
     <nav class="foot-links" aria-label="Canlı ekosistem">
-      <a href="https://www.afair.studio/prizma/atolye/">afair.studio</a>
+      <a href="/prizma/atolye/">afair.studio</a>
       <a href="https://www.afair.live/prizma/atolye/">afair.live</a>
       <a href="https://www.xn--ataehirmodern-ktc.com/prizma-atolye/">ataşehirmodern</a>
       <a href="https://www.xn--modernataehir-qtc.com/prizma-atolye/">modernataşehir</a>
       <a href="https://ertanaraz.com/prizma-atolye/">ertanaraz</a>
-      <a href="./gpt.json">gpt.json</a>
+      <a href="/prizma/atolye/gpt.json">gpt.json</a>
     </nav>
   </footer>
-</body>
-</html>
+
+
+<footer class="sayfa-kimligi"><p>AFAIR Studio · Tasarımcı ve malzeme çalışma alanı · Kumaşına dokun.Evinden uç.</p><a href="/sayfalar/">AFAIR Studio deneyimlerini keşfet ↗</a></footer></body></html>
