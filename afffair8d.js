@@ -119,8 +119,8 @@
 
   let simTime = 0;
   function stepPhysics() {
-    simTime += 0.015;
-    const wMag = 0.00085 * (0.35 + state.windStrength);
+    simTime += 0.014;
+    const wMag = 0.00042 * (0.35 + state.windStrength);
     const wx = Math.sin(state.windAngle + Math.sin(simTime * 0.5) * 0.30) * wMag;
     const wz = Math.cos(state.windAngle + Math.cos(simTime * 0.4) * 0.25) * wMag;
 
@@ -380,8 +380,8 @@
       const dx = e.clientX - lx, dy = e.clientY - ly;
       lx = e.clientX; ly = e.clientY;
       // Direct 360° camera rotation + momentum inertia + directional wind wave!
-      const dYaw = -dx * 0.019;
-      const dPitch = dy * 0.011;
+      const dYaw = -dx * 0.025;
+      const dPitch = dy * 0.013;
       state.yaw += dYaw;
       state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + dPitch));
       state.velYaw = dYaw * 0.84;
@@ -465,7 +465,7 @@
       if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
 
       if (state.autoOrbit) {
-        state.yaw += 0.00028;
+        state.yaw += 0.00008;
       } else if (!dragging) {
         state.yaw += state.velYaw;
         state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + state.velPitch));
@@ -631,7 +631,7 @@
   }
 
   // Pre-settle couture drape equilibrium so Frame 1 opens in poised fluid silk folds
-  for (let w = 0; w < 180; w++) stepPhysics();
+  for (let w = 0; w < 420; w++) stepPhysics();
   selectFabric(state.fabricIdx, false);
   requestAnimationFrame(render);
 })();
