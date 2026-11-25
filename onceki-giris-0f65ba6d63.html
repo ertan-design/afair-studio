@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Lif Atölyesi · AFAIR Studio</title>
+  <meta name="description" content="Liften dokumaya, numuneden provaya: iki malzeme fikrini yan yana incele. Fiziksel numune ve tedarikçi doğrulama adımlarını açıkça gör.">
+  <link rel="stylesheet" href="./lif-atolyesi/lif.css">
+  <script src="./lif-atolyesi/lif.js" defer></script>
+<link rel="stylesheet" href="/dila-dokuma/kumastest.css">
+  <script src="/dila-dokuma/kumastest.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#atolye">Atölyeye geç</a>
+  <header><a class="brand" href="/">AFAIR / STUDIO</a><nav aria-label="AFAIR Studio"><a href="/kumas">Tam ekran kumaş</a><a href="/dokuma-ufuk/">Dokuma Ufuk</a><a href="/dila/">Prova</a><a href="/dila-hareket-atolyesi/">Filmler</a></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="baslik"><h1 id="baslik">Kumaş <em>hareket eder.</em></h1><section class="dila-fabric" data-dila-fabric aria-labelledby="dila-fabric-title">
+<canvas width="900" height="460" role="img" aria-label="Loş ışıkta rüzgârla dalgalanan üç boyutlu dokuma"></canvas>
+<div class="dila-fabric-info"><h2 id="dila-fabric-title">Kumaşı çevir.</h2><p data-fabric-status>Sürükle ya da açıyı seç. Rüzgârı kendin ayarla.</p></div>
+<div class="dila-fabric-controls"><label>Açı <output data-angle-value>15°</output><input aria-label="Kumaş açısı" type="range" min="0" max="360" value="15" data-angle></label><label>Rüzgâr <input aria-label="Rüzgâr gücü" type="range" min="0" max="100" value="55" data-wind></label><button type="button" data-motion>Hareketi durdur</button></div></section><div class="hero-bottom"><p>Dijital kumaş denemesi.</p><a class="round-link" href="#atolye">Dokumaları karşılaştır ↓</a></div></section>
+
+    <section id="atolye" aria-labelledby="karsilastirma-baslik">
+      <div class="section-heading"><p class="kicker">01 / KARŞILAŞTIR</p><h2 id="karsilastirma-baslik">Aynı fikir.<br>İki malzeme yolu.</h2></div>
+      <form id="ayarlar" class="workspace" aria-label="Malzeme karşılaştırma ayarları">
+        <fieldset class="sample-controls"><legend>A / İlk aday</legend>
+          <label for="lif-a">Lif fikri<select id="lif-a" name="lif-a"><option value="pamuk">Pamuk</option><option value="keten">Keten</option><option value="yun">Yün</option><option value="ipek">İpek</option></select></label>
+          <label for="orgu-a">Dokuma düzeni<select id="orgu-a" name="orgu-a"><option value="bezayagi">Bezayağı · 1/1</option><option value="dimi">Dimi · 2/2</option><option value="saten">Saten · 5 uçlu şema</option></select></label>
+          <label for="renk-a">Renk niyeti<select id="renk-a" name="renk-a"><option value="aqua">Akuamarin</option><option value="apricot">Kayısı</option><option value="coral">Mercan</option><option value="blue">Mavi</option></select></label>
+        </fieldset>
+        <fieldset class="sample-controls"><legend>B / İkinci aday</legend>
+          <label for="lif-b">Lif fikri<select id="lif-b" name="lif-b"><option value="ipek">İpek</option><option value="pamuk">Pamuk</option><option value="keten">Keten</option><option value="yun">Yün</option></select></label>
+          <label for="orgu-b">Dokuma düzeni<select id="orgu-b" name="orgu-b"><option value="saten">Saten · 5 uçlu şema</option><option value="bezayagi">Bezayağı · 1/1</option><option value="dimi">Dimi · 2/2</option></select></label>
+          <label for="renk-b">Renk niyeti<select id="renk-b" name="renk-b"><option value="apricot">Kayısı</option><option value="aqua">Akuamarin</option><option value="coral">Mercan</option><option value="blue">Mavi</option></select></label>
+        </fieldset>
+        <fieldset class="shared-controls"><legend>İkisine aynı koşul</legend>
+          <label for="isik">Işık denemesi<select id="isik" name="isik"><option value="notr">Nötr stüdyo</option><option value="sicak">Sıcak iç mekân</option><option value="serin">Serin gün ışığı</option></select></label>
+          <label for="olcek">İplik şeması ölçeği<select id="olcek" name="olcek"><option value="yakin">Yakın görünüm</option><option value="genel">Genel görünüm</option></select></label>
+          <button type="button" id="yer-degistir">A ile B’yi değiştir ↔</button>
+        </fieldset>
+      </form>
+      <div class="samples">
+        <figure class="sample"><div class="sample-caption"><span>A / TASARIM ADAYI</span><strong id="ad-a">Pamuk · Bezayağı</strong></div><canvas id="tuval-a" width="1200" height="800" role="img" aria-label="A adayının temsili dokuma şeması"></canvas><figcaption id="ozet-a"></figcaption></figure>
+        <figure class="sample"><div class="sample-caption"><span>B / TASARIM ADAYI</span><strong id="ad-b">İpek · Saten</strong></div><canvas id="tuval-b" width="1200" height="800" role="img" aria-label="B adayının temsili dokuma şeması"></canvas><figcaption id="ozet-b"></figcaption></figure>
+      </div>
+      <p class="comparison-status" id="karsilastirma-durum" role="status" aria-live="polite"></p>
+      <details><summary>Bu görüntü neyi gösterir?</summary><p>Çözgü ve atkının üstten görünüşüyle kurulmuş basitleştirilmiş bir çizimdir. Lif seçimi çizimin görünüşünü değiştirir; gerçek lif davranışını, iplik numarasını, parlaklığı, dökümü veya dayanımı hesaplamaz. Işık seçenekleri görsel renklendirme denemeleridir; spektral ölçüm, Kelvin kalibrasyonu veya renk yönetimi değildir.</p></details>
+    </section>
+
+    <section class="physical" aria-labelledby="fiziksel-baslik">
+      <p class="kicker">02 / EKRANDAN NUMUNEYE</p><h2 id="fiziksel-baslik">Gerçek kumaşın<br>kendi kaydı olmalı.</h2>
+      <div class="verification-grid"><article><span>01</span><h3>Kaynağı belli olsun.</h3><p>Tedarikçi adı, ürün kodu, parti numarası, lif bileşimi ve bakım beyanı istenir. Burada henüz doğrulanmış bir tedarikçi numunesi yok.</p></article><article><span>02</span><h3>Numuneyi aynı ışıkta gör.</h3><p>Fiziksel parçalar yan yana incelenir. Ekran rengi tek başına kumaş kabulü sayılmaz. Gerçek Pantone referansı ve ölçüm raporu varsa numuneye bağlanır.</p></article><article><span>03</span><h3>Prova ile karar ver.</h3><p>Terzi; kullanım amacı, tenle temas, hareket, dikiş ve bakım gereksinimini numuneyle değerlendirir. Uygunluk ya da müsaitlik bu ekrandan varsayılmaz.</p></article></div>
+      <dl class="missing"><div><dt>Tedarikçi / parti</dt><dd>Henüz alınmadı</dd></div><div><dt>Gramaj / iplik numarası</dt><dd>Henüz doğrulanmadı</dd></div><div><dt>Pantone / renk farkı ΔE</dt><dd>Fiziksel referans ve ölçüm yok</dd></div><div><dt>Stok / sertifika / fiyat</dt><dd>Bu sayfadan doğrulanmıyor</dd></div></dl>
+    </section>
+
+    <section class="handoff" aria-labelledby="teslim-baslik"><div><p class="kicker">03 / SONRAKİ ADIM</p><h2 id="teslim-baslik">Bir kumaş seçmedin.<br>İyi bir soru hazırladın.</h2><p>Karşılaştırma kartını indir, fiziksel numune geldiğinde onun bilgileriyle tamamla. Kart, kişisel ölçü veya iletişim bilgisi içermez.</p></div><div class="actions"><button id="kart-indir" type="button">Karşılaştırma kartını indir · JSON ↓</button><a class="button" href="https://www.afair.live/yasam-destegi/?konu=terzi">Terzi görüşmesi hazırlığı ↗</a><a class="button secondary" href="https://www.xn--ataehirmodern-ktc.com/uc-yon/">Ataşehir’de yaşama dön ↗</a><p id="aktarim-durum" role="status" aria-live="polite"></p></div></section>
+  </main>
+  <footer><span>AFAIR / STUDIO · LİF ATÖLYESİ</span><a href="https://www.afair.live/yasam-destegi/?konu=tarim">Lifin yetiştiği yer · tarım görüşmesi ↗</a><a href="/onceki-giris-0d686a243c.html">Önceki giriş ↗</a></footer>
+</body></html>

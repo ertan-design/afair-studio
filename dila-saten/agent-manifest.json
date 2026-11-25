@@ -1,0 +1,33 @@
+{
+  "schema": "dila.cloth-controls.v1",
+  "url": "https://www.afair.studio/",
+  "controls": {
+    "angle": {
+      "selector": "#angle",
+      "min": 0,
+      "max": 360
+    },
+    "wind": {
+      "selector": "#wind",
+      "min": 0,
+      "max": 100
+    },
+    "wave": {
+      "selector": "#wave",
+      "min": 0,
+      "max": 100
+    },
+    "light": {
+      "selector": "#light",
+      "min": 0,
+      "max": 360
+    },
+    "pause": "#motion",
+    "dream": "#dream",
+    "export_json": "#export"
+  },
+  "operations": "Native browser inputs; no server execution or automatic GPT dispatch.",
+  "physical_sample": null,
+  "appointments": "https://www.afair.live/yasam-destegi/?konu=terzi",
+  "limits": "Procedural cloth appearance; not scanned material, calibrated spectral color or validated mass-spring simulation."
+}
