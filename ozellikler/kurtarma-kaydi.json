@@ -1,0 +1,408 @@
+{
+  "schema": "afair.recovery.v1",
+  "source_commit": "a715ffca3372b1343bdf446d0c4cea3f4e65c695",
+  "homepage_preserved": true,
+  "added_buttons": [
+    {
+      "url": "/ozellikler/galeri/",
+      "title": "Galeri araçları"
+    },
+    {
+      "url": "/ozellikler/renk/",
+      "title": "Renk ve prova"
+    },
+    {
+      "url": "/ozellikler/pasaport/",
+      "title": "Koleksiyon pasaportu"
+    }
+  ],
+  "html_repairs": [
+    {
+      "path": "final/kroma-aynasi/index.html",
+      "sha256": "31d83f5e27fba7c864f5e48ae947988e971098c38a8e137f05f7c1d97a857d02"
+    },
+    {
+      "path": "final/dort-front-senkron/index.html",
+      "sha256": "22217771dc99531cff2ea3ffa1dae045e3ccf1a0b218ab00f48c61a09f6e53c6"
+    },
+    {
+      "path": "final/sekiz-konsept-kapasite/index.html",
+      "sha256": "c9157e908c67c78430b57c7e29f1acb1c807396e6ed3d52d678f1d5cff8e74d9"
+    },
+    {
+      "path": "final/wildcard-alt-domain/index.html",
+      "sha256": "98ee932980baf4a62de482013f91b2e218fb560e1a96c3092a70c359b75db3aa"
+    },
+    {
+      "path": "ozellikler/alt-alan/index.html",
+      "sha256": "c09fb2f7896795cb71cfe98a088e1e4d35904445b329cd098b48ff15a875fdf0"
+    },
+    {
+      "path": "ozellikler/atelier/index.html",
+      "sha256": "b88d280928fb9d26c0be451f0c3acf6906bf860a2ad010c97cc8b2736ec01eab"
+    }
+  ],
+  "restored_assets": [
+    {
+      "path": "ozellikler/galeri/dila_8_konsept_senkron.jsonl",
+      "git_blob": "f4b205e89aad1699e328ab71ee4f0fe18077a2d9",
+      "source_path": "prizma/dila_8_konsept_senkron.jsonl"
+    },
+    {
+      "path": "ozellikler/galeri/dila_videolar.jsonl",
+      "git_blob": "03c51fc78866f8cec9a325a34d8f3f010cfa8469",
+      "source_path": "prizma/dila_videolar.jsonl"
+    },
+    {
+      "path": "ozellikler/galeri/filo_canli_durum.jsonl",
+      "git_blob": "c6d8d57554045fcb0e300543beea82c04cd315a3",
+      "source_path": "prizma/filo_canli_durum.jsonl"
+    },
+    {
+      "path": "ozellikler/galeri/manifest.json",
+      "git_blob": "9509eed8b3b2b152563475261794b8510d95d1c6",
+      "source_path": "prizma/manifest.json"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-filo.js",
+      "git_blob": "c031535cfa22dc4a8091e8585adc775a9ddede7f",
+      "source_path": "prizma/prizma-filo.js"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-front1.js",
+      "git_blob": "a3024d70bb5e358cd75082fe2a610103c4be68ca",
+      "source_path": "prizma/prizma-front1.js"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-front2.js",
+      "git_blob": "f0b6ff6a920283846c4125aed5e55b1d62423f4b",
+      "source_path": "prizma/prizma-front2.js"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-front4.js",
+      "git_blob": "c7fc749af5eb86e9d6384e4dde3604a0fd575c54",
+      "source_path": "prizma/prizma-front4.js"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-hub.js",
+      "git_blob": "9cec57eb91444a0a677a0dbeb1d737dcbbdd8749",
+      "source_path": "prizma/prizma-hub.js"
+    },
+    {
+      "path": "ozellikler/galeri/prizma-video.js",
+      "git_blob": "537c5b13e895589368b6956dc0698a3c24e2bd38",
+      "source_path": "prizma/prizma-video.js"
+    },
+    {
+      "path": "ozellikler/galeri/studio_galeri.css",
+      "git_blob": "89712af1a1989d2e8576c73111ad532fd21cc964",
+      "source_path": "prizma/studio_galeri.css"
+    },
+    {
+      "path": "ozellikler/galeri/studio_galeri.js",
+      "git_blob": "a7e7621f284dd4e36dbb374a4d47a3e29d2929a7",
+      "source_path": "prizma/studio_galeri.js"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_01_IKI_MEZURA_TERZI.jpg",
+      "git_blob": "eddf841b67002c84d585e4bb624dbf3629b40513",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_01_IKI_MEZURA_TERZI.mp4",
+      "git_blob": "451585c8c1cefac0c75ef29d4a6821e24f855e4f",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.mp4"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4",
+      "git_blob": "4225f4b9fcf4ee2b5b3eb07f77e74d14349c214d",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg",
+      "git_blob": "9c30d35f83b8ebb6cfd29301f6476c1cef9a3efc",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4",
+      "git_blob": "923abba76e8ff94c67c3d17f82e9875bfd60f098",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4",
+      "git_blob": "ec5da846feb5ea911cbb80bb220a4ae2452f523d",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4"
+    },
+    {
+      "path": "ozellikler/galeri/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg",
+      "git_blob": "f0b99af072b65c9dba3ab7bedcdc39f85ec9274f",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4",
+      "git_blob": "6c3902f222216dc9a2a2f81bdf303e0c56dd20f9",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/galeri/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg",
+      "git_blob": "b8b4c3ada42d4f548bb45ca07695b8daac81f63b",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/galeri/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4",
+      "git_blob": "0a3a84ac59d5b0ae4bda7206a743e65e6c6a2d37",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/dila_8_konsept_senkron.jsonl",
+      "git_blob": "f4b205e89aad1699e328ab71ee4f0fe18077a2d9",
+      "source_path": "prizma/dila_8_konsept_senkron.jsonl"
+    },
+    {
+      "path": "ozellikler/pasaport/dila_videolar.jsonl",
+      "git_blob": "03c51fc78866f8cec9a325a34d8f3f010cfa8469",
+      "source_path": "prizma/dila_videolar.jsonl"
+    },
+    {
+      "path": "ozellikler/pasaport/filo_canli_durum.jsonl",
+      "git_blob": "c6d8d57554045fcb0e300543beea82c04cd315a3",
+      "source_path": "prizma/filo_canli_durum.jsonl"
+    },
+    {
+      "path": "ozellikler/pasaport/manifest.json",
+      "git_blob": "9509eed8b3b2b152563475261794b8510d95d1c6",
+      "source_path": "prizma/manifest.json"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-filo.js",
+      "git_blob": "c031535cfa22dc4a8091e8585adc775a9ddede7f",
+      "source_path": "prizma/prizma-filo.js"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-front1.js",
+      "git_blob": "a3024d70bb5e358cd75082fe2a610103c4be68ca",
+      "source_path": "prizma/prizma-front1.js"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-front2.js",
+      "git_blob": "f0b6ff6a920283846c4125aed5e55b1d62423f4b",
+      "source_path": "prizma/prizma-front2.js"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-front3.js",
+      "git_blob": "aad0cb35af300ff12172bdb876f2228905891973",
+      "source_path": "prizma/prizma-front3.js"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-hub.js",
+      "git_blob": "9cec57eb91444a0a677a0dbeb1d737dcbbdd8749",
+      "source_path": "prizma/prizma-hub.js"
+    },
+    {
+      "path": "ozellikler/pasaport/prizma-video.js",
+      "git_blob": "537c5b13e895589368b6956dc0698a3c24e2bd38",
+      "source_path": "prizma/prizma-video.js"
+    },
+    {
+      "path": "ozellikler/pasaport/studio_galeri.css",
+      "git_blob": "89712af1a1989d2e8576c73111ad532fd21cc964",
+      "source_path": "prizma/studio_galeri.css"
+    },
+    {
+      "path": "ozellikler/pasaport/studio_galeri.js",
+      "git_blob": "a7e7621f284dd4e36dbb374a4d47a3e29d2929a7",
+      "source_path": "prizma/studio_galeri.js"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_01_IKI_MEZURA_TERZI.jpg",
+      "git_blob": "eddf841b67002c84d585e4bb624dbf3629b40513",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_01_IKI_MEZURA_TERZI.mp4",
+      "git_blob": "451585c8c1cefac0c75ef29d4a6821e24f855e4f",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4",
+      "git_blob": "4225f4b9fcf4ee2b5b3eb07f77e74d14349c214d",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg",
+      "git_blob": "9c30d35f83b8ebb6cfd29301f6476c1cef9a3efc",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4",
+      "git_blob": "923abba76e8ff94c67c3d17f82e9875bfd60f098",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4",
+      "git_blob": "ec5da846feb5ea911cbb80bb220a4ae2452f523d",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg",
+      "git_blob": "f0b99af072b65c9dba3ab7bedcdc39f85ec9274f",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4",
+      "git_blob": "6c3902f222216dc9a2a2f81bdf303e0c56dd20f9",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/pasaport/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg",
+      "git_blob": "b8b4c3ada42d4f548bb45ca07695b8daac81f63b",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/pasaport/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4",
+      "git_blob": "0a3a84ac59d5b0ae4bda7206a743e65e6c6a2d37",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/renk/dila_8_konsept_senkron.jsonl",
+      "git_blob": "f4b205e89aad1699e328ab71ee4f0fe18077a2d9",
+      "source_path": "prizma/dila_8_konsept_senkron.jsonl"
+    },
+    {
+      "path": "ozellikler/renk/dila_videolar.jsonl",
+      "git_blob": "03c51fc78866f8cec9a325a34d8f3f010cfa8469",
+      "source_path": "prizma/dila_videolar.jsonl"
+    },
+    {
+      "path": "ozellikler/renk/filo_canli_durum.jsonl",
+      "git_blob": "c6d8d57554045fcb0e300543beea82c04cd315a3",
+      "source_path": "prizma/filo_canli_durum.jsonl"
+    },
+    {
+      "path": "ozellikler/renk/manifest.json",
+      "git_blob": "9509eed8b3b2b152563475261794b8510d95d1c6",
+      "source_path": "prizma/manifest.json"
+    },
+    {
+      "path": "ozellikler/renk/prizma-filo.js",
+      "git_blob": "c031535cfa22dc4a8091e8585adc775a9ddede7f",
+      "source_path": "prizma/prizma-filo.js"
+    },
+    {
+      "path": "ozellikler/renk/prizma-front2.js",
+      "git_blob": "f0b6ff6a920283846c4125aed5e55b1d62423f4b",
+      "source_path": "prizma/prizma-front2.js"
+    },
+    {
+      "path": "ozellikler/renk/prizma-front3.js",
+      "git_blob": "aad0cb35af300ff12172bdb876f2228905891973",
+      "source_path": "prizma/prizma-front3.js"
+    },
+    {
+      "path": "ozellikler/renk/prizma-front4.js",
+      "git_blob": "c7fc749af5eb86e9d6384e4dde3604a0fd575c54",
+      "source_path": "prizma/prizma-front4.js"
+    },
+    {
+      "path": "ozellikler/renk/prizma-hub.js",
+      "git_blob": "9cec57eb91444a0a677a0dbeb1d737dcbbdd8749",
+      "source_path": "prizma/prizma-hub.js"
+    },
+    {
+      "path": "ozellikler/renk/prizma-video.js",
+      "git_blob": "537c5b13e895589368b6956dc0698a3c24e2bd38",
+      "source_path": "prizma/prizma-video.js"
+    },
+    {
+      "path": "ozellikler/renk/studio_galeri.css",
+      "git_blob": "89712af1a1989d2e8576c73111ad532fd21cc964",
+      "source_path": "prizma/studio_galeri.css"
+    },
+    {
+      "path": "ozellikler/renk/studio_galeri.js",
+      "git_blob": "a7e7621f284dd4e36dbb374a4d47a3e29d2929a7",
+      "source_path": "prizma/studio_galeri.js"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_01_IKI_MEZURA_TERZI.jpg",
+      "git_blob": "eddf841b67002c84d585e4bb624dbf3629b40513",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_01_IKI_MEZURA_TERZI.mp4",
+      "git_blob": "451585c8c1cefac0c75ef29d4a6821e24f855e4f",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.mp4"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4",
+      "git_blob": "4225f4b9fcf4ee2b5b3eb07f77e74d14349c214d",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg",
+      "git_blob": "9c30d35f83b8ebb6cfd29301f6476c1cef9a3efc",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4",
+      "git_blob": "923abba76e8ff94c67c3d17f82e9875bfd60f098",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4",
+      "git_blob": "ec5da846feb5ea911cbb80bb220a4ae2452f523d",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4"
+    },
+    {
+      "path": "ozellikler/renk/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg",
+      "git_blob": "f0b99af072b65c9dba3ab7bedcdc39f85ec9274f",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4",
+      "git_blob": "6c3902f222216dc9a2a2f81bdf303e0c56dd20f9",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/renk/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg",
+      "git_blob": "b8b4c3ada42d4f548bb45ca07695b8daac81f63b",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/renk/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4",
+      "git_blob": "0a3a84ac59d5b0ae4bda7206a743e65e6c6a2d37",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4"
+    }
+  ],
+  "scope": "Asset and navigation recovery; not a complete acceptance test for all legacy product functions."
+}

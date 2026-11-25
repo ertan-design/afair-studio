@@ -1,0 +1,10 @@
+{"k":"sema","ad":"dila_dna_v1","amac":"8 konsepti tek ortak profille senkronize eden cekirdek kontrat","alanlar":["dna_id","alt_ton","kontrast","yasak_renkler","altin_palet","yeni_siyah","olcu_cm","galeri_tarzi","akustik_mod","sha16"]}
+{"k":"konsept","id":"K1","rol":"ANA","ad":"AFAIR LIVE — Iki Mezura & Dila AI Terzi","hedef":"afair.live","sicrama":"dila_dna_v1 profilini uretip K2..K8'i tetikler"}
+{"k":"konsept","id":"K2","rol":"YAN_1","ad":"AFAIR STUDIO — AI Galeri Art","hedef":"afair.studio","sicrama":"K1 DNA paletiyle kisisel AI sanat sergisi kurar"}
+{"k":"konsept","id":"K3","rol":"YAN_2","ad":"ESTETIK — Renk Bilimi & Yasak Renk Motoru","hedef":"estetik","sicrama":"Alt-ton/kontrast bilimiyle K1, K2 ve K4'u kalibre eder"}
+{"k":"konsept","id":"K4","rol":"YAN_3","ad":"KIYAFET — Mezura Kalibi & Kapsul Gardirop","hedef":"kiyafet","sicrama":"Yasak rengi engelleyip 12 parcalik dikim matrisi uretir"}
+{"k":"konsept","id":"K5","rol":"YAN_4","ad":"SANART — Mekan, Moda & Eser Harmonisi","hedef":"sanart","sicrama":"K2 eserlerini modernatasehir/zehracevik mekanlariyla esler"}
+{"k":"konsept","id":"K6","rol":"YAN_5","ad":"PERMAKULTUR — Dogal Lif & Ekolojik Pigment","hedef":"permakultur","sicrama":"hasat.online/tarim.online ile yavas luks koken bagi kurar"}
+{"k":"konsept","id":"K7","rol":"YAN_6","ad":"GITAR — Akustik Sergi & Prova Atmosferi","hedef":"gitar","sicrama":"Her DNA arketipine ozel BPM/armonik ses imzasi verir"}
+{"k":"konsept","id":"K8","rol":"YAN_7","ad":"DRONE + DIJITAL PASAPORT & 50K KAPI","hedef":"selinahbap.com","sicrama":"3D mekan cekimi + SHA-256 sahiplik pasaportu + senkron muhur"}
+{"k":"epistemoloji","ilke":"Donanim sensoru (%) != Model zeka yuzdesi; uydurma guven yuzdesi yasak; Ureten Olcmez + ters test + read-back zorunlu"}

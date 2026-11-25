@@ -1,0 +1,54 @@
+:root {
+  --bg: #15100f;
+  --panel: #201816;
+  --line: #3e2e2a;
+  --ink: #f7efe7;
+  --muted: #bfa99f;
+  --copper: #dc9d6b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+.sg-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--copper);
+}
+.sg-nav { display: flex; gap: 14px; }
+.sg-nav a { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 11px; }
+.sg-nav a:hover { border-color: var(--copper); color: var(--copper); }
+.sg-wrap { max-width: 1240px; margin: 24px auto; padding: 0 20px 44px; }
+.eyebrow { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.16em; color: var(--copper); }
+h1 { margin: 0 0 8px; font-family: Georgia, serif; font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); }
+.lead { margin: 0 0 20px; color: var(--muted); max-width: 720px; }
+.dna-panel { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.tone-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tbtn {
+  background: #2b201d;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tbtn.is-on { background: var(--copper); color: #19110d; border-color: var(--copper); font-weight: 700; }
+#dna-canvas { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); background: #120d0c; margin-bottom: 16px; }
+.concept-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.ccard { background: #161110; border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.ccard strong { display: block; font-size: 13px; color: var(--copper); margin-bottom: 4px; }
+.ccard p { margin: 0; font-size: 12px; color: var(--muted); }
+@media (max-width: 960px) { .concept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .concept-grid { grid-template-columns: 1fr; } }

@@ -22,7 +22,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.studio/final/kroma-aynasi/index.html",
-      "sha256": "412aef4f19323c77adf5727f44fdb58e75de104c50e2517ec1426f8a65c5f0c9"
+      "sha256": "31d83f5e27fba7c864f5e48ae947988e971098c38a8e137f05f7c1d97a857d02"
     },
     {
       "path": "final/dila-kimlik-arsivi/index.html",
@@ -40,7 +40,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.studio/final/sekiz-konsept-kapasite/index.html",
-      "sha256": "98c575e1381c969317a35b09cd55eca11224bd7f75abbc80a057cc6bff345d94"
+      "sha256": "c9157e908c67c78430b57c7e29f1acb1c807396e6ed3d52d678f1d5cff8e74d9"
     },
     {
       "path": "final/dort-front-senkron/index.html",
@@ -49,7 +49,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.studio/final/dort-front-senkron/index.html",
-      "sha256": "0cd0d4fdc39f44919a299ec841c45041587960e4995ca9f18d57544336b26f2d"
+      "sha256": "22217771dc99531cff2ea3ffa1dae045e3ccf1a0b218ab00f48c61a09f6e53c6"
     },
     {
       "path": "final/wildcard-alt-domain/index.html",
@@ -58,7 +58,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.studio/final/wildcard-alt-domain/index.html",
-      "sha256": "df2ac24edde28f4a05a0c47ca6782e3d940a9c5f7eeaa96805e2649e34302f20"
+      "sha256": "98ee932980baf4a62de482013f91b2e218fb560e1a96c3092a70c359b75db3aa"
     },
     {
       "path": "final/atolye-8d-ses-ucus/index.html",
@@ -565,5 +565,6 @@
       "sha256": "fc95ddda4d8fe27a8a66f7e4629d277b3d52229d250680a26a097140a6f0ca2c"
     }
   ],
-  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication"
+  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication",
+  "recovery_record": "/ozellikler/kurtarma-kaydi.json"
 }

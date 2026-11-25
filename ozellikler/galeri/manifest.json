@@ -1,0 +1,203 @@
+{
+  "schema": "prizma.live-bundle.v2",
+  "generated_utc": "2026-11-24T22:19:32.391Z",
+  "csp_strict_safe": true,
+  "zero_cdn": true,
+  "zero_xss": true,
+  "zero_local_path_leaks": true,
+  "targets": [
+    "https://ertanaraz.com/prizma/",
+    "https://www.afair.studio/prizma/",
+    "https://www.afair.live/prizma/"
+  ],
+  "video_studio": "video.html + 4x RTX 3090 NVENC MP4 + Higgsfield Cloud API Adapter",
+  "file_count": 31,
+  "files": [
+    {
+      "file": "dila_8_konsept_senkron.jsonl",
+      "bytes": 1775,
+      "sha256": "a9eee115016e08e60a83186af3036ef7e89df7a0a5299a0bbd5eb3cf4dc49cb0",
+      "sha16": "a9eee115016e08e6"
+    },
+    {
+      "file": "dila_videolar.jsonl",
+      "bytes": 1039,
+      "sha256": "7ec841a32c34ecb5024a0ba980a04ac83a70f8a72fc80fa7a8f59f5946deedb8",
+      "sha16": "7ec841a32c34ecb5"
+    },
+    {
+      "file": "filo_canli_durum.jsonl",
+      "bytes": 4476,
+      "sha256": "0eb2cd9be38cbf53c4cb810fa2c08e54a596bd76f1f3d9a3d027884310a100c0",
+      "sha16": "0eb2cd9be38cbf53"
+    },
+    {
+      "file": "filo.html",
+      "bytes": 3542,
+      "sha256": "4f006bfc3e99888a27f2f469c954e8c4ed1f65ddc19b417eab549cf546af5262",
+      "sha16": "4f006bfc3e99888a"
+    },
+    {
+      "file": "front1.html",
+      "bytes": 9609,
+      "sha256": "ec8e89715b7434e8f65dd3f0cd4d6ff5bb9fee3011ed776197f1ba42d907e2bf",
+      "sha16": "ec8e89715b7434e8"
+    },
+    {
+      "file": "front2.html",
+      "bytes": 7202,
+      "sha256": "a3f26baeeca9e5e0a6225f9fc02234c087bbeb9dc9332f3015acd828da6c8c93",
+      "sha16": "a3f26baeeca9e5e0"
+    },
+    {
+      "file": "front3.html",
+      "bytes": 4748,
+      "sha256": "eafdd5f85152c3dd8c6b8ccfca8db390bc22b86fe1e1ac588177e40a53e78587",
+      "sha16": "eafdd5f85152c3dd"
+    },
+    {
+      "file": "front4.html",
+      "bytes": 5632,
+      "sha256": "cd06cb6a47f2918895d89259ace8695ec91e15750b6adefb5102917ba4705085",
+      "sha16": "cd06cb6a47f29188"
+    },
+    {
+      "file": "index.html",
+      "bytes": 8156,
+      "sha256": "01f660042b52994f25d91d0e1f3703a7bf3c71f121f217de38e30dad07bc1dd5",
+      "sha16": "01f660042b52994f"
+    },
+    {
+      "file": "prizma-data.js",
+      "bytes": 22670,
+      "sha256": "b32eb30633741705ef937fc6739bcaf7208b1319f60775d57e45a0b9a1464518",
+      "sha16": "b32eb30633741705"
+    },
+    {
+      "file": "prizma-filo.js",
+      "bytes": 4076,
+      "sha256": "7ee027f065d7f876c49294e6256928f477c4624320efa8e870c986c0a8d4aa12",
+      "sha16": "7ee027f065d7f876"
+    },
+    {
+      "file": "prizma-front1.js",
+      "bytes": 11380,
+      "sha256": "07fb0ca1e4be4eee582101bcf5457f6babee617abebc5ce77ad86777893c4ec8",
+      "sha16": "07fb0ca1e4be4eee"
+    },
+    {
+      "file": "prizma-front2.js",
+      "bytes": 10331,
+      "sha256": "8f4e1a4226310445629cd9cbd1c046aefc52fd6699a8f551700826092c3501ef",
+      "sha16": "8f4e1a4226310445"
+    },
+    {
+      "file": "prizma-front3.js",
+      "bytes": 9455,
+      "sha256": "b941e09df08b88e22a7b250fb896dded88e02b19a7779dfd61a0df6825ad9052",
+      "sha16": "b941e09df08b88e2"
+    },
+    {
+      "file": "prizma-front4.js",
+      "bytes": 12972,
+      "sha256": "12ce29b34d2265ff0f982b092ee6d122138419b0efd87f9ce4c893062d156a07",
+      "sha16": "12ce29b34d2265ff"
+    },
+    {
+      "file": "prizma-hub.js",
+      "bytes": 4606,
+      "sha256": "61ca0a701b255725e173f02fb224072155e3217e0bf5fe06e500bfa0c5d474f0",
+      "sha16": "61ca0a701b255725"
+    },
+    {
+      "file": "prizma-video.js",
+      "bytes": 10842,
+      "sha256": "4a6270436b95334e47bfa46feb1c2a10d727662f6decd344ab0bf5e0cf0a39f8",
+      "sha16": "4a6270436b95334e"
+    },
+    {
+      "file": "prizma.css",
+      "bytes": 10860,
+      "sha256": "ac9c7d668392e72c4515f60ab9d13ebecc9c0738dab6898762c4cd7c38b80045",
+      "sha16": "ac9c7d668392e72c"
+    },
+    {
+      "file": "video.html",
+      "bytes": 8261,
+      "sha256": "003294d80dd8cc268b89470448c5e30039a240ab0902094794ddf0d927077cc5",
+      "sha16": "003294d80dd8cc26"
+    },
+    {
+      "file": "video/DILA_01_IKI_MEZURA_TERZI.jpg",
+      "bytes": 57510,
+      "sha256": "83803a329f7a8878e1f1a15b804cbdc867aec16c53ab796eb2f6fe8df8f5fe8d",
+      "sha16": "83803a329f7a8878"
+    },
+    {
+      "file": "video/DILA_01_IKI_MEZURA_TERZI.mp4",
+      "bytes": 1512136,
+      "sha256": "d55b0ff26e2485ffb70ca6eccb9468453cd027212350158a6926cd169d8796bb",
+      "sha16": "d55b0ff26e2485ff"
+    },
+    {
+      "file": "video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg",
+      "bytes": 54537,
+      "sha256": "957937715da56a4889847e7c1f374de074e5c3abbcc0c85123f7df4dc2fecfc2",
+      "sha16": "957937715da56a48"
+    },
+    {
+      "file": "video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4",
+      "bytes": 1625731,
+      "sha256": "8677875daf93c03da4b9019fc2a10757e011e833ad488bb13aff3d79546d3cdc",
+      "sha16": "8677875daf93c03d"
+    },
+    {
+      "file": "video/DILA_03_YENI_SIYAH_AKUSTIK.jpg",
+      "bytes": 54078,
+      "sha256": "13fee8e0cf24e3c3de14fe931e4f5279c32d5c4322f6b2a3346c87b5adee66bb",
+      "sha16": "13fee8e0cf24e3c3"
+    },
+    {
+      "file": "video/DILA_03_YENI_SIYAH_AKUSTIK.mp4",
+      "bytes": 1429197,
+      "sha256": "a0e225357133f6bd4a5ea792fcf45c1b258033885b815b9de7060cabafdca9e2",
+      "sha16": "a0e225357133f6bd"
+    },
+    {
+      "file": "video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg",
+      "bytes": 54537,
+      "sha256": "957937715da56a4889847e7c1f374de074e5c3abbcc0c85123f7df4dc2fecfc2",
+      "sha16": "957937715da56a48"
+    },
+    {
+      "file": "video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4",
+      "bytes": 4005705,
+      "sha256": "123ae1af03e1cdd0968066e66fc688f6f52af697238dc94bdb077932c79882ba",
+      "sha16": "123ae1af03e1cdd0"
+    },
+    {
+      "file": "video/HF_01_GALERIDE_IPEK_FASTSTART.jpg",
+      "bytes": 22954,
+      "sha256": "2188e88327993a9ae513dc49050269b306b36107e8997f6ea946e8295f31ce5a",
+      "sha16": "2188e88327993a9a"
+    },
+    {
+      "file": "video/HF_01_GALERIDE_IPEK_FASTSTART.mp4",
+      "bytes": 1164848,
+      "sha256": "a3ffca3a1c008b738a16fef33e2d1eb574f1ae2236fbf5519b352e0ad64f6593",
+      "sha16": "a3ffca3a1c008b73"
+    },
+    {
+      "file": "video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg",
+      "bytes": 19487,
+      "sha256": "5b5a91684ab57c3a1a17d86b7a8d59f9e303c591d438cc7053b2393b48e1f5fa",
+      "sha16": "5b5a91684ab57c3a"
+    },
+    {
+      "file": "video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4",
+      "bytes": 1173752,
+      "sha256": "003a90b236854b5fdf5a49e75799df800ab94757d26d118fb170ed1efccf9a2e",
+      "sha16": "003a90b236854b5f"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{"id":"scene1","origin":"own_rtx3090_nvenc","f":"DILA_01_IKI_MEZURA_TERZI.mp4","dur":6,"b":1512136,"ms":771,"fps":233.5,"faststart":true,"sha16":"d55b0ff26e2485ff"}
+{"id":"scene2","origin":"own_rtx3090_nvenc","f":"DILA_02_AFAIR_STUDIO_AI_GALERI.mp4","dur":6,"b":1625824,"ms":728,"fps":247.3,"faststart":true,"sha16":"8677875daf93c03d"}
+{"id":"scene3","origin":"own_rtx3090_nvenc","f":"DILA_03_YENI_SIYAH_AKUSTIK.mp4","dur":6,"b":1429132,"ms":666,"fps":270.3,"faststart":true,"sha16":"a0e225357133f6bd"}
+{"id":"master_reel","origin":"own_rtx3090_nvenc","f":"DILA_04_MARKA_FILMI_MASTER_REEL.mp4","dur":15,"b":4005926,"ms":1376,"fps":327,"faststart":true,"sha16":"123ae1af03e1cdd0"}
+{"id":"hf_galeri","origin":"higgsfield_seedance_2.5","f":"HF_01_GALERIDE_IPEK_FASTSTART.mp4","dur":5.05,"b":1164848,"ms":45,"fps":30,"faststart":true,"sha16":"a3ffca3a1c008b73"}
+{"id":"hf_terzi","origin":"higgsfield_seedance_2.5","f":"HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4","dur":5.05,"b":1173752,"ms":42,"fps":30,"faststart":true,"sha16":"003a90b236854b5f"}
