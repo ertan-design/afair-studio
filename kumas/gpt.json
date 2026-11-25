@@ -1,0 +1,21 @@
+{
+ "ad": "AFAIR / STUDIO · Dokun",
+ "amac": "Kumaşı gerçek fizikle göstermek: asılı bir kumaş rüzgârla dalgalanır, kullanıcı tutup çeker, 360 derece döner. Kumaş seçimi bir ürün kartının önizlemesidir.",
+ "adres": "/kumas/",
+ "sayfa_api": {
+  "nesne": "window.KUMAS",
+  "malzemeler": {"saten": "İpek saten", "kadife": "Kadife", "keten": "Keten"},
+  "cagrilar": {
+   "KUMAS.malzeme('saten'|'kadife'|'keten')": "kumaşı değiştirir; geçersiz adda false",
+   "KUMAS.ruzgar(0..1)": "rüzgâr gücünü ayarlar",
+   "KUMAS.nefes()": "tek seferlik üfleme",
+   "KUMAS.donus(derece)": "kamerayı verilen açıya çevirir",
+   "KUMAS.durum()": "{malzeme, ruzgar, parcacik, bag, tutuluyor}"
+  }
+ },
+ "kullanici": ["kumaşı sürükle: tut ve çek", "boşluğu sürükle: 360 derece dön", "teker: yaklaş", "ok tuşları: dön", "boşluk tuşu: üfle"],
+ "fizik": {"yontem": "Verlet kütle-yay", "parcacik": 2240, "yinelem": 10, "ruzgar": "üçgen başına yüzeye dik basınç", "asili_halka": 14},
+ "isik": {"ana": "tepeden spot, ışık havuzu", "arka": "kenar ışığı", "saten": "Kajiya-Kay anizotropik parlama, 5 çerçeveli saten örgü", "kadife": "hav kenar parlaması", "keten": "mat, düzensiz iplik"},
+ "sinirlar": ["renk ve doku temsilidir; bir ürünün gerçek fotoğrafı değildir", "fiyat, stok ve sipariş bağlı değildir"],
+ "bagimlilik": "yok; ağ isteği yok"
+}
