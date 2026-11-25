@@ -1,50 +1,72 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <title>ATAŞEHİR × AFAIR · Dokun, Çevir, Şehre Uç</title>
-  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
-  <link rel="stylesheet" href="./afair-8d.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>AFFFAIR · Çatıdan uç. Şehre in.</title>
+<meta name="description" content="Ataşehir'in üç kulesinden istediğin yöne süzül; yeni evinde terzi, sanat ve doğayla tanış.">
+<link rel="stylesheet" href="./afffair8d.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "AFFFAIR × Başka İstanbul Yok · Çatıdan uç. Şehre in.", "description": "Google Maps kullanmadan Ataşehir Modern'in 3 kulesinden Watergarden, Finanskent, Maltepe Sahili ve İstanbul'a WebGL2 3B yönlendirilebilir uçuş.", "applicationCategory": "DesignApplication", "isAccessibleForFree": true, "potentialAction": [{"@type": "ControlAction", "name": "Steer3DTowerFlight", "target": "https://www.afair.studio/dokuma-ufuk/?tower={0_3}&yaw={0_360}"}]}</script>
+<script id="afair-gpt-state" type="application/json">{}</script>
+<script src="./ufuk8d.js" defer></script>
 </head>
-<body data-baslik="Dokun. Çevir. Şehre uç.">
-  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
+<body>
+<div class="stage-wrap">
+  <canvas id="flightCanvas" class="gl-canvas" aria-label="Sürükleyerek yönlendirebileceğin 3 boyutlu 3 kule uçuş sahnesi"></canvas>
 
-  <header class="ust-bar">
-    <div class="marka-grup">
-      <a class="marka" href="./index.html">ATAŞEHİR</a>
-    </div>
-    <nav class="kip-grup" aria-label="Sahne">
-      <button type="button" class="hap aktif" id="kip-kumas">Kumaş</button>
-      <button type="button" class="hap" id="kip-ucus">Uçuş</button>
-      <button type="button" class="hap" id="kip-yasam">Yaşam</button>
+  <header class="top-whisper">
+    <a class="brand-mark" href="/">AFFFAIR</a>
+    <nav class="top-actions" aria-label="Sahne geçişi">
+      <a class="ghost-pill" href="/">8D Kumaş</a>
     </nav>
   </header>
 
-  <section class="baslik-katmani" aria-live="polite">
-    <h1 id="hero-baslik">Dokun. Çevir. Şehre uç.</h1>
-    <p id="hero-alt">360° sürükle. Üç çatıdan yönünü seç.</p>
-  </section>
+  <div class="hero-copy">
+    <h1 class="hero-title">Çatıdan uç.<br>Şehre in.</h1>
+    <p class="hero-sub" id="routeSub">Kule 1 · 43. Kat → Watergarden · Sürükleyerek yönlendir.</p>
+  </div>
 
-  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
-    <p id="cekmece-metin">Online İki-Mezura Terzi şu an müsait.</p>
-    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="none" data-src="/dokuma-ufuk/medya/genie_ucus_referans.mp4"></video>
-    <div class="mini-aksiyon">
-      <a class="cam-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Aç ↗</a>
-      <button type="button" class="cam-dugme" id="cekmece-kapat">Kapat</button>
+  <div class="dock" role="region" aria-label="Uçuş yönü seçimi">
+    <button type="button" class="pill-btn on" data-tower="0">Watergarden</button>
+    <button type="button" class="pill-btn" data-tower="1">Finanskent</button>
+    <button type="button" class="pill-btn" data-tower="2">Sahil</button>
+    <button type="button" class="pill-btn" data-tower="3">İstanbul</button>
+  </div>
+</div>
+
+<section class="below-fold" aria-label="Yeni komşu yaşam masası ve GPT bağlantıları">
+  <article class="q-card">
+    <div>
+      <h2>Online Terzi Müsait</h2>
+      <p>Yeni evine iki mezura ve gerçek Pantone kumaşlarla bugün uğrayalım.</p>
     </div>
-  </aside>
-
-  <footer class="alt-bar">
-    <div class="alt-dugmeler">
-      <button type="button" class="cam-dugme" id="btn-sec">Kumaş</button>
-      <button type="button" class="cam-dugme" id="btn-ruzgar">Rüzgâr</button>
-      <button type="button" class="cam-dugme" id="btn-ses">8D Ses</button>
+    <div>
+      <button type="button" class="pill-btn on" data-book="tailor">Terzi Çağır</button>
+      <div class="q-status" id="msg-tailor"></div>
     </div>
-    <span class="durum-etiket" id="canli-durum">Şampanya İpeği · 22°</span>
-  </footer>
-
-  <script src="./afair-8d.js"></script>
+  </article>
+  <article class="q-card">
+    <div>
+      <h2>Tarım Danışmanı</h2>
+      <p>Balkonunun rüzgârına uygun zeytin, lavanta ve doğal hasat randevusu.</p>
+    </div>
+    <div>
+      <button type="button" class="pill-btn" data-book="agro">Randevu Al</button>
+      <div class="q-status" id="msg-agro"></div>
+    </div>
+  </article>
+  <article class="q-card">
+    <div>
+      <h2>360° İpek &amp; Canlı RYTE</h2>
+      <p>Loş ışıkta dokumayı 360° incele veya GPT / C:\ryte canlı manifestini aç.</p>
+    </div>
+    <div class="top-actions">
+      <a class="pill-btn" href="/">8D Kumaş ↗</a>
+      <a class="pill-btn" href="./gpt.json">GPT JSON</a>
+      <a class="pill-btn" href="./ryte-canli.json">RYTE Canlı</a>
+    </div>
+  </article>
+</section>
 </body>
 </html>

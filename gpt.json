@@ -1,52 +1,175 @@
 {
-  "schema": "afffair.prizma.gpt-contract.v2",
-  "marka": "AFFFAIR × PRIZMA ATELIER",
-  "slogan": "Kumaşına dokun. Evinden uç.",
-  "alt_slogan": "Sana özel kumaş. Üç kule. Özgür İstanbul.",
-  "amac": "İstanbul Haute Couture (AFFFAIR) sessiz lüks estetiğini, saf siyah (#000000) vetolu 6 Pantone TCX doğal kumaşı, Google Maps olmadan 3 kule çatı uçuşunu ve Ataşehir Modern'e yeni taşınan bir misafirin 4-site yaşam ihtiyacını (online terzi, sanat/ışık, tarım danışmanı, 50K kapı pasaportu) tek sade deneyimde birleştirmek.",
-  "dila_8_kural_uyumu": {
-    "1_sifir_karisiklik": "3 tam ekran odaklı sahne; minimum metin",
-    "2_gorur_gormez_hareketli": "Açılışta canlı 60 FPS WebGL rüzgarlı kumaş",
-    "3_gen_z_ve_quiet_luxury": "AFFFAIR loş stüdyo ışığı, sıcak espresso-obsidyen (#110d0c), 0 saf siyah",
-    "4_3yas_basit_slogan": "Kumaşına dokun. Evinden uç.",
-    "5_kisa_net_oz": "Her ekranda tek odak ve 2-4 kelimelik başlıklar",
-    "6_kafa_yormayan": "Tek satırlık yüzen kontrol şeridi",
-    "7_gercek_fizik_ve_8d": "60x60 gerçek 3D WebGL kumaş örgüsü, rüzgar dalgası, kadife/ipek Fresnel gölgesi, Sürreal 8D morfu ve StereoPanner 8D ses",
-    "8_tam_yonlendirilebilir": "360° fare/dokunmatik döndürme, yakınlaştırma, kumaşa dokunup dalga yaratma, rüzgar/ışık açısı ve WASD/ok/sürükleme ile yönlendirilebilir 3D uçuş"
+  "schema": "afffair.dila.8kural.gpt.v3",
+  "updated": "2026-11-25T04:58:40+03:00",
+  "brand": "AFFFAIR",
+  "purpose": {
+    "why_built": "Ataşehir Modern'in 3 kulesine yeni taşınan bir sakinin ve lüks moda/sanat ziyaretçisinin: (1) gerçek Pantone dokumaları loş galeri ışığında 360° çevirip rüzgârla dalgalandırması (afair.studio), (2) çatıdan Watergarden, Finanskent, Maltepe Sahili ve tüm İstanbul'a Google Maps kullanmadan kendi parmağıyla uçması (dokuma-ufuk & baskaistanbulyok), (3) seçtiği kumaşla eve iki-mezura canlı terzi ve tarım danışmanı çağırması (afair.live) — insanlar için sıfır karmaşa, GPT ajanlar için %100 makine-okunur kontrol.",
+    "dila_8_laws_verified": {
+      "1_no_clutter_le_8_controls": true,
+      "2_instant_entry_webgl2_motion": true,
+      "3_gen_z_mobile_and_inertia": true,
+      "4_quiet_luxury_afffair_le_3_fonts": true,
+      "5_short_child_clear_copy_le_30_words": true,
+      "6_zero_cognitive_load": true,
+      "7_real_webgl2_pleated_cloth_and_3d_flight_8d_shadows": true,
+      "8_zero_toggle_direct_360_and_wind_flight_steering": true
+    },
+    "pure_black_veto": "STRICT_ZERO_PURE_BLACK_LIFTED_OBSIDIAN_0E1016",
+    "pending_tasks_in_memory": 0,
+    "ryte_subagents_live_endpoint": "/ryte-canli.json",
+    "pii_stored": 0
   },
-  "kumaslar_pantone_tcx": [
-    { "id": "zumrut", "pantone": "PANTONE 19-5918 TCX", "ad": "Oksitlenmiş Zümrüt İpek", "hex": "#132E2A", "orgu": "2/2 Dimi", "gramaj": "145 g/m²", "koken": "Bursa İpeği" },
-    { "id": "espresso", "pantone": "PANTONE 19-1111 TCX", "ad": "Gece Espressosu Gabardin", "hex": "#2A1E1B", "orgu": "Gabardin Dimi", "gramaj": "260 g/m²", "koken": "Organik Merinos" },
-    { "id": "murdum", "pantone": "PANTONE 19-2024 TCX", "ad": "Derin Patlıcan İpek Krep", "hex": "#2D1C2B", "orgu": "Bükümlü Krep", "gramaj": "118 g/m²", "koken": "Yıkanmış İpek" },
-    { "id": "kehribar", "pantone": "PANTONE 16-0948 TCX", "ad": "Antik Kehribar Keten-İpek", "hex": "#B87E35", "orgu": "1/1 Bezayağı", "gramaj": "190 g/m²", "koken": "Trakya Keteni + İpek" },
-    { "id": "keten", "pantone": "PANTONE 12-0710 TCX", "ad": "Ham Ağartılmamış Keten", "hex": "#E2D5BE", "orgu": "1/1 Bezayağı", "gramaj": "215 g/m²", "koken": "Boyasız Organik Keten" },
-    { "id": "antrasit", "pantone": "PANTONE 19-4013 TCX", "ad": "Ay Işığı Antrasit Kaşmir", "hex": "#1B2230", "orgu": "5/1 Saten Dimi", "gramaj": "285 g/m²", "koken": "Kaşmir + Merinos" }
+  "programmatic_browser_api": {
+    "globals": [
+      "window.AFAIR_GPT_API",
+      "window.AFAIR_STUDIO_API"
+    ],
+    "webmcp_tool": "afair_control_8d_stage",
+    "url_query_controls": "?fabric=0..3&yaw=0..360&pitch=-65..65&wind=0..200&tower=0..3"
+  },
+  "fabrics_pantone_tcx": [
+    {
+      "id": 0,
+      "code": "PANTONE 16-1342 TCX",
+      "name": "Bakır Atlas",
+      "sub": "22 Momme İpek Saten · Loş Spot Yansımalı",
+      "rgb": [
+        0.76,
+        0.44,
+        0.26
+      ],
+      "spec": [
+        0.98,
+        0.85,
+        0.66
+      ],
+      "sheen": 0.88,
+      "trans": 0.34,
+      "weave": 88.0
+    },
+    {
+      "id": 1,
+      "code": "PANTONE 13-1008 TCX",
+      "name": "Şampanya İpek",
+      "sub": "Ham Organze & Keten Karışımı · 185 g/m²",
+      "rgb": [
+        0.85,
+        0.79,
+        0.69
+      ],
+      "spec": [
+        1.0,
+        0.96,
+        0.88
+      ],
+      "sheen": 0.72,
+      "trans": 0.46,
+      "weave": 72.0
+    },
+    {
+      "id": 2,
+      "code": "PANTONE 19-2428 TCX",
+      "name": "Mürdüm Kadife",
+      "sub": "Kesik Hav İpek Kadife · 320 g/m²",
+      "rgb": [
+        0.46,
+        0.17,
+        0.33
+      ],
+      "spec": [
+        0.95,
+        0.68,
+        0.8
+      ],
+      "sheen": 0.78,
+      "trans": 0.22,
+      "weave": 68.0
+    },
+    {
+      "id": 3,
+      "code": "PANTONE 19-3924 TCX",
+      "name": "Gece İpeği",
+      "sub": "Saf Siyah Yasağı İkamesi · Derin İndigo",
+      "rgb": [
+        0.19,
+        0.27,
+        0.44
+      ],
+      "spec": [
+        0.76,
+        0.84,
+        0.98
+      ],
+      "sheen": 0.9,
+      "trans": 0.3,
+      "weave": 96.0
+    }
   ],
-  "yasak_renk": "#000000",
-  "atasehir_modern_3_kule": {
-    "adres": "Atatürk Mah., Ahmet Yesevi Cad., Ataşehir / İstanbul",
-    "koordinat_yaklasik": "40.98 K, 29.12 D",
-    "google_maps_kullanimi": false,
-    "rotalar": [
-      { "kule": "Balance Tower (35 Kat)", "yon": "242° GB", "hedef": "Watergarden İstanbul AVM", "mesafe_km": 2.4 },
-      { "kule": "Flex Tower (43 Kat)", "yon": "048° KD", "hedef": "İstanbul Finans Merkezi (İFM)", "mesafe_km": 2.8 },
-      { "kule": "Grand Tower (25 Kat)", "yon": "174° G", "hedef": "Maltepe Sahili · Miting & Konser Alanı", "mesafe_km": 10.8 },
-      { "kule": "Üst Halka (420 m)", "yon": "360° İstanbul", "hedef": "Başka İstanbul Yok (Adalar · Boğaz · Gökçeada)", "mesafe_km": 28.5 }
-    ]
-  },
-  "canli_adresler": {
-    "afair_studio_atolye": "https://www.afair.studio/prizma/atolye/",
-    "afair_live_atolye": "https://www.afair.live/prizma/atolye/",
-    "ertanaraz_atolye": "https://ertanaraz.com/prizma-atolye/",
-    "atasehirmodern_atolye": "https://www.xn--ataehirmodern-ktc.com/prizma-atolye/",
-    "modernatasehir_atolye": "https://www.xn--modernataehir-qtc.com/prizma-atolye/",
-    "front1_renk": "https://www.afair.studio/prizma/front1",
-    "front2_mezura": "https://www.afair.live/prizma/front2",
-    "front3_galeri": "https://www.afair.studio/prizma/front3",
-    "front4_pasaport": "https://ertanaraz.com/prizma/front4",
-    "video_studyo": "https://www.afair.studio/prizma/video",
-    "tarim_danisman": "https://www.tarim.online/",
-    "selinahbap_50k": "https://www.selinahbap.com/"
-  },
-  "eksik_ve_sinir": "Randevu fişleri tarayıcı içinde SHA-16 mühürlü JSONL üretir (harici SMS/takvim/ödeme bağlı değildir); baskaistanbulyok.com DNS yönlendirmesi henüz aktif değildir."
+  "atasehir_3tower_routes": [
+    {
+      "id": 0,
+      "name": "Watergarden",
+      "tower": "Kule 1 · 43. Kat",
+      "to": "Watergarden AVM & Sanat",
+      "rgb": [
+        0.82,
+        0.56,
+        0.3
+      ],
+      "tx": -1.65,
+      "ty": -0.55,
+      "tz": -1.35
+    },
+    {
+      "id": 1,
+      "name": "Finanskent",
+      "tower": "Kule 2 · 35. Kat",
+      "to": "Finanskent Fırsat & Ses",
+      "rgb": [
+        0.38,
+        0.68,
+        0.82
+      ],
+      "tx": 1.65,
+      "ty": -0.45,
+      "tz": -1.55
+    },
+    {
+      "id": 2,
+      "name": "Maltepe Sahil",
+      "tower": "Kule 3 · 25. Kat",
+      "to": "Sahil Konser & Spor",
+      "rgb": [
+        0.36,
+        0.74,
+        0.62
+      ],
+      "tx": -0.65,
+      "ty": -0.62,
+      "tz": 1.45
+    },
+    {
+      "id": 3,
+      "name": "İstanbul",
+      "tower": "Üst Halka · +420m",
+      "to": "Başka İstanbul Yok",
+      "rgb": [
+        0.78,
+        0.46,
+        0.66
+      ],
+      "tx": 0.15,
+      "ty": 0.82,
+      "tz": -1.75
+    }
+  ],
+  "live_surfaces": [
+    "https://www.afair.studio/",
+    "https://www.afair.studio/dokuma-ufuk/",
+    "https://www.afair.studio/karbon-8d/",
+    "https://www.afair.studio/karbon-ucus/",
+    "https://www.afair.live/",
+    "https://www.afair.live/karbon-8d/",
+    "https://ertanaraz.com/baskaistanbulyok"
+  ]
 }

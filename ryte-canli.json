@@ -1,68 +1,125 @@
 {
-  "sema": "afair.ryte-canli-kopru.v1",
-  "durum": "CANLI",
-  "uretim_utc": "2026-11-25T01:23:32Z",
-  "aciklama": "Bulut GPT ve alt ajanlar icin canli RYTE oda dizini ve WebMCP yetenek koprusu (sifir yerel yol).",
-  "toplam_oda": 113,
+  "sema": "afffair.ryte-canli-kopru.v3",
+  "durum": "CANLI_AKTIF",
+  "uretim_ts": "2026-11-25T04:58:40+03:00",
+  "uretim_utc": "2026-11-25T01:58:40Z",
+  "aciklama": "AFFFAIR Quiet Luxury 8-Kural sahneleri, C:\\ryte canli alt-ajan agi ve GPT/WebMCP tam islevsel kontrol koprusu (sifir yerel kullanici yolu, sifir PII).",
+  "aktif_alt_ajanlar": [
+    {
+      "id": "ryte-auditor-53d84c2a",
+      "rol": "RYTE Local Sites 8-Rule Auditor",
+      "durum": "CANLI_DOGRULANDI"
+    },
+    {
+      "id": "afair-mesh-8a9f202c",
+      "rol": "AFAIR Repos & RYTE Live Mesh Inspector",
+      "durum": "CANLI_DOGRULANDI"
+    },
+    {
+      "id": "gpt-ux-08e822c9",
+      "rol": "GPT Functionality & Quiet-Luxury UX Architect",
+      "durum": "CANLI_DOGRULANDI"
+    },
+    {
+      "id": "studio-router-ba6da935",
+      "rol": "AFAIR Studio Live Routing & 8-Law Auditor",
+      "durum": "CANLI_DOGRULANDI"
+    }
+  ],
+  "toplam_oda": 118,
+  "bekleyen_gorev_sayisi": 0,
   "canli_siteler": [
     {
       "alan": "afair.studio",
       "url": "https://www.afair.studio/",
-      "rol": "Quiet Luxury 360° 8D Ipek & Ruzgar Atolyesi"
+      "rol": "AFFFAIR Quiet Luxury 360° 8D Pilili İpek & Rüzgâr Heykeli"
+    },
+    {
+      "alan": "afair.studio/dokuma-ufuk",
+      "url": "https://www.afair.studio/dokuma-ufuk/",
+      "rol": "Ataşehir 3-Kule WebGL2 Yönlendirilebilir Çatı Uçuşu"
     },
     {
       "alan": "afair.live",
       "url": "https://www.afair.live/",
-      "rol": "Online Iki-Mezura Terzi & Yasam Masasi"
+      "rol": "AFFFAIR Live 360° Kumaş & Eve İki-Mezura Terzi Sahnesi"
     },
     {
-      "alan": "selinahbap.com",
-      "url": "https://www.selinahbap.com/",
-      "rol": "1903 GPT Birlesik Sahne & Tarim Danismani"
-    },
-    {
-      "alan": "atasehirmodern.com",
-      "url": "https://www.xn--ataehirmodern-ktc.com/dokuma-ufuk/",
-      "rol": "Atasehir 3-Blok Catidan Ucus & Sehir Girisi"
-    },
-    {
-      "alan": "modernatasehir.com",
-      "url": "https://www.xn--modernataehir-qtc.com/dokuma-ufuk/",
-      "rol": "Modern Atasehir Sakin Yasam Hizmetleri"
-    },
-    {
-      "alan": "codekafa.com",
-      "url": "https://www.codekafa.com/dokuma-ufuk/",
-      "rol": "Olcum, Elektronik & Kapilar"
-    },
-    {
-      "alan": "ertanaraz.com",
-      "url": "https://ertanaraz.com/baska-istanbul-yok/",
-      "rol": "Baska Istanbul Yok Ust Halka & Tum Gercek Isler"
+      "alan": "ertanaraz.com/baskaistanbulyok",
+      "url": "https://ertanaraz.com/baskaistanbulyok",
+      "rol": "Başka İstanbul Yok Üst Halka & 297 Canlı İş Kapısı"
     }
   ],
-  "webmcp_araclari": [
-    "afair_control_8d_stage(mode, fabricIndex, angleDeg, wind, flightTarget)",
-    "window.AFAIR_STUDIO_API.durumOku()",
-    "window.AFAIR_STUDIO_API.aciAyarla360(derece)",
-    "window.AFAIR_STUDIO_API.ruzgarAyarla(oran01)",
-    "window.AFAIR_STUDIO_API.ucusYonlendir(hedefIdx)",
-    "window.AFAIR_STUDIO_API.ryteCanliOku()"
+  "gpt_ve_webmcp_araclari": [
+    "GET /gpt.json",
+    "GET /llms.txt",
+    "GET /ryte-canli.json",
+    "window.AFAIR_GPT_API.purpose()",
+    "window.AFAIR_GPT_API.getState()",
+    "window.AFAIR_GPT_API.setFabric(0..3)",
+    "window.AFAIR_GPT_API.setOrbit360(yawDeg, pitchDeg, zoom)",
+    "window.AFAIR_GPT_API.setWind(strength_0_200, angleDeg_0_360)",
+    "window.AFAIR_GPT_API.selectTower(0..3)",
+    "window.AFAIR_GPT_API.steerFlight(dx, dy, progress_0_1)",
+    "window.AFAIR_GPT_API.book(service)",
+    "navigator.modelContext: afair_control_8d_stage"
   ],
   "son_odalar": [
     {
-      "oda": "🖤_20261125_GEMINI_DILA_8KURAL_QUIET_LUXURY_360_8D_KUMAS_VE_CANLI_RYTE",
-      "guncelleme_utc": "2026-11-25T01:22:40Z",
-      "ust_dosya_sayisi": 0,
-      "ust_bayt": 0,
-      "muhur_var": false
+      "oda": "00001903_20261124_212500_CLAUDE_MASA_BIRLESIK_ARAYUZ_TEKNIK_SERGISI",
+      "guncelleme_utc": "2026-11-25T01:52:44Z",
+      "ust_dosya_sayisi": 4,
+      "ust_bayt": 10141,
+      "muhur_var": true
+    },
+    {
+      "oda": "00000008_20261125_043620_CLAUDE_TERAZI_Dila_8_Kural_Hakemi_⚖️",
+      "guncelleme_utc": "2026-11-25T01:45:30Z",
+      "ust_dosya_sayisi": 5,
+      "ust_bayt": 34901,
+      "muhur_var": true
     },
     {
       "oda": "DILAEMRE-UYGULAMA-20261125",
-      "guncelleme_utc": "2026-11-25T01:22:01Z",
-      "ust_dosya_sayisi": 2,
-      "ust_bayt": 107161,
+      "guncelleme_utc": "2026-11-25T01:44:24Z",
+      "ust_dosya_sayisi": 3,
+      "ust_bayt": 222437,
       "muhur_var": false
+    },
+    {
+      "oda": "🪡_ARGON_AFFFAIR_360_QUIET_LUXURY_r26",
+      "guncelleme_utc": "2026-11-25T01:40:11Z",
+      "ust_dosya_sayisi": 6,
+      "ust_bayt": 37723,
+      "muhur_var": true
+    },
+    {
+      "oda": "20261125_KARBON_DILA_AFAIR_8KONSEPT_SICRAMA_ARASTIRMA",
+      "guncelleme_utc": "2026-11-25T01:36:06Z",
+      "ust_dosya_sayisi": 7,
+      "ust_bayt": 40401,
+      "muhur_var": false
+    },
+    {
+      "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
+      "guncelleme_utc": "2026-11-25T01:33:10Z",
+      "ust_dosya_sayisi": 11,
+      "ust_bayt": 174342,
+      "muhur_var": true
+    },
+    {
+      "oda": "KARBON_DILA_8KURAL_AFFFAIR_8D_KUMAS_VE_YONLENDIRILEBILIR_ATASEHIR",
+      "guncelleme_utc": "2026-11-25T01:32:56Z",
+      "ust_dosya_sayisi": 11,
+      "ust_bayt": 139003,
+      "muhur_var": true
+    },
+    {
+      "oda": "🖤_20261125_GEMINI_DILA_8KURAL_QUIET_LUXURY_360_8D_KUMAS_VE_CANLI_RYTE",
+      "guncelleme_utc": "2026-11-25T01:25:08Z",
+      "ust_dosya_sayisi": 3,
+      "ust_bayt": 5772,
+      "muhur_var": true
     },
     {
       "oda": "20261125_CODEX_DILA_KUMAS_YAYIN",
@@ -100,17 +157,10 @@
       "muhur_var": false
     },
     {
-      "oda": "KARBON_OZERKTETIK_CANLIYA_ALMA_KAPISI",
-      "guncelleme_utc": "2026-11-25T01:14:27Z",
-      "ust_dosya_sayisi": 11,
-      "ust_bayt": 164486,
-      "muhur_var": true
-    },
-    {
       "oda": "🧵_20261125_GEMINI_ATASEHIR_3BLOK_KANAT_PANTONE_DOKUMA_VE_BASKA_ISTANBUL",
       "guncelleme_utc": "2026-11-24T22:54:17Z",
       "ust_dosya_sayisi": 3,
-      "ust_bayt": 7572,
+      "ust_bayt": 7844,
       "muhur_var": true
     },
     {
@@ -118,7 +168,7 @@
       "guncelleme_utc": "2026-11-24T22:54:17Z",
       "ust_dosya_sayisi": 3,
       "ust_bayt": 4602,
-      "muhur_var": true
+      "muhur_var": false
     },
     {
       "oda": "KARBON_baskaistanbulyok_atasehir_3blok_wingsuit_ve_pantone_kumas",
@@ -131,7 +181,7 @@
       "oda": "🏛️_PRIZMA_ATASEHIR_MODERN_BASKA_ISTANBUL_YOK_ATOLYE",
       "guncelleme_utc": "2026-11-24T22:48:14Z",
       "ust_dosya_sayisi": 6,
-      "ust_bayt": 26990,
+      "ust_bayt": 27227,
       "muhur_var": true
     },
     {
@@ -147,13 +197,6 @@
       "ust_dosya_sayisi": 3,
       "ust_bayt": 25264,
       "muhur_var": false
-    },
-    {
-      "oda": "00001903_20261124_212500_CLAUDE_MASA_BIRLESIK_ARAYUZ_TEKNIK_SERGISI",
-      "guncelleme_utc": "2026-11-24T22:45:37Z",
-      "ust_dosya_sayisi": 4,
-      "ust_bayt": 9891,
-      "muhur_var": true
     },
     {
       "oda": "baskaistanbulyok_taslak",
@@ -181,7 +224,7 @@
       "guncelleme_utc": "2026-11-24T22:40:05Z",
       "ust_dosya_sayisi": 7,
       "ust_bayt": 2016996,
-      "muhur_var": false
+      "muhur_var": true
     },
     {
       "oda": "20261125_CODEX_ATASEHIR_UC_ROTA_YASAM",
@@ -202,7 +245,7 @@
       "guncelleme_utc": "2026-11-24T22:38:45Z",
       "ust_dosya_sayisi": 10,
       "ust_bayt": 89703,
-      "muhur_var": true
+      "muhur_var": false
     },
     {
       "oda": "🎬_20261125_GEMINI_DILA_SINEMA_WEBGPU_50K_VE_ACIK_KAPILAR",
@@ -230,7 +273,7 @@
       "guncelleme_utc": "2026-11-24T22:20:44Z",
       "ust_dosya_sayisi": 5,
       "ust_bayt": 48917,
-      "muhur_var": false
+      "muhur_var": true
     },
     {
       "oda": "00000007_20261125_005800_CLAUDE_GAIA_PC_WEB_ESLESTIRME",
@@ -251,7 +294,7 @@
       "guncelleme_utc": "2026-11-24T22:17:19Z",
       "ust_dosya_sayisi": 6,
       "ust_bayt": 26370,
-      "muhur_var": false
+      "muhur_var": true
     },
     {
       "oda": "20261125_DILA_UC_BOYUTLU_SAHNE",
@@ -307,7 +350,7 @@
       "guncelleme_utc": "2026-11-24T22:07:17Z",
       "ust_dosya_sayisi": 11,
       "ust_bayt": 3030844,
-      "muhur_var": false
+      "muhur_var": true
     },
     {
       "oda": "00000004_20261125_010352_CLAUDE_TERAZI_DILA_HIGGSFIELD_VIDEO",
@@ -329,6 +372,13 @@
       "ust_dosya_sayisi": 8,
       "ust_bayt": 26852,
       "muhur_var": false
+    },
+    {
+      "oda": "00444050_20261124_211029_CLAUDE_TERAZI_Selinahbap_x_AFAIR_Canli_Kapi_Sahnesi_🚪",
+      "guncelleme_utc": "2026-11-24T21:59:48Z",
+      "ust_dosya_sayisi": 10,
+      "ust_bayt": 61131,
+      "muhur_var": true
     }
   ]
 }
