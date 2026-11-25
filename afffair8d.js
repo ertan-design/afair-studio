@@ -42,11 +42,11 @@
   const uvs = new Float32Array(COUNT * 2);
   const spanX = 2.20, spanY = 2.05;
 
-  function anchorPos(x, t) {
+  function anchorPos(x) {
     const u = x / (N - 1);
     const pleatZ = Math.sin(u * Math.PI * 8.0) * 0.16;
     const arcX = (u - 0.5) * spanX;
-    const arcY = 0.96 + Math.cos((u - 0.5) * 2.4) * 0.08 + Math.sin(t * 1.1 + u * 3.0) * 0.015;
+    const arcY = 0.96 + Math.cos((u - 0.5) * 2.4) * 0.08;
     const arcZ = pleatZ + Math.cos((u - 0.5) * 2.2) * 0.18;
     return [arcX, arcY, arcZ];
   }
@@ -130,21 +130,21 @@
         const i = y * N + x;
         const ix = i * 3;
         if (y === 0) {
-          const [ax, ay, az] = anchorPos(x, simTime);
+          const [ax, ay, az] = anchorPos(x);
           pos[ix] = old[ix] = ax;
           pos[ix + 1] = old[ix + 1] = ay;
           pos[ix + 2] = old[ix + 2] = az;
           continue;
         }
 
-        const vx = (pos[ix] - old[ix]) * 0.968;
-        const vy = (pos[ix + 1] - old[ix + 1]) * 0.968;
-        const vz = (pos[ix + 2] - old[ix + 2]) * 0.968;
+        const vx = (pos[ix] - old[ix]) * 0.955;
+        const vy = (pos[ix + 1] - old[ix + 1]) * 0.955;
+        const vz = (pos[ix + 2] - old[ix + 2]) * 0.955;
         old[ix] = pos[ix]; old[ix + 1] = pos[ix + 1]; old[ix + 2] = pos[ix + 2];
 
-        const travelWave = Math.sin(pos[ix] * 2.4 - simTime * 2.1 + pos[ix + 1] * 1.5)
-                         + 0.5 * Math.cos(pos[ix + 1] * 2.6 - simTime * 1.6 - pos[ix] * 1.2);
-        const billow = (0.25 + 0.85 * v) * travelWave * wMag;
+        const travelWave = Math.sin(pos[ix] * 2.4 - simTime * 2.2 + pos[ix + 1] * 1.5)
+                         + 0.5 * Math.cos(pos[ix + 1] * 2.6 - simTime * 1.7 - pos[ix] * 1.2);
+        const billow = (v * v) * travelWave * wMag * 0.65;
 
         pos[ix] += vx + wx * v + state.gustX * v * 0.008;
         pos[ix + 1] += vy - 0.0012 + state.gustY * v * 0.005;
@@ -273,8 +273,8 @@
         vec3 col = uColor * weaveGrain * (0.15 + pow(diff, 1.55) * 1.08 * spot) * valleyAO;
         col += uSpec * (spec * spot + fresnel * 0.42 + backGlow * 0.52);
 
-        // Surreal 8D subtle champagne-iridescent shimmer on fold edges
-        vec3 irid = 0.5 + 0.5 * cos(uTime * 0.8 + vUv.xyx * 4.5 + vec3(0.0, 1.9, 3.8));
+        // Surreal 8D subtle champagne-iridescent shimmer driven by 360° viewing angle
+        vec3 irid = 0.5 + 0.5 * cos(dot(N, V) * 5.0 + vUv.xyx * 3.5 + vec3(0.0, 1.9, 3.8));
         col += irid * fresnel * 0.18;
 
         // Strict Dila Pure-Black Veto: lifted warm obsidian floor
@@ -465,7 +465,7 @@
       if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
 
       if (state.autoOrbit) {
-        state.yaw += 0.00075;
+        state.yaw += 0.00028;
       } else if (!dragging) {
         state.yaw += state.velYaw;
         state.pitch = Math.max(-1.12, Math.min(1.12, state.pitch + state.velPitch));
