@@ -32,6 +32,9 @@ html, body {
   display: block; cursor: grab; touch-action: none;
 }
 #glStage:active { cursor: grabbing; }
+.orbit-control { display:flex; align-items:center; gap:.4rem; white-space:nowrap; font-size:.85rem; }
+.orbit-control input { width:clamp(5rem,18vw,9rem); accent-color:var(--ivory); }
+.orbit-control span { min-width:3ch; font-variant-numeric:tabular-nums; }
 .top-bar {
   position: absolute; top: 0; left: 0; right: 0;
   display: flex; justify-content: space-between; align-items: center;
@@ -131,6 +134,7 @@ html, body {
   </div>
 
   <div class="dock-bar" role="region" aria-label="Sahne yönlendirme seçenekleri">
+    <label class="orbit-control">Açı <input id="orbit-angle" type="range" min="0" max="360" value="21"> <span id="orbit-value" aria-hidden="true">21°</span></label>
     <button type="button" class="dock-pill on" data-preset="0">Bakır Atlas</button>
     <button type="button" class="dock-pill" data-preset="1">Şampanya İpek</button>
     <button type="button" class="dock-pill" data-preset="2">Mürdüm Kadife</button>
@@ -569,6 +573,27 @@ html, body {
     tldInp.addEventListener('input', updTld); updTld();
   }
 
+  const orbitAngle = document.getElementById('orbit-angle');
+  const orbitValue = document.getElementById('orbit-value');
+  function currentAngle() {
+    return Math.round(((st.yaw * 180 / Math.PI) % 360 + 360) % 360);
+  }
+  function syncOrbitControl() {
+    const degrees = currentAngle();
+    if (Number(orbitAngle.value) % 360 === degrees % 360) return;
+    orbitAngle.value = String(degrees);
+    orbitValue.textContent = degrees + '°';
+  }
+  function setOrbit(degrees) {
+    st.autoOrbit = false;
+    st.velYaw = 0;
+    st.velPitch = 0;
+    st.yaw = (Number(degrees) || 0) * Math.PI / 180;
+    syncOrbitControl();
+    orbitValue.textContent = orbitAngle.value + '°';
+  }
+  orbitAngle.addEventListener('input', () => setOrbit(orbitAngle.value));
+
   function frame() {
     stepSim();
     if (!down) {
@@ -577,6 +602,7 @@ html, body {
       else { st.yaw += st.velYaw; st.pitch = Math.max(-0.95, Math.min(1.12, st.pitch + st.velPitch)); st.velYaw *= 0.92; st.velPitch *= 0.92; }
     }
 
+    syncOrbitControl();
     if (cv && gl && prog) {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const w = Math.max(1, Math.floor(cv.clientWidth * dpr)), h = Math.max(1, Math.floor(cv.clientHeight * dpr));
@@ -637,9 +663,9 @@ html, body {
     relocationProof: true,
     externalDependencies: 0,
     purpose: () => ({"page": "afair-studio-360-loom", "brand": "AFFFAIR STUDIO", "whyBuilt": "rufat.afair.studio ve dila.afair.studio mantığında tasarımcıların hem üretim yaptığı hem aynı anda sergilediği 360° WebGL2 dokuma stüdyosu."}),
-    getState: () => ({ preset: PRESETS[st.idx], yawDeg: Math.round(((st.yaw * 180 / Math.PI) % 360 + 360) % 360), zoom: st.zoom }),
+    getState: () => ({ preset: PRESETS[st.idx], yawDeg: currentAngle(), zoom: st.zoom }),
     setPreset: i => { st.idx = Math.max(0, Math.min(PRESETS.length - 1, Number(i) || 0)); return window.AFAIR_GPT_API.getState(); },
-    setOrbit360: deg => { st.autoOrbit = false; st.yaw = (Number(deg) || 0) * Math.PI / 180; return window.AFAIR_GPT_API.getState(); }
+    setOrbit360: deg => { setOrbit(deg); return window.AFAIR_GPT_API.getState(); }
   };
   requestAnimationFrame(frame);
 })();</script>
