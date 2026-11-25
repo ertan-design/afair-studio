@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR STUDIO · 50.000 Kapı 2-Bit RCOMBO & 1-Bayt SHA-256 Sabotaj Final</title>
+  <meta name="description" content="Kurtarılan Front-4 final sürümü: 50.000 kapılı 2-bit bitmap haritası, canlı 1-bayt SHA-256 sabotaj doğrulayıcısı ve 3 AI galeri odası.">
+  <link rel="stylesheet" href="./pasaport50k.css">
+  <script defer src="./pasaport50k.js"></script>
+</head>
+<body>
+  <header class="p-head">
+    <strong>AFAIR STUDIO · 50.000 KAPI RCOMBO &amp; PASAPORT FİNAL</strong>
+    <a class="p-back" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="p-wrap">
+    <section class="p-grid">
+      <div class="p-card">
+        <p class="eyebrow">50.000 KAPI · 2-BİT RCOMBO BİT HARİTASI (250×200 = 12.500 BAYT)</p>
+        <h1>Elli bin kapıyı tek karede gör.</h1>
+        <canvas id="rcombo-canvas" width="750" height="360" aria-label="50000 kapı 2-bit RCOMBO canlı haritası"></canvas>
+        <div class="stat-row" id="rcombo-stats"></div>
+        <div class="inspect-row">
+          <label for="gate-id">Kapı İncele (#1 – #50.000)</label>
+          <input id="gate-id" type="number" min="1" max="50000" value="4443">
+          <button type="button" class="pbtn is-on" id="b-inspect">Kapıyı Oku</button>
+          <button type="button" class="pbtn" id="b-toggle">Durumu Değiştir</button>
+        </div>
+        <p class="inspect-out" id="inspect-out"></p>
+      </div>
+
+      <div class="p-card">
+        <p class="eyebrow">CANLI 1-BAYT SHA-256 SABOTAJ DOĞRULAYICISI</p>
+        <h2>Tek bayt değişince mühür öter.</h2>
+        <textarea id="dna-text" rows="5" aria-label="Dila DNA Pasaport içeriği">{"pasaport":"DILA_DNA_V4","yasak_siyah":"#000000","pantone":"19-5420-TCX","kapi_sayisi":50000,"durum":"MUHURLU"}</textarea>
+        <div class="btn-row">
+          <button type="button" class="pbtn is-on" id="b-seal">Orijinal SHA-256 Mühürle</button>
+          <button type="button" class="pbtn warn" id="b-sabotage">1 Bayt Sabotaj Uygula!</button>
+        </div>
+        <pre class="hash-box" id="hash-box">Hesaplanıyor...</pre>
+      </div>
+    </section>
+
+    <section class="gal-band">
+      <h2>Kurtarılan 3 AI Galeri &amp; Atölye Odası (Yerel ./ Levhalar)</h2>
+      <div class="gal-grid">
+        <figure class="gcard"><img src="./sahne1_terzi.jpg" alt="İki mezura atölye sahnesi" width="960" height="540"><figcaption><strong>Oda 01 · İki-Mezura Terzi Atölyesi</strong><span>Ölçü ve ipek kalıp masası</span></figcaption></figure>
+        <figure class="gcard"><img src="./sahne2_galeri.jpg" alt="AFAIR Studio AI galeri sahnesi" width="960" height="540"><figcaption><strong>Oda 02 · AFAIR AI Sanat Galerisi</strong><span>3200K sıcak galeri spotu</span></figcaption></figure>
+        <figure class="gcard"><img src="./sahne3_akustik.jpg" alt="Akustik gitar ve yeni siyah atölyesi" width="960" height="540"><figcaption><strong>Oda 03 · Yeni Siyah &amp; Akustik Oda</strong><span>Espresso/mürdüm ışık armonisi</span></figcaption></figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

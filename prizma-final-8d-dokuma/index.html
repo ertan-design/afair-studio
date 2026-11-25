@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR STUDIO · 8D Sürreal İpek, Makro Kumaş & 8D Ses Final</title>
+  <meta name="description" content="Kurtarılan final sürüm: WebGL 60x60 360° ipek, Sürreal 8D dalga morfu, 8D StereoPanner + Karplus-Strong akustik gitar ve gerçek makro dokuma levhaları.">
+  <link rel="stylesheet" href="./dokuma8d.css">
+  <script defer src="./dokuma8d.js"></script>
+</head>
+<body>
+  <header class="f-head">
+    <strong>AFAIR STUDIO · 8D SÜRREAL İPEK FİNAL</strong>
+    <a class="back-btn" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="f-wrap">
+    <section class="stage-grid">
+      <div class="gl-card">
+        <canvas id="gl8d" width="1200" height="660" aria-label="360 derece döndürülebilir 8D sürreal ipek WebGL sahnesi"></canvas>
+        <div class="gl-top">
+          <p class="eyebrow">KURTARILAN FİNAL · 0 #000000 · WEBGL1 + 8D WEBAUDIO</p>
+          <h1>Kumaşına dokun. 8D sesi duy.</h1>
+        </div>
+        <div class="gl-hud">
+          <span id="hud-fab">PANTONE 19-5420 TCX · Gece Zümrüdü</span>
+          <span id="hud-8d">8D Sürreal: Kapalı</span>
+          <span id="hud-aud">8D Ses: Kapalı</span>
+        </div>
+      </div>
+
+      <aside class="ctrl-card">
+        <h2>Atmosfer &amp; 8D Ses Kontrolleri</h2>
+        <div class="row">
+          <button type="button" class="fbtn is-on" id="b-orbit">360° Çevir</button>
+          <button type="button" class="fbtn" id="b-touch">Dokun Dalgalandır</button>
+          <button type="button" class="fbtn" id="b-surreal">Sürreal 8D Morf</button>
+        </div>
+        <div class="row">
+          <button type="button" class="fbtn" id="b-audio">8D İpek Rüzgâr Sesi</button>
+          <button type="button" class="fbtn" id="b-guitar">Akustik Gitar Akoru Çal</button>
+        </div>
+
+        <label for="sl-wind">Rüzgâr Kuvveti <strong id="v-wind">1.00</strong></label>
+        <input id="sl-wind" type="range" min="0" max="200" value="100">
+
+        <label for="sl-light">Spot Işık Açısı <strong id="v-light">44°</strong></label>
+        <input id="sl-light" type="range" min="0" max="360" value="44">
+
+        <label for="sl-zoom">Mikro Çözgü-Atkı Yakınlaş <strong id="v-zoom">3.0m</strong></label>
+        <input id="sl-zoom" type="range" min="15" max="46" value="30">
+
+        <h2>6 Pantone TCX Dokuma</h2>
+        <div class="sw-grid" id="sw-grid"></div>
+      </aside>
+    </section>
+
+    <section class="macro-band">
+      <h2>Kurtarılan Gerçek Makro Kumaş Levhaları (Yerel ./ Dosyalar)</h2>
+      <div class="macro-grid">
+        <figure class="mcard">
+          <img src="./levha_02_zumrut_keten_makro.jpg" alt="Zümrüt keten çözgü atkı makro çalışması" width="960" height="540">
+          <figcaption><strong>Levha 01 · Gece Zümrüdü Keten &amp; Çözgü-Atkı</strong><span>PANTONE 19-5420 TCX · Organik lif derinliği</span></figcaption>
+        </figure>
+        <figure class="mcard">
+          <img src="./levha_03_espresso_murdum_makro.jpg" alt="Gece espresso gabardin ve mürdüm ipek makro dokuma" width="960" height="540">
+          <figcaption><strong>Levha 02 · Gece Espresso Gabardin &amp; Mürdüm İpek</strong><span>PANTONE 19-0915 + 19-2520 TCX · Saf siyah #000000 yok</span></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
