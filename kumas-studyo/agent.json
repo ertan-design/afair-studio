@@ -1,0 +1,67 @@
+{
+  "schema": "afair.cloth-studio.v1",
+  "purpose": "Interactive material exploration; not a booking or model execution service",
+  "controls": {
+    "material": [
+      "silk",
+      "linen",
+      "cotton"
+    ],
+    "color": [
+      "apricode",
+      "aqua",
+      "blue",
+      "bitter"
+    ],
+    "wind": [
+      0,
+      100
+    ],
+    "direction": [
+      -180,
+      180
+    ],
+    "light": [
+      -100,
+      100
+    ],
+    "angle": [
+      0,
+      360
+    ],
+    "buttons": [
+      "motion",
+      "dream",
+      "reset",
+      "near",
+      "far"
+    ],
+    "canvas": {
+      "id": "cloth",
+      "keyboard": [
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Space",
+        "Home"
+      ]
+    }
+  },
+  "events": [
+    "afair:studio-change"
+  ],
+  "renderer": "Native WebGL, CPU constraint-based cloth mesh, procedural weave shading and projected shadow",
+  "capabilities": {
+    "rotation_360": true,
+    "wind": true,
+    "light_direction": true,
+    "pause": true,
+    "physical_sample_scan": false,
+    "pantone_verified": false,
+    "booking": false,
+    "model_calls": false
+  },
+  "validation": "Synthetic visual study; no measured textile calibration",
+  "external_dependencies": []
+}
