@@ -1,0 +1,40 @@
+{
+  "schema": "dila.cloth-controls.v1",
+  "url": "https://www.afair.studio/dokuma-ufuk/ilk-kurgu",
+  "controls": {
+    "angle": {
+      "selector": "#angle",
+      "min": 0,
+      "max": 360
+    },
+    "wind": {
+      "selector": "#wind",
+      "min": 0,
+      "max": 100
+    },
+    "wave": {
+      "selector": "#wave",
+      "min": 0,
+      "max": 100
+    },
+    "light": {
+      "selector": "#light",
+      "min": 0,
+      "max": 360
+    },
+    "pause": "#motion",
+    "dream": "#dream",
+    "export_json": "#export",
+    "zoom_in": "#zoom-in",
+    "zoom_out": "#zoom-out",
+    "share": "#share"
+  },
+  "operations": "Native browser inputs; no server execution or automatic GPT dispatch.",
+  "physical_sample": null,
+  "appointments": "https://www.afair.live/yasam-destegi/?konu=terzi",
+  "limits": "Procedural cloth appearance; not scanned material, calibrated spectral color or validated mass-spring simulation.",
+  "share": {
+    "format": "#view=1&angle=0..360&wind=0..100&wave=0..100&light=0..360&zoom=0.75..1.6&pitch=-0.6..0.6&phase=0..600&color=blue|aqua|apricot|coral&dream=0|1",
+    "behavior": "Validated fragment state loads a paused reproducible view; no server transmission."
+  }
+}
