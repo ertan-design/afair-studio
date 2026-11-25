@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>AFFFAIR · 360° Kumaş, Rüzgâr &amp; Quiet Luxury</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "AFFFAIR 360 Quiet Luxury Cloth Studio",
+  "url": "https://ertanaraz.com/afffair",
+  "description": "Dila 8 madde standardina tam uyumlu, loş ışıklı, 360 derece dondurulebilen, kullanicinin ruzgar ve 8D akisini yonlendirdigi gercek WebGL kumas dalgasi deneyimi.",
+  "applicationCategory": "DesignApplication",
+  "isAccessibleForFree": true
+}
+</script>
+
+<link rel="stylesheet" href="sayfa.css">
+</head>
+<body>
+<canvas id="cloth"></canvas>
+
+<header class="top">
+  <div class="mark">
+    <strong>AFFFAIR</strong>
+    <span id="fabricLabel">19-4024 · GECE LACİVERTİ İPEK</span>
+  </div>
+  <div class="swatches" id="swatches">
+    <button class="dot on" data-f="0" title="Gece Laciverti İpek" data-s="sf3526766"></button>
+    <button class="dot" data-f="1" title="Kırık Kemik Keten" data-s="s24943144"></button>
+    <button class="dot" data-f="2" title="Botanik Zümrüt Kadife" data-s="s9a66f78d"></button>
+    <button class="dot" data-f="3" title="Sıcak Bronz Organze" data-s="sd151131d"></button>
+    <button class="reset" id="btnReset">360° Sıfırla</button>
+  </div>
+</header>
+
+<section class="copy">
+  <div class="eyebrow">Quiet Luxury · 360° Kumaş</div>
+  <h1>Dokun.<br>Rüzgârı seç.</h1>
+  <p>Gerçek kumaş dalgası. Loş ışık. 360° çevir, rüzgârı ve 8D akışı sen yönet.</p>
+  <div class="hint">Sürükle · 360° İncele · Tıkla Dalgalandır</div>
+</section>
+
+<footer class="dock">
+  <div class="ctrl">
+    <label for="sWind">Rüzgâr</label>
+    <input id="sWind" type="range" min="0" max="200" value="95">
+  </div>
+  <div class="ctrl">
+    <label for="s8d">8D Akış</label>
+    <input id="s8d" type="range" min="0" max="100" value="38">
+  </div>
+  <div class="ctrl">
+    <label for="sLight">Loş Işık</label>
+    <input id="sLight" type="range" min="0" max="360" value="42">
+  </div>
+  <a class="go" href="/atasehir-ucus">Ataşehir Uçuş →</a>
+  <a class="go" href="/3d" data-s="s1cd027cc">3D Sahne</a>
+</footer>
+
+<script src="b1.js"></script>
+</body>
+</html>

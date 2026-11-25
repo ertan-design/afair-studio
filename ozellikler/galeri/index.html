@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Front 3 / 4 · AFAIR Studio AI Galeri Odaları, Kelvin Işık &amp; Akustik Küratör</title>
+  <meta name="description" content="AFAIR STUDIO Front 3: 4 AI sanat galerisi odası, 2700K-5600K canlı ışık sıcaklığı simülatörü, K5 Sanart ceket-tablo harmonisi ve K7 WebAudio akustik gitar atmosferi.">
+  <link rel="stylesheet" href="./prizma.css">
+  <script src="./prizma-data.js" defer></script>
+  <script src="./prizma-front3.js" defer></script>
+<link rel="stylesheet" href="sayfa.css">
+</head>
+<body>
+  <nav class="eco-bar" aria-label="Canlı ekosistem köprüsü">
+    <span class="eco-badge">FRONT 3 / 4 · FREE EKLEME · AI GALERİ ART</span>
+    <a href="https://ertanaraz.com/prizma/">ertanaraz.com/prizma</a>
+    <a href="https://www.afair.studio/prizma/">afair.studio/prizma</a>
+    <a href="https://www.afair.live/prizma/">afair.live/prizma</a>
+    <a href="https://www.afair.studio/">AFAIR Studio ↗</a>
+    <span class="eco-spacer">FRONT 1 + 2 SENKRONLU · K7 WEBAUDIO</span>
+  </nav>
+
+  <header class="top-header">
+    <a class="brand" href="./index.html">
+      <strong>PRIZMA × DİLA</strong>
+      <span>Front 3 · AI Sanat Galerisi &amp; Kelvin Işık Küratörü</span>
+    </a>
+    <nav class="nav-links" aria-label="PRIZMA uygulamaları">
+      <a href="./index.html">Komuta Merkezi</a>
+      <a href="./front1.html">Front 1 · Renk</a>
+      <a href="./front2.html">Front 2 · Mezura</a>
+      <a class="nav-active" href="./front3.html">Front 3 · Galeri</a>
+      <a href="./front4.html">Front 4 · Pasaport</a>
+      <a href="./video.html">Video Stüdyosu</a>
+      <a href="./filo.html">44-Site Filo</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">AFAIR STUDIO × K2 + K5 SANART + K7 GİTAR · FRONT 3 / 4</p>
+      <h1>Üstündeki Ceketle Evindeki Tablo<br>Aynı Işıkta ve Aynı Akorda Konuşsun.</h1>
+      <p class="lead">
+        Front 1 DNA paletin ve Front 2 iki-mezura kumaşınla eşleşen 4 AI galeri odasını gez;
+        <strong>2700K–5600K</strong> ışık sıcaklığını oynatarak eserin ve kumaşın mekânda nasıl nefes aldığını anında gör ve oda akorunu dinle.
+      </p>
+      <div class="dna-strip" id="f3-dna-strip" aria-live="polite"></div>
+    </section>
+
+    <section class="card card-gold">
+      <div class="btn-row" id="f3-room-btns"></div>
+      <div class="grid-2">
+        <div>
+          <canvas id="f3-gallery-canvas" class="canvas-frame" width="760" height="380" aria-label="Canlı AI Galeri odası ve Kelvin ışık simülasyonu"></canvas>
+          <div class="field">
+            <label for="f3-kelvin"><span>Galeri / Salon Işık Sıcaklığı (Kelvin)</span><strong id="lbl-kelvin">3800 K · Müze Nötr</strong></label>
+            <input type="range" id="f3-kelvin" min="2700" max="5600" step="100" value="3800">
+          </div>
+          <div class="field">
+            <label for="f3-tohum"><span>AI Kompozisyon Varyasyonu (Sıçrama Tohumu)</span><strong id="lbl-tohum">Varyasyon #01</strong></label>
+            <input type="range" id="f3-tohum" min="1" max="24" step="1" value="1">
+          </div>
+        </div>
+
+        <div>
+          <h2 id="f3-room-title">Oda Yükleniyor…</h2>
+          <p class="lead" id="f3-room-desc"></p>
+          <div class="alert alert-ok" id="f3-light-eval"></div>
+          <div class="concept-card">
+            <strong>K5 Sanart · Mekân &amp; Duvar Eşleşmesi</strong>
+            <p id="f3-sanart-note"></p>
+          </div>
+          <div class="concept-card">
+            <strong>K1 + K4 · Kıyafet &amp; Kumaş Bağı</strong>
+            <p id="f3-garment-note"></p>
+          </div>
+          <div class="concept-card">
+            <strong>K7 Gitar · Oda Akustik İmzası</strong>
+            <p id="f3-audio-note"></p>
+          </div>
+
+          <div class="btn-row">
+            <button type="button" class="btn btn-teal" id="btn-f3-play">K7 Oda Akorunu Çal</button>
+            <button type="button" class="btn btn-gold" id="btn-f3-save">Kürasyonu Mühürle</button>
+            <button type="button" class="btn" id="btn-f3-indir">dila_galeri_kurasyon_v1.jsonl İndir</button>
+          </div>
+          <p class="status-note" id="f3-status"></p>
+          <pre class="mono-box" id="f3-jsonl-out"></pre>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>Front 3 / 4 · AFAIR Studio AI Galeri &amp; Kelvin Işık Küratörü · Saf Canvas + WebAudio (0 dış CDN)</span>
+      <a href="./front4.html">Sonraki Sıçrama: Front 4 Dijital Pasaport &amp; 50.000 Kapı →</a>
+    </footer>
+  </main>
+</body>
+</html>

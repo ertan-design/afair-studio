@@ -1,0 +1,52 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#0a0f1c;color:#f3eee4;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;user-select:none;-webkit-font-smoothing:antialiased}
+canvas#cloth{position:fixed;inset:0;width:100%;height:100%;display:block;cursor:grab}
+canvas#cloth:active{cursor:grabbing}
+
+/* Ultra-minimal Quiet Luxury HUD — Zero Clutter */
+.top{
+  position:fixed;top:22px;left:28px;right:28px;z-index:20;
+  display:flex;justify-content:space-between;align-items:center;pointer-events:none;
+}
+.mark{pointer-events:auto;display:flex;align-items:baseline;gap:10px}
+.mark strong{font-family:Georgia,'Iowan Old Style',serif;font-weight:400;font-size:20px;letter-spacing:.26em;color:#f6f1e7}
+.mark span{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#c8a472}
+
+.swatches{pointer-events:auto;display:flex;align-items:center;gap:10px;padding:7px 12px;border-radius:999px;background:rgba(12,18,32,.48);backdrop-filter:blur(16px);border:1px solid rgba(200,164,114,.22)}
+.dot{width:18px;height:18px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);cursor:pointer;transition:.25s;position:relative}
+.dot:hover,.dot.on{transform:scale(1.22);border-color:#f6f1e7;box-shadow:0 0 14px rgba(200,164,114,.55)}
+.reset{background:none;border:0;color:#c8a472;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;cursor:pointer;padding-left:6px;border-left:1px solid rgba(255,255,255,.15)}
+.reset:hover{color:#fff}
+
+.copy{
+  position:fixed;left:28px;top:50%;transform:translateY(-50%);z-index:15;max-width:360px;pointer-events:none;
+}
+@media(max-width:760px){.copy{top:auto;bottom:112px;transform:none;left:20px;right:20px}}
+.copy .eyebrow{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#c8a472;margin-bottom:10px}
+.copy h1{font-family:Georgia,'Iowan Old Style',serif;font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.02em;color:#f7f2e8;margin-bottom:12px}
+.copy p{font-size:13.5px;line-height:1.55;color:rgba(243,238,228,.72);max-width:290px}
+.hint{margin-top:14px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(200,164,114,.82)}
+
+.dock{
+  position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:20;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;
+  padding:11px 20px;border-radius:999px;
+  background:rgba(12,18,32,.56);backdrop-filter:blur(18px);
+  border:1px solid rgba(200,164,114,.26);
+  max-width:calc(100vw - 28px);
+}
+.ctrl{display:flex;align-items:center;gap:8px}
+.ctrl label{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:rgba(243,238,228,.75);white-space:nowrap}
+.ctrl input[type=range]{width:76px;accent-color:#c8a472;cursor:pointer}
+.go{
+  padding:7px 14px;border-radius:999px;background:#f3eee4;color:#0f192d;text-decoration:none;
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;transition:.2s;white-space:nowrap;
+}
+.go:hover{background:#c8a472;color:#0b1120}
+
+[data-s="sf3526766"]{background:#162844}
+[data-s="s24943144"]{background:#e8dfd0}
+[data-s="s9a66f78d"]{background:#195441}
+[data-s="sd151131d"]{background:#8f6036}
+[data-s="s1cd027cc"]{background:transparent;color:#f3eee4;border:1px solid rgba(200,164,114,.45)}
