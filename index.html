@@ -515,11 +515,13 @@ html, body {
       st.yaw += st.velYaw; st.pitch = Math.max(-0.95, Math.min(1.12, st.pitch + st.velPitch));
       st.gustX = Math.max(-2.2, Math.min(2.2, dx * 0.06));
       st.gustY = Math.max(-2.0, Math.min(2.0, -dy * 0.05));
+      queueRedraw();
     });
     window.addEventListener('pointerup', () => { down = false; });
     cv.addEventListener('wheel', e => {
       e.preventDefault();
       st.zoom = Math.max(2.1, Math.min(6.4, st.zoom + e.deltaY * 0.0026));
+      queueRedraw();
     }, { passive: false });
   }
 
@@ -529,6 +531,7 @@ html, body {
       st.prog = 0.06;
       document.querySelectorAll('[data-preset]').forEach((b, i) => b.classList.toggle('on', i === st.idx));
       for (let i = N; i < CNT; i += 3) pos[i * 3 + 2] += 0.09;
+      queueRedraw();
     });
   });
 
@@ -592,17 +595,26 @@ html, body {
     st.yaw = (Number(degrees) || 0) * Math.PI / 180;
     syncOrbitControl();
     orbitValue.textContent = orbitAngle.value + '°';
+    queueRedraw();
   }
   orbitAngle.addEventListener('input', () => setOrbit(orbitAngle.value));
 
   const motionToggle = document.getElementById('motion-toggle');
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let redrawPending = false;
+  function queueRedraw() {
+    if (redrawPending) return;
+    redrawPending = true;
+    requestAnimationFrame(frame);
+  }
+
   let motionPaused;
   function setMotionPaused(paused) {
     motionPaused = paused;
     st.velYaw = 0;
     st.velPitch = 0;
     motionToggle.textContent = paused ? 'Hareketi başlat' : 'Duraklat';
+    queueRedraw();
   }
   setMotionPaused(motionPreference.matches);
   motionToggle.hidden = false;
@@ -610,6 +622,7 @@ html, body {
   motionPreference.addEventListener('change', event => setMotionPaused(event.matches));
 
   function frame() {
+    redrawPending = false;
     if (!motionPaused) stepSim();
     if (!motionPaused && !down) {
       st.gustX *= 0.90; st.gustY *= 0.90;
@@ -669,7 +682,7 @@ html, body {
         gl.depthMask(true); gl.disable(gl.BLEND);
       }
     }
-    requestAnimationFrame(frame);
+    if (!motionPaused) queueRedraw();
   }
 
   window.AFAIR_GPT_API = {
@@ -679,10 +692,11 @@ html, body {
     externalDependencies: 0,
     purpose: () => ({"page": "afair-studio-360-loom", "brand": "AFFFAIR STUDIO", "whyBuilt": "rufat.afair.studio ve dila.afair.studio mantığında tasarımcıların hem üretim yaptığı hem aynı anda sergilediği 360° WebGL2 dokuma stüdyosu."}),
     getState: () => ({ preset: PRESETS[st.idx], yawDeg: currentAngle(), zoom: st.zoom, motionPaused }),
-    setPreset: i => { st.idx = Math.max(0, Math.min(PRESETS.length - 1, Number(i) || 0)); return window.AFAIR_GPT_API.getState(); },
+    setPreset: i => { st.idx = Math.max(0, Math.min(PRESETS.length - 1, Number(i) || 0)); queueRedraw(); return window.AFAIR_GPT_API.getState(); },
     setOrbit360: deg => { setOrbit(deg); return window.AFAIR_GPT_API.getState(); }
   };
-  requestAnimationFrame(frame);
+  window.addEventListener('resize', queueRedraw);
+  if (cv && typeof ResizeObserver === 'function') new ResizeObserver(queueRedraw).observe(cv);
 })();</script>
 </body>
 </html>
