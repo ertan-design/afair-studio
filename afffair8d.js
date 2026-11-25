@@ -550,7 +550,7 @@
       gl.depthMask(false);
       gl.uniform1f(uLoc.uPass, 2.0);
       gl.uniform1f(uLoc.uScale, 1.09);
-      gl.uniform3f(uLoc.uOffset, 0.06 * Math.sin(simTime * 0.9), 0.06, -0.34);
+      gl.uniform3f(uLoc.uOffset, 0.14 * Math.sin(state.yaw), 0.06, -0.34);
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
       gl.depthMask(true);
       gl.disable(gl.BLEND);
@@ -631,7 +631,8 @@
   }
 
   // Pre-settle couture drape equilibrium so Frame 1 opens in poised fluid silk folds
-  for (let w = 0; w < 420; w++) stepPhysics();
+  for (let w = 0; w < 650; w++) stepPhysics();
+  old.set(pos);
   selectFabric(state.fabricIdx, false);
   requestAnimationFrame(render);
 })();
