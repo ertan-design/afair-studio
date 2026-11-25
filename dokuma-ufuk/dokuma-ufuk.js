@@ -654,30 +654,36 @@
     }
 
     var surgu = document.getElementById('ucus-surgu');
-    if (surgu) {
-      surgu.addEventListener('input', function () {
-        ustHalkaKipi = false;
-        ucusOran = (parseInt(surgu.value, 10) || 0) / 100;
-        ufukCiz();
-      });
-    }
-
     var btnCanlandir = document.getElementById('btn-ucus-canlandir');
-    if (btnCanlandir) {
-      btnCanlandir.addEventListener('click', function () {
-        if (animId) cancelAnimationFrame(animId);
-        ustHalkaKipi = false;
-        var bas = performance.now();
-        function adim(simdi) {
-          var p = Math.min(1, (simdi - bas) / 2600);
-          ucusOran = p;
-          if (surgu) surgu.value = String(Math.round(p * 100));
-          ufukCiz();
-          if (p < 1) animId = requestAnimationFrame(adim);
-        }
-        animId = requestAnimationFrame(adim);
-      });
+    var azHareket = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function ucusuDurdur() {
+      cancelAnimationFrame(animId);
+      animId = 0;
+      btnCanlandir.textContent = 'Uçuşu başlat';
     }
+    surgu.addEventListener('input', function () {
+      ucusuDurdur();
+      ustHalkaKipi = false;
+      ucusOran = Number(surgu.value) / 100;
+      ufukCiz();
+    });
+    btnCanlandir.addEventListener('click', function () {
+      if (animId) { ucusuDurdur(); return; }
+      ustHalkaKipi = false;
+      if (azHareket.matches) { ucusOran = 1; surgu.value = '100'; ufukCiz(); return; }
+      var baslangic = ucusOran >= 1 ? 0 : ucusOran;
+      var bas = performance.now();
+      btnCanlandir.textContent = 'Uçuşu durdur';
+      function adim(simdi) {
+        ucusOran = Math.min(1, baslangic + (simdi - bas) / 2600);
+        surgu.value = String(Math.round(ucusOran * 100));
+        ufukCiz();
+        if (ucusOran < 1) animId = requestAnimationFrame(adim);
+        else ucusuDurdur();
+      }
+      animId = requestAnimationFrame(adim);
+    });
+    azHareket.addEventListener('change', function (event) { if (event.matches) ucusuDurdur(); });
 
     /* Ufuk tuvalinde kule tiklama */
     var ufukCv = document.getElementById('ufuk-tuval');

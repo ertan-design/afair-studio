@@ -1,0 +1,17 @@
+a.dila-nav-link{white-space:nowrap}
+.dila-fabric{margin:clamp(1rem,3vw,3rem) 0;padding:0;border:1px solid #635042;background:#1e171b;color:#faeedf;max-width:none;min-width:0}
+.dila-fabric h2{font:400 clamp(1.8rem,4vw,4.4rem)/1.04 Georgia,serif;letter-spacing:-.035em;margin:0;color:#faeedf;text-transform:none}
+.dila-fabric p{font:400 1rem/1.5 system-ui,sans-serif;color:#d6c5b7;margin:.45rem 0 0;max-width:54ch}
+.dila-fabric-info{padding:clamp(1rem,2.8vw,2.5rem)}
+.dila-fabric canvas{display:block;width:100%;height:clamp(225px,40vw,530px);background:radial-gradient(ellipse,#745444,#221820 67%);touch-action:pan-y;cursor:grab}
+.dila-fabric canvas:active{cursor:grabbing}
+.dila-fabric-controls{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr)) auto;gap:.85rem;padding:0 clamp(1rem,2.8vw,2.5rem) 1.2rem;align-items:end}
+.dila-fabric-controls label{display:grid;gap:.35rem;color:#faeedf;font:600 .9rem/1.3 system-ui}
+.dila-fabric-controls input{width:100%;accent-color:#e7b487}
+.dila-fabric-controls button{padding:.55rem .95rem;border:1px solid #986e52;background:#31232a;color:#faeedf;border-radius:3px;font:600 .9rem system-ui;cursor:pointer}
+.dila-fabric :focus-visible{outline:2px solid #ffd0a5;outline-offset:4px}
+.dila-fabric[data-unavailable] .dila-fabric-controls,.dila-fabric[data-unavailable] canvas{display:none}
+.dila-tech>summary{cursor:pointer;color:inherit;text-decoration:underline;text-underline-offset:.2em}
+.manset-pafta .dila-fabric{text-align:left}
+@media(max-width:630px){.dila-fabric-controls{grid-template-columns:1fr 1fr}.dila-fabric-controls button{justify-self:start}.dila-fabric canvas{touch-action:pan-y}}
+.dila-fabric canvas{height:clamp(220px,30vw,410px);background:radial-gradient(ellipse 24% 8% at 50% 88%,#100a106e,transparent),radial-gradient(ellipse,#543a35,#221820 72%)}
