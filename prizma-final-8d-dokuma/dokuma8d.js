@@ -153,6 +153,7 @@
     var gl = canvas.getContext("webgl", { antialias: true, alpha: false });
     if (!gl) return;
     var vs = [
+      "precision mediump float;",
       "attribute vec2 aUV;",
       "uniform float uTime, uWind, uSurreal;",
       "uniform mat4 uMVP;",
