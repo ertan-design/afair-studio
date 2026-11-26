@@ -167,6 +167,14 @@
     {
       "source": "/argon-4domain-r29/",
       "destination": "/argon-4domain-r29/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece",
+      "destination": "/prizma-ryte-hece/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece/",
+      "destination": "/prizma-ryte-hece/index.html"
     }
   ],
   "buildCommand": "",
