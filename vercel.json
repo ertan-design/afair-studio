@@ -143,6 +143,30 @@
     {
       "source": "/final-kapasite-terazi/",
       "destination": "/final-kapasite-terazi/index.html"
+    },
+    {
+      "source": "/final-sanart-12sergi-svg",
+      "destination": "/final-sanart-12sergi-svg/index.html"
+    },
+    {
+      "source": "/final-sanart-12sergi-svg/",
+      "destination": "/final-sanart-12sergi-svg/index.html"
+    },
+    {
+      "source": "/atolye-8d-ses-ucus",
+      "destination": "/atolye-8d-ses-ucus/index.html"
+    },
+    {
+      "source": "/atolye-8d-ses-ucus/",
+      "destination": "/atolye-8d-ses-ucus/index.html"
+    },
+    {
+      "source": "/argon-4domain-r29",
+      "destination": "/argon-4domain-r29/index.html"
+    },
+    {
+      "source": "/argon-4domain-r29/",
+      "destination": "/argon-4domain-r29/index.html"
     }
   ],
   "buildCommand": "",

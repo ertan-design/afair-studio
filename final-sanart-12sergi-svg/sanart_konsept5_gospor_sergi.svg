@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="50%" stop-color="#0d1629"/>
+      <stop offset="100%" stop-color="#060a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="22" fill="url(#bg)" stroke="#10b981" stroke-width="4"/>
+  <rect x="30" y="28" width="1540" height="86" rx="12" fill="#09101e" stroke="#1e293b" stroke-width="2"/>
+  <text x="55" y="65" fill="#10b981" font-family="Consolas, monospace" font-size="23" font-weight="bold">PART 5/8 • GOSPOR PAS • SAKİNLER KAFESİ • TEK ÇİZGİ TAKTİK PAS OYUNU</text>
+  <text x="55" y="96" fill="#cbd5e1" font-family="Consolas, monospace" font-size="16">8 ZEHRA — KONSEPT 5. OYUN (zehracevik.org) // SAĞ ANA SALON (598×533 cm • 31.46 m² • H:288 cm)</text>
+  <rect x="1260" y="44" width="285" height="52" rx="8" fill="#111c33" stroke="#10b981" stroke-width="1.5"/>
+  <text x="1402" y="76" fill="#7fffd4" font-family="Consolas, monospace" font-size="15" font-weight="bold" text-anchor="middle">CLOUDFLARE PAGES • 200 OK</text>
+
+  <!-- 4 Metric Boxes -->
+  <g transform="translate(30, 140)">
+    <rect x="0" y="0" width="365" height="190" rx="14" fill="#09101e" stroke="#1e293b" stroke-width="2"/>
+    <text x="24" y="45" fill="#94a3b8" font-family="Consolas, monospace" font-size="14">HONEST METRIC 01</text>
+    <text x="24" y="105" fill="#ffffff" font-family="Consolas, monospace" font-size="20" font-weight="bold">PAS İSABETİ: 94.2% (xG 2.84)</text>
+    <text x="24" y="155" fill="#10b981" font-family="Consolas, monospace" font-size="14">NO HUMAN FACE • VERIFIED</text>
+
+    <rect x="391" y="0" width="365" height="190" rx="14" fill="#09101e" stroke="#1e293b" stroke-width="2"/>
+    <text x="415" y="45" fill="#94a3b8" font-family="Consolas, monospace" font-size="14">ARCHITECTURAL NODE 02</text>
+    <text x="415" y="105" fill="#7fffd4" font-family="Consolas, monospace" font-size="18" font-weight="bold">ÜÇGEN DÜĞÜMÜ: 4× İKİLİ MASA (70×70 cm)</text>
+    <text x="415" y="155" fill="#cbd5e1" font-family="Consolas, monospace" font-size="14">1:50 RÖLÖVE HİZALAMASI ✓</text>
+
+    <rect x="782" y="0" width="365" height="190" rx="14" fill="#09101e" stroke="#1e293b" stroke-width="2"/>
+    <text x="806" y="45" fill="#94a3b8" font-family="Consolas, monospace" font-size="14">SYSTEM TELEMETRY 03</text>
+    <text x="806" y="105" fill="#ffb673" font-family="Consolas, monospace" font-size="19" font-weight="bold">DUCKDB TELEMETRİ: 0-WAIT CANLI</text>
+    <text x="806" y="155" fill="#34d399" font-family="Consolas, monospace" font-size="14">0-WAIT • STABLE STREAM</text>
+
+    <rect x="1173" y="0" width="367" height="190" rx="14" fill="#09101e" stroke="#10b981" stroke-width="2"/>
+    <text x="1197" y="45" fill="#94a3b8" font-family="Consolas, monospace" font-size="14">MIMARI ROLOVE 04</text>
+    <text x="1197" y="105" fill="#ffffff" font-family="Consolas, monospace" font-size="20" font-weight="bold">RÖLÖVE: 80.50 m² → 81.01 m²</text>
+    <text x="1197" y="155" fill="#10b981" font-family="Consolas, monospace" font-size="14">BFS KORİDOR ≥ 78 cm (GEÇER ✓)</text>
+  </g>
+
+  <rect x="30" y="358" width="1540" height="110" rx="14" fill="#080d18" stroke="#1e293b" stroke-width="2"/>
+  <path d="M 60 413 Q 400 365 800 413 T 1540 413" fill="none" stroke="#10b981" stroke-width="3.5"/>
+  <path d="M 60 413 Q 400 460 800 413 T 1540 413" fill="none" stroke="#7fffd4" stroke-width="2" stroke-dasharray="8,6"/>
+  <text x="800" y="452" fill="#94a3b8" font-family="Consolas, monospace" font-size="14" text-anchor="middle">SANART ÇATISI • KAFE İÇİNDE OYUN OYNADIĞINI BİLMEDEN GEZİLEN 8 MEKÂNSAL ENSTALASYON • 5120×1440 NATIVE</text>
+</svg>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR STUDIO · SANART — 12 özgün vektör sergi.</title>
+  <meta name="description" content="Arşivdeki 12 gerçek vektör sergi eseri (Oda 1–8 + Gospor, FreeHand, Y1904, Toiji) ve Pantone ipek eşleştirmesi.">
+  <link rel="stylesheet" href="./plus.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu arşiv sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">AFAIR STUDIO · SANART</a>
+    </div>
+    <nav class="sag" aria-label="Arşiv paneli ve geçiş">
+      <button type="button" class="dugme" id="arsiv-ac" aria-expanded="false">Arşiv Paftası ＋</button>
+      <a class="dugme" href="/final-kromatik-8konsept/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="arsiv-panel" id="arsiv-panel" aria-label="SanArt 12 Özgün SVG Sergi Arşivi Final" hidden>
+    <h2>SanArt 12 Özgün SVG Sergi Arşivi Final</h2>
+    <p class="not">Arşivdeki 12 gerçek vektör sergi eseri (Oda 1–8 + Gospor, FreeHand, Y1904, Toiji) ve Pantone ipek eşleştirmesi.</p>
+    
+            <div class="secim-satir">
+              <div class="kutu"><label for="sec-eser">Özgün Arşiv SVG Eseri (12 Dosya)</label>
+                <select id="sec-eser"><option value="sanart_sergi_1.svg">1/12 · sanart_sergi_1.svg (7487 B · sha:d1cfd5a8)</option><option value="sanart_sergi_2.svg">2/12 · sanart_sergi_2.svg (7556 B · sha:c0bd786f)</option><option value="sanart_sergi_3.svg">3/12 · sanart_sergi_3.svg (7576 B · sha:3be94fe4)</option><option value="sanart_sergi_4.svg">4/12 · sanart_sergi_4.svg (7532 B · sha:a656a9c5)</option><option value="sanart_sergi_5.svg">5/12 · sanart_sergi_5.svg (7554 B · sha:d09d5b0f)</option><option value="sanart_sergi_6.svg">6/12 · sanart_sergi_6.svg (7540 B · sha:6ace78c8)</option><option value="sanart_sergi_7.svg">7/12 · sanart_sergi_7.svg (7566 B · sha:d1a4fd97)</option><option value="sanart_sergi_8.svg">8/12 · sanart_sergi_8.svg (7581 B · sha:7de0b864)</option><option value="sanart_konsept5_gospor_sergi.svg">9/12 · sanart_konsept5_gospor_sergi.svg (3847 B · sha:f10c6550)</option><option value="sanart_konsept6_freehand_sergi.svg">10/12 · sanart_konsept6_freehand_sergi.svg (3857 B · sha:f374eaae)</option><option value="sanart_konsept7_y1904_sergi.svg">11/12 · sanart_konsept7_y1904_sergi.svg (3860 B · sha:f0e79e27)</option><option value="sanart_konsept8_toiji_sergi.svg">12/12 · sanart_konsept8_toiji_sergi.svg (3880 B · sha:a4a32a76)</option></select>
+              </div>
+            </div>
+            <div class="gorsel-cerceve"><img id="eser-gorsel" src="./sanart_sergi_1.svg" alt="SanArt Özgün SVG Sergi Eseri"></div>
+            
+    <div class="detay-metin" id="arsiv-detay">Arşiv verisi yüklendi.</div>
+    <div class="alt-aksiyon">
+      <a class="dugme" id="arsiv-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-sanart-12sergi-svg-arsiv.json">Arşiv Özeti İndir (.json)</a>
+      <button type="button" class="dugme" id="arsiv-kapat">Kapat ✕</button>
+    </div>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>12 özgün vektör sergi.</h1>
+    <p>Arşivdeki 12 gerçek SanArt SVG eseri ve 360° ipek sahnesi.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">19-2428 TCX Galeri Mürdüm · 360°</div>
+  </footer>
+
+  <script src="./plus.js"></script>
+</body>
+</html>
